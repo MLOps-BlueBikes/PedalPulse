@@ -50,7 +50,7 @@ This project aims to predict the demand for BlueBikes using historical data and 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/MuskanKhandelwal/Bluebikes-demand-forecasting.git
+   git clone [https://github.com/MLOps-BlueBikes/PedalPulse.git](https://github.com/MLOps-BlueBikes/PedalPulse.git)
    cd Bluebikes-demand-forecasting
    ```
 

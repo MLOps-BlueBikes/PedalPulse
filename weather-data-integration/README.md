@@ -1,5 +1,5 @@
 
-# Weather and Ride history Integration ( Yet to apply automation Using API)
+# Weather Data and Ride history Integration ( Yet to apply automation Using API)
 
 
 It will scrape weather data from Wunderground and integrate it with bike ride data. The purpose is to analyze the relationship between weather conditions and bike usage. The workflow involves:

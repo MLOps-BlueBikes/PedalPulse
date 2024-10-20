@@ -32,7 +32,6 @@ Workflow
 
 Once the merge is complete, the resulting dataset, which now includes weather conditions for each bike ride, can be saved to a CSV file for further analysis:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pythonCopy codefinal_df.to_csv('ride_weather_data.csv', index=False)   `
 
 ### 2\. Data Format
 

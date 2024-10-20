@@ -10,9 +10,11 @@ It will scrape weather data from Wunderground and integrate it with bike ride da
 
 ## Files
 
-- **`web_scraping.ipynb`**: The main Jupyter notebook for scraping weather data and merging it with the ride data.
+- **`web_scraping.ipynb`**: The main notebook for scraping weather data and merging it with the ride data.
 - **`ride_data.csv`**: A dataset that contains information on bike rides such as start/end times, stations, coordinates, and user type.
-- **`weather_data.csv`**: Weather data scraped from Wunderground for relevant dates, including temperature, humidity, wind conditions, and other metrics.
+- **`Weather_StationData1.csv`**: Weather Station data Including location of Weather Station
+
+Ride Data => Blue Bike monthly Data from S3 Bucket 
 
 ## Prerequisites
 

@@ -25,71 +25,88 @@ Ensure you have the following installed to run the notebook:
   ```bash
   pip install pandas beautifulsoup4 selenium
 
-How to Run the Notebook
-1. Scraping Weather Data
-The notebook uses Selenium and BeautifulSoup to extract historical weather data from Wunderground. You need to define the date range you want to scrape, and the notebook will:
+Workflow
+--------
 
-Navigate to Wunderground’s weather history page for each date.
-Extract relevant weather information (temperature, humidity, wind, etc.).
-Save the data in a structured Pandas DataFrame.
-Example scraping function:
+### 1\. Saving the Merged Data
 
-python
-Copy code
-def scrape_wunderground_data(date):
-    # Function to scrape weather data for a specific date from Wunderground
-    ...
-You can modify the date range as needed for your analysis.
+Once the merge is complete, the resulting dataset, which now includes weather conditions for each bike ride, can be saved to a CSV file for further analysis:
 
-2. Merging Weather Data with Ride Data
-The weather data is merged with the ride data by matching the closest timestamps. The ride start time (started_at) is compared with the weather data timestamps, and the nearest weather observation is attached to each ride.
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pythonCopy codefinal_df.to_csv('ride_weather_data.csv', index=False)   `
 
-Steps:
+### 2\. Data Format
 
-Convert both started_at (from ride data) and DateTime (from weather data) into a proper datetime format.
+#### Ride Data (ride\_data.csv)
 
-Use merge_asof() to perform the time-based merge:
+*   **ride\_id**: Unique identifier for each bike ride.
+    
+*   **rideable\_type**: Type of bike used (e.g., docked bike).
+    
+*   **started\_at**: Start time of the ride (to be merged with weather data).
+    
+*   **ended\_at**: End time of the ride.
+    
+*   **start\_station\_name, start\_station\_id**: Information about the start station.
+    
+*   **end\_station\_name, end\_station\_id**: Information about the end station.
+    
+*   **start\_lat, start\_lng**: Latitude and longitude of the start point.
+    
+*   **end\_lat, end\_lng**: Latitude and longitude of the end point.
+    
+*   **member\_casual**: Type of rider (member or casual).
+    
+*   **Closest Weather Station**: Name of the nearest weather station.
+    
+*   **Weather Station ID**: ID of the weather station.
+    
 
-python
-Copy code
-merged_df = pd.merge_asof(rides_df, weather_df, left_on='started_at', right_on='DateTime', direction='backward')
-3. Saving the Merged Data
-The merged data (ride data + weather conditions) can be saved into a CSV file for further analysis:
+#### Weather Data (weather\_data.csv)
 
-python
-Copy code
-final_df.to_csv('ride_weather_data.csv', index=False)
-Data Format
-Ride Data (ride_data.csv)
-ride_id: Unique identifier for each bike ride.
-rideable_type: Type of bike used (e.g., docked bike).
-started_at: Ride start time (to be merged with weather data).
-ended_at: Ride end time.
-start_station_name, start_station_id, end_station_name, end_station_id: Station details.
-start_lat, start_lng, end_lat, end_lng: Latitude and longitude of start and end points.
-member_casual: Rider type (member or casual).
-Closest Weather Station: Weather station nearest to the ride start.
-Weather Station ID: ID of the weather station.
-NAME: Name of the station.
-Weather Data (weather_data.csv)
-Temperature (°F): Temperature readings.
-Dew Point: Dew point in Fahrenheit.
-Humidity: Humidity percentage.
-Wind: Wind direction.
-Wind Speed: Wind speed in mph.
-Wind Gust: Maximum gust speed.
-Pressure: Air pressure in inches.
-Precip.: Precipitation in inches.
-Condition: Weather condition (e.g., Cloudy).
-DateTime: Timestamp of the weather observation (used for merging with ride data).
-Running the Notebook
-Open web_scraping.ipynb in Jupyter Notebook.
-Ensure your WebDriver (e.g., ChromeDriver) is set up correctly.
-Run all cells sequentially to:
-Scrape weather data for the specified date range.
-Merge the weather data with the ride data.
-Save the merged data into a CSV file.
-Important Notes
-Selenium WebDriver: Ensure you have ChromeDriver (or other WebDriver) installed and added to your system's PATH for Selenium scraping.
-Scraping Limitations: Wunderground may limit scraping activities (rate limiting, CAPTCHAs). The notebook includes delays to reduce the likelihood of being blocked.
-Accuracy of Merging: The merging is based on the closest time match. While this works well for most scenarios, rapidly changing weather conditions may require finer time granularity.
+*   **Temperature (°F)**: Temperature reading in Fahrenheit.
+    
+*   **Dew Point**: Dew point temperature.
+    
+*   **Humidity**: Humidity percentage.
+    
+*   **Wind**: Wind direction.
+    
+*   **Wind Speed**: Wind speed in mph.
+    
+*   **Wind Gust**: Maximum wind gust speed.
+    
+*   **Pressure**: Air pressure in inches.
+    
+*   **Precip.**: Precipitation in inches.
+    
+*   **Condition**: Weather condition (e.g., Cloudy, Rainy).
+    
+*   **DateTime**: Timestamp of the weather observation (used for merging).
+    
+
+### 3\. Running the Notebook
+
+Follow these steps to run the Jupyter notebook:
+
+1.  Open the web\_scraping.ipynb notebook in Jupyter.
+    
+2.  Ensure you have Selenium WebDriver (e.g., ChromeDriver) installed and properly configured for web scraping.
+    
+3.  Run all cells to:
+    
+    *   Scrape the weather data for the specified date range.
+        
+    *   Merge the weather data with the bike ride data based on the closest matching timestamps.
+        
+    *   Save the final merged dataset to a CSV file.
+        
+
+### 4\. Important Notes
+
+*   **Selenium WebDriver**: Ensure that ChromeDriver (or another WebDriver for your browser) is installed and added to your system’s PATH. Selenium is required for web scraping.
+    
+*   **Scraping Limitations**: Be aware that Wunderground may have rate limits or CAPTCHAs. The notebook includes sleep delays between requests to reduce the risk of being blocked.
+    
+*   **Merging Accuracy**: The merge is performed using the nearest available weather timestamp before the ride start time. In cases of rapidly changing weather, there may be slight mismatches in the weather conditions at the exact ride start time.
+    
+

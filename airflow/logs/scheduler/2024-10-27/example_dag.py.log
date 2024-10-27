@@ -1,0 +1,28 @@
+[2024-10-27T01:37:59.298+0000] {processor.py:157} INFO - Started process (PID=56) to work on /opt/airflow/dags/example_dag.py
+[2024-10-27T01:37:59.301+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2024-10-27T01:37:59.304+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:37:59.303+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2024-10-27T01:37:59.960+0000] {processor.py:836} INFO - DAG(s) dict_keys(['blue_bike_prediction_dag']) retrieved from /opt/airflow/dags/example_dag.py
+[2024-10-27T01:38:00.488+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:38:00.487+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-10-27T01:38:00.504+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:38:00.503+0000] {dag.py:3508} INFO - Setting next_dagrun for blue_bike_prediction_dag to 2024-10-27T00:00:00+00:00, run_after=2024-10-28T00:00:00+00:00
+[2024-10-27T01:38:00.527+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 1.245 seconds
+[2024-10-27T01:38:31.419+0000] {processor.py:157} INFO - Started process (PID=155) to work on /opt/airflow/dags/example_dag.py
+[2024-10-27T01:38:31.420+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2024-10-27T01:38:31.421+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:38:31.421+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2024-10-27T01:38:31.761+0000] {processor.py:836} INFO - DAG(s) dict_keys(['blue_bike_prediction_dag']) retrieved from /opt/airflow/dags/example_dag.py
+[2024-10-27T01:38:31.775+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:38:31.774+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-10-27T01:38:31.795+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:38:31.794+0000] {dag.py:3508} INFO - Setting next_dagrun for blue_bike_prediction_dag to 2024-10-27T00:00:00+00:00, run_after=2024-10-28T00:00:00+00:00
+[2024-10-27T01:38:31.807+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.393 seconds
+[2024-10-27T01:39:01.838+0000] {processor.py:157} INFO - Started process (PID=248) to work on /opt/airflow/dags/example_dag.py
+[2024-10-27T01:39:01.839+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2024-10-27T01:39:01.840+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:39:01.840+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2024-10-27T01:39:02.386+0000] {processor.py:836} INFO - DAG(s) dict_keys(['blue_bike_prediction_dag']) retrieved from /opt/airflow/dags/example_dag.py
+[2024-10-27T01:39:02.405+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:39:02.404+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-10-27T01:39:02.417+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:39:02.417+0000] {dag.py:3508} INFO - Setting next_dagrun for blue_bike_prediction_dag to 2024-10-27T00:00:00+00:00, run_after=2024-10-28T00:00:00+00:00
+[2024-10-27T01:39:02.424+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.587 seconds
+[2024-10-27T01:39:33.318+0000] {processor.py:157} INFO - Started process (PID=336) to work on /opt/airflow/dags/example_dag.py
+[2024-10-27T01:39:33.321+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2024-10-27T01:39:33.322+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:39:33.321+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2024-10-27T01:39:33.609+0000] {processor.py:836} INFO - DAG(s) dict_keys(['blue_bike_prediction_dag']) retrieved from /opt/airflow/dags/example_dag.py
+[2024-10-27T01:39:33.617+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:39:33.617+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-10-27T01:39:33.628+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:39:33.628+0000] {dag.py:3508} INFO - Setting next_dagrun for blue_bike_prediction_dag to 2024-10-27T00:00:00+00:00, run_after=2024-10-28T00:00:00+00:00
+[2024-10-27T01:39:33.637+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.322 seconds

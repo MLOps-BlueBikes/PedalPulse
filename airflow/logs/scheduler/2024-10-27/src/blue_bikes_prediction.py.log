@@ -18,3 +18,1313 @@
 [2024-10-27T01:39:31.585+0000] {logging_mixin.py:150} INFO - [2024-10-27T01:39:31.584+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
 [2024-10-27T01:39:32.032+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
 [2024-10-27T01:39:32.041+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.462 seconds
+[2024-10-27T21:45:13.647+0000] {processor.py:157} INFO - Started process (PID=93136) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:45:13.648+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:45:13.649+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:45:13.649+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:45:14.162+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:45:14.187+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.546 seconds
+[2024-10-27T21:45:44.353+0000] {processor.py:157} INFO - Started process (PID=93224) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:45:44.355+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:45:44.356+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:45:44.356+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:45:44.877+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:45:44.903+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.554 seconds
+[2024-10-27T21:46:15.398+0000] {processor.py:157} INFO - Started process (PID=93312) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:46:15.403+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:46:15.406+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:46:15.405+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:46:15.902+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:46:15.907+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.522 seconds
+[2024-10-27T21:46:46.011+0000] {processor.py:157} INFO - Started process (PID=93400) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:46:46.013+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:46:46.014+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:46:46.014+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:46:46.496+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:46:46.522+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.515 seconds
+[2024-10-27T21:47:16.972+0000] {processor.py:157} INFO - Started process (PID=93488) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:47:16.974+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:47:16.975+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:47:16.975+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:47:17.498+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:47:17.511+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.553 seconds
+[2024-10-27T21:47:47.893+0000] {processor.py:157} INFO - Started process (PID=93576) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:47:47.899+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:47:47.901+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:47:47.900+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:47:48.450+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:47:48.465+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.585 seconds
+[2024-10-27T21:48:18.898+0000] {processor.py:157} INFO - Started process (PID=93664) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:48:18.901+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:48:18.903+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:48:18.902+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:48:19.504+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:48:19.517+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.635 seconds
+[2024-10-27T21:48:49.935+0000] {processor.py:157} INFO - Started process (PID=93752) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:48:49.936+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:48:49.937+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:48:49.937+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:48:50.441+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:48:50.452+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.521 seconds
+[2024-10-27T21:49:20.753+0000] {processor.py:157} INFO - Started process (PID=93840) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:49:20.757+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:49:20.758+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:49:20.758+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:49:21.266+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:49:21.275+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.529 seconds
+[2024-10-27T21:49:51.509+0000] {processor.py:157} INFO - Started process (PID=93928) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:49:51.512+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:49:51.516+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:49:51.516+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:49:52.027+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:49:52.037+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.543 seconds
+[2024-10-27T21:50:22.516+0000] {processor.py:157} INFO - Started process (PID=94016) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:50:22.518+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:50:22.522+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:50:22.521+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:50:23.174+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:50:23.188+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.681 seconds
+[2024-10-27T21:50:53.429+0000] {processor.py:157} INFO - Started process (PID=94104) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:50:53.430+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:50:53.432+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:50:53.432+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:50:53.898+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:50:53.912+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.487 seconds
+[2024-10-27T21:51:24.579+0000] {processor.py:157} INFO - Started process (PID=94192) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:51:24.582+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:51:24.583+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:51:24.583+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:51:25.023+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:51:25.035+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.467 seconds
+[2024-10-27T21:51:55.137+0000] {processor.py:157} INFO - Started process (PID=94280) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:51:55.139+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:51:55.142+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:51:55.141+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:51:55.607+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:51:55.618+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.486 seconds
+[2024-10-27T21:52:25.862+0000] {processor.py:157} INFO - Started process (PID=94368) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:52:25.863+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:52:25.864+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:52:25.864+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:52:26.320+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:52:26.334+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.477 seconds
+[2024-10-27T21:52:56.878+0000] {processor.py:157} INFO - Started process (PID=94456) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:52:56.880+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:52:56.881+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:52:56.881+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:52:57.331+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:52:57.339+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.477 seconds
+[2024-10-27T21:53:27.590+0000] {processor.py:157} INFO - Started process (PID=94544) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:53:27.592+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:53:27.593+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:53:27.593+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:53:28.001+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:53:28.013+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.431 seconds
+[2024-10-27T21:53:58.269+0000] {processor.py:157} INFO - Started process (PID=94632) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:53:58.271+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:53:58.273+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:53:58.272+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:53:58.751+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:53:58.760+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.495 seconds
+[2024-10-27T21:54:28.922+0000] {processor.py:157} INFO - Started process (PID=94720) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:54:28.924+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:54:28.925+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:54:28.925+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:54:29.442+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:54:29.460+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.544 seconds
+[2024-10-27T21:55:00.094+0000] {processor.py:157} INFO - Started process (PID=94815) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:55:00.096+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:55:00.097+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:55:00.097+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:55:00.551+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:55:00.568+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.478 seconds
+[2024-10-27T21:55:30.858+0000] {processor.py:157} INFO - Started process (PID=94903) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:55:30.863+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:55:30.864+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:55:30.864+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:55:31.414+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:55:31.425+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.577 seconds
+[2024-10-27T21:56:01.700+0000] {processor.py:157} INFO - Started process (PID=94991) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:56:01.703+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:56:01.705+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:56:01.705+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:56:02.201+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:56:02.218+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.522 seconds
+[2024-10-27T21:56:32.336+0000] {processor.py:157} INFO - Started process (PID=95079) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:56:32.338+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:56:32.339+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:56:32.339+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:56:32.767+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:56:32.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.445 seconds
+[2024-10-27T21:57:03.174+0000] {processor.py:157} INFO - Started process (PID=95167) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:57:03.176+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:57:03.177+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:57:03.177+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:57:03.615+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:57:03.625+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.465 seconds
+[2024-10-27T21:57:33.934+0000] {processor.py:157} INFO - Started process (PID=95255) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:57:33.936+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:57:33.938+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:57:33.938+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:57:34.401+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:57:34.422+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.493 seconds
+[2024-10-27T21:58:04.500+0000] {processor.py:157} INFO - Started process (PID=95342) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:58:04.503+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:58:04.504+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:58:04.503+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:58:04.900+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:58:04.911+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.417 seconds
+[2024-10-27T21:58:35.224+0000] {processor.py:157} INFO - Started process (PID=95430) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:58:35.226+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:58:35.227+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:58:35.227+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:58:35.679+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:58:35.691+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.472 seconds
+[2024-10-27T21:59:05.830+0000] {processor.py:157} INFO - Started process (PID=95518) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:59:05.832+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:59:05.833+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:59:05.833+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:59:06.285+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:59:06.291+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.475 seconds
+[2024-10-27T21:59:36.315+0000] {processor.py:157} INFO - Started process (PID=95610) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:59:36.316+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T21:59:36.316+0000] {logging_mixin.py:150} INFO - [2024-10-27T21:59:36.316+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:59:36.739+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T21:59:36.746+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.432 seconds
+[2024-10-27T22:00:07.734+0000] {processor.py:157} INFO - Started process (PID=95699) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:00:07.744+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:00:07.744+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:00:07.744+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:00:08.188+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:00:08.197+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.475 seconds
+[2024-10-27T22:00:38.877+0000] {processor.py:157} INFO - Started process (PID=95787) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:00:38.879+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:00:38.879+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:00:38.879+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:00:39.335+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:00:39.357+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.483 seconds
+[2024-10-27T22:01:09.396+0000] {processor.py:157} INFO - Started process (PID=95874) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:01:09.398+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:01:09.399+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:01:09.398+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:01:10.302+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:01:10.365+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.976 seconds
+[2024-10-27T22:01:41.364+0000] {processor.py:157} INFO - Started process (PID=95963) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:01:41.366+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:01:41.366+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:01:41.366+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:01:41.883+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:01:41.896+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.538 seconds
+[2024-10-27T22:02:12.419+0000] {processor.py:157} INFO - Started process (PID=96051) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:02:12.420+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:02:12.423+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:02:12.423+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:02:12.822+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:02:12.828+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.414 seconds
+[2024-10-27T22:02:43.190+0000] {processor.py:157} INFO - Started process (PID=96139) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:02:43.192+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:02:43.193+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:02:43.193+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:02:43.616+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:02:43.623+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.437 seconds
+[2024-10-27T22:03:13.733+0000] {processor.py:157} INFO - Started process (PID=96227) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:03:13.734+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:03:13.736+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:03:13.735+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:03:14.205+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:03:14.230+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.503 seconds
+[2024-10-27T22:03:44.620+0000] {processor.py:157} INFO - Started process (PID=96315) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:03:44.622+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:03:44.623+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:03:44.623+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:03:45.122+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:03:45.138+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.521 seconds
+[2024-10-27T22:04:15.310+0000] {processor.py:157} INFO - Started process (PID=96403) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:04:15.311+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:04:15.312+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:04:15.312+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:04:15.833+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:04:15.856+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.551 seconds
+[2024-10-27T22:04:46.000+0000] {processor.py:157} INFO - Started process (PID=96491) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:04:46.002+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:04:46.003+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:04:46.003+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:04:46.494+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:04:46.518+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.524 seconds
+[2024-10-27T22:05:17.307+0000] {processor.py:157} INFO - Started process (PID=96579) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:05:17.309+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:05:17.310+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:05:17.310+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:05:17.843+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:05:17.863+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.562 seconds
+[2024-10-27T22:05:48.731+0000] {processor.py:157} INFO - Started process (PID=96667) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:05:48.733+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:05:48.735+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:05:48.735+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:05:49.258+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:05:49.270+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.543 seconds
+[2024-10-27T22:06:19.440+0000] {processor.py:157} INFO - Started process (PID=96755) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:06:19.442+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:06:19.445+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:06:19.445+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:06:20.093+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:06:20.107+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.677 seconds
+[2024-10-27T22:06:50.840+0000] {processor.py:157} INFO - Started process (PID=96843) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:06:50.841+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:06:50.842+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:06:50.842+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:06:51.365+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:06:51.382+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.546 seconds
+[2024-10-27T22:07:22.193+0000] {processor.py:157} INFO - Started process (PID=96931) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:07:22.198+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:07:22.199+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:07:22.199+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:07:22.673+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:07:22.689+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.508 seconds
+[2024-10-27T22:07:53.778+0000] {processor.py:157} INFO - Started process (PID=97019) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:07:53.781+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:07:53.782+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:07:53.782+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:07:54.236+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:07:54.250+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.485 seconds
+[2024-10-27T22:08:24.309+0000] {processor.py:157} INFO - Started process (PID=97105) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:08:24.319+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:08:24.322+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:08:24.321+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:08:25.526+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:08:25.563+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 1.267 seconds
+[2024-10-27T22:08:56.031+0000] {processor.py:157} INFO - Started process (PID=97194) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:08:56.034+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:08:56.037+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:08:56.035+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:08:56.548+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:08:56.572+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.550 seconds
+[2024-10-27T22:09:27.520+0000] {processor.py:157} INFO - Started process (PID=97282) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:09:27.526+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:09:27.531+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:09:27.531+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:09:27.977+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:09:27.987+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.482 seconds
+[2024-10-27T22:09:58.129+0000] {processor.py:157} INFO - Started process (PID=97370) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:09:58.134+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:09:58.136+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:09:58.136+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:09:58.627+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:09:58.652+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.532 seconds
+[2024-10-27T22:10:29.544+0000] {processor.py:157} INFO - Started process (PID=97458) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:10:29.546+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:10:29.547+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:10:29.547+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:10:30.021+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:10:30.043+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.512 seconds
+[2024-10-27T22:11:00.682+0000] {processor.py:157} INFO - Started process (PID=97546) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:11:00.684+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:11:00.686+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:11:00.686+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:11:01.099+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:11:01.112+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.435 seconds
+[2024-10-27T22:11:31.895+0000] {processor.py:157} INFO - Started process (PID=97634) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:11:31.897+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:11:31.898+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:11:31.898+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:11:32.367+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:11:32.386+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.493 seconds
+[2024-10-27T22:12:03.272+0000] {processor.py:157} INFO - Started process (PID=97729) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:12:03.273+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:12:03.274+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:12:03.274+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:12:03.689+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:12:03.707+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.439 seconds
+[2024-10-27T22:12:33.967+0000] {processor.py:157} INFO - Started process (PID=97817) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:12:33.969+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:12:33.969+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:12:33.969+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:12:34.493+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:12:34.507+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.542 seconds
+[2024-10-27T22:13:05.269+0000] {processor.py:157} INFO - Started process (PID=97904) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:13:05.271+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:13:05.271+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:13:05.271+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:13:05.675+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:13:05.690+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.424 seconds
+[2024-10-27T22:13:36.462+0000] {processor.py:157} INFO - Started process (PID=97992) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:13:36.464+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:13:36.465+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:13:36.464+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:13:36.855+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:13:36.863+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.405 seconds
+[2024-10-27T22:14:07.129+0000] {processor.py:157} INFO - Started process (PID=98080) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:14:07.131+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:14:07.131+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:14:07.131+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:14:07.515+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:14:07.529+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.403 seconds
+[2024-10-27T22:14:37.608+0000] {processor.py:157} INFO - Started process (PID=98168) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:14:37.609+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:14:37.610+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:14:37.610+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:14:38.006+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:14:38.020+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.416 seconds
+[2024-10-27T22:15:08.192+0000] {processor.py:157} INFO - Started process (PID=98256) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:15:08.202+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:15:08.208+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:15:08.206+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:15:08.768+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:15:08.797+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.637 seconds
+[2024-10-27T22:15:39.375+0000] {processor.py:157} INFO - Started process (PID=98344) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:15:39.376+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:15:39.376+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:15:39.376+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:15:39.949+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:15:39.975+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.604 seconds
+[2024-10-27T22:16:10.890+0000] {processor.py:157} INFO - Started process (PID=98432) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:16:10.892+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:16:10.894+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:16:10.894+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:16:11.382+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:16:11.392+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.507 seconds
+[2024-10-27T22:16:42.427+0000] {processor.py:157} INFO - Started process (PID=98520) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:16:42.431+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:16:42.434+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:16:42.433+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:16:42.922+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:16:42.942+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.530 seconds
+[2024-10-27T22:17:13.889+0000] {processor.py:157} INFO - Started process (PID=98608) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:17:13.891+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:17:13.892+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:17:13.892+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:17:14.363+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:17:14.373+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.490 seconds
+[2024-10-27T22:17:45.155+0000] {processor.py:157} INFO - Started process (PID=98696) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:17:45.159+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:17:45.161+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:17:45.160+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:17:45.643+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:17:45.655+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.510 seconds
+[2024-10-27T22:18:15.758+0000] {processor.py:157} INFO - Started process (PID=98783) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:18:15.760+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:18:15.761+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:18:15.761+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:18:16.253+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:18:16.264+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.520 seconds
+[2024-10-27T22:18:46.820+0000] {processor.py:157} INFO - Started process (PID=98872) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:18:46.824+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:18:46.826+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:18:46.825+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:18:47.357+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:18:47.367+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.557 seconds
+[2024-10-27T22:19:17.504+0000] {processor.py:157} INFO - Started process (PID=98960) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:19:17.505+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:19:17.506+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:19:17.506+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:19:18.155+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:19:18.167+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.667 seconds
+[2024-10-27T22:19:48.422+0000] {processor.py:157} INFO - Started process (PID=99048) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:19:48.428+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:19:48.431+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:19:48.430+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:19:48.878+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:19:48.885+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.476 seconds
+[2024-10-27T22:20:19.204+0000] {processor.py:157} INFO - Started process (PID=99136) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:20:19.206+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:20:19.208+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:20:19.208+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:20:19.690+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:20:19.700+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.501 seconds
+[2024-10-27T22:20:50.240+0000] {processor.py:157} INFO - Started process (PID=99224) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:20:50.242+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:20:50.243+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:20:50.243+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:20:50.977+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:20:50.999+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.765 seconds
+[2024-10-27T22:21:21.457+0000] {processor.py:157} INFO - Started process (PID=99312) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:21:21.464+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:21:21.467+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:21:21.467+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:21:21.967+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:21:21.986+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.542 seconds
+[2024-10-27T22:21:52.949+0000] {processor.py:157} INFO - Started process (PID=99400) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:21:52.951+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:21:52.955+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:21:52.955+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:21:53.509+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:21:53.535+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.595 seconds
+[2024-10-27T22:22:24.133+0000] {processor.py:157} INFO - Started process (PID=99488) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:22:24.135+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:22:24.135+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:22:24.135+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:22:24.599+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:22:24.617+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.496 seconds
+[2024-10-27T22:22:54.816+0000] {processor.py:157} INFO - Started process (PID=99576) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:22:54.826+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:22:54.828+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:22:54.828+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:22:55.342+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:22:55.356+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.546 seconds
+[2024-10-27T22:23:25.521+0000] {processor.py:157} INFO - Started process (PID=99664) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:23:25.522+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:23:25.523+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:23:25.522+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:23:25.979+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:23:25.989+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.481 seconds
+[2024-10-27T22:23:56.131+0000] {processor.py:157} INFO - Started process (PID=99751) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:23:56.165+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:23:56.173+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:23:56.169+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:23:57.017+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:23:57.169+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 1.044 seconds
+[2024-10-27T22:24:27.580+0000] {processor.py:157} INFO - Started process (PID=99838) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:24:27.584+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:24:27.590+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:24:27.587+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:24:28.078+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:24:28.094+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.519 seconds
+[2024-10-27T22:24:58.402+0000] {processor.py:157} INFO - Started process (PID=99926) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:24:58.404+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:24:58.406+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:24:58.406+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:24:58.901+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:24:58.941+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.543 seconds
+[2024-10-27T22:25:29.228+0000] {processor.py:157} INFO - Started process (PID=315) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:25:29.229+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:25:29.231+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:25:29.230+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:25:29.692+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:25:29.703+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.479 seconds
+[2024-10-27T22:25:59.873+0000] {processor.py:157} INFO - Started process (PID=403) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:25:59.876+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:25:59.878+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:25:59.877+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:26:00.331+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:26:00.357+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.492 seconds
+[2024-10-27T22:26:30.702+0000] {processor.py:157} INFO - Started process (PID=491) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:26:30.705+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:26:30.707+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:26:30.706+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:26:31.179+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:26:31.197+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.510 seconds
+[2024-10-27T22:27:01.401+0000] {processor.py:157} INFO - Started process (PID=579) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:27:01.402+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:27:01.404+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:27:01.404+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:27:01.890+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:27:01.902+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.504 seconds
+[2024-10-27T22:27:32.076+0000] {processor.py:157} INFO - Started process (PID=667) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:27:32.078+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:27:32.080+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:27:32.079+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:27:32.529+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:27:32.552+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.480 seconds
+[2024-10-27T22:28:02.652+0000] {processor.py:157} INFO - Started process (PID=754) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:28:02.656+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:28:02.658+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:28:02.657+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:28:03.910+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:28:03.932+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 1.297 seconds
+[2024-10-27T22:28:34.010+0000] {processor.py:157} INFO - Started process (PID=842) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:28:34.011+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:28:34.012+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:28:34.011+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:28:34.436+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:28:34.461+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.458 seconds
+[2024-10-27T22:29:05.307+0000] {processor.py:157} INFO - Started process (PID=931) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:29:05.308+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:29:05.309+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:29:05.309+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:29:05.791+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:29:05.815+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.513 seconds
+[2024-10-27T22:29:36.148+0000] {processor.py:157} INFO - Started process (PID=1019) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:29:36.153+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:29:36.154+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:29:36.153+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:29:36.698+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:29:36.714+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.583 seconds
+[2024-10-27T22:30:07.304+0000] {processor.py:157} INFO - Started process (PID=1114) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:30:07.309+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:30:07.318+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:30:07.315+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:30:07.854+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:30:07.867+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.570 seconds
+[2024-10-27T22:30:38.238+0000] {processor.py:157} INFO - Started process (PID=1202) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:30:38.240+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:30:38.242+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:30:38.241+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:30:38.672+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:30:38.686+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.453 seconds
+[2024-10-27T22:31:09.002+0000] {processor.py:157} INFO - Started process (PID=1290) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:31:09.006+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:31:09.009+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:31:09.007+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:31:09.430+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:31:09.447+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.461 seconds
+[2024-10-27T22:31:40.109+0000] {processor.py:157} INFO - Started process (PID=1378) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:31:40.111+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:31:40.113+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:31:40.112+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:31:40.553+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:31:40.563+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.459 seconds
+[2024-10-27T22:32:10.843+0000] {processor.py:157} INFO - Started process (PID=1466) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:32:10.845+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:32:10.849+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:32:10.848+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:32:11.227+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:32:11.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.417 seconds
+[2024-10-27T22:32:41.516+0000] {processor.py:157} INFO - Started process (PID=1554) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:32:41.518+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:32:41.520+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:32:41.520+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:32:41.834+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:32:41.853+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.342 seconds
+[2024-10-27T22:33:11.893+0000] {processor.py:157} INFO - Started process (PID=1641) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:33:11.894+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:33:11.896+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:33:11.895+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:33:12.265+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:33:12.277+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.391 seconds
+[2024-10-27T22:33:42.466+0000] {processor.py:157} INFO - Started process (PID=1730) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:33:42.467+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:33:42.469+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:33:42.469+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:33:42.774+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:33:42.798+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.337 seconds
+[2024-10-27T22:34:12.984+0000] {processor.py:157} INFO - Started process (PID=1818) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:34:12.986+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:34:12.987+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:34:12.986+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:34:13.312+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:34:13.331+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.351 seconds
+[2024-10-27T22:34:43.552+0000] {processor.py:157} INFO - Started process (PID=1906) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:34:43.553+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:34:43.554+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:34:43.554+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:34:43.856+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:34:43.865+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.316 seconds
+[2024-10-27T22:35:14.048+0000] {processor.py:157} INFO - Started process (PID=1994) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:35:14.050+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:35:14.052+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:35:14.052+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:35:14.395+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:35:14.428+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.385 seconds
+[2024-10-27T22:35:44.648+0000] {processor.py:157} INFO - Started process (PID=2082) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:35:44.651+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:35:44.653+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:35:44.653+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:35:44.887+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:35:44.895+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.252 seconds
+[2024-10-27T22:36:15.049+0000] {processor.py:157} INFO - Started process (PID=2170) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:36:15.049+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:36:15.051+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:36:15.050+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:36:15.283+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:36:15.295+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.251 seconds
+[2024-10-27T22:36:46.227+0000] {processor.py:157} INFO - Started process (PID=2258) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:36:46.229+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:36:46.230+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:36:46.229+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:36:46.554+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:36:46.580+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.360 seconds
+[2024-10-27T22:37:16.901+0000] {processor.py:157} INFO - Started process (PID=2346) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:37:16.903+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:37:16.906+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:37:16.905+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:37:17.346+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:37:17.364+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.469 seconds
+[2024-10-27T22:37:47.594+0000] {processor.py:157} INFO - Started process (PID=2434) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:37:47.596+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:37:47.597+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:37:47.597+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:37:47.949+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:37:47.965+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.376 seconds
+[2024-10-27T22:38:18.271+0000] {processor.py:157} INFO - Started process (PID=2522) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:38:18.272+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:38:18.273+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:38:18.273+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:38:18.590+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:38:18.623+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.355 seconds
+[2024-10-27T22:38:48.754+0000] {processor.py:157} INFO - Started process (PID=2610) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:38:48.755+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:38:48.756+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:38:48.756+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:38:49.079+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:38:49.095+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.344 seconds
+[2024-10-27T22:39:19.287+0000] {processor.py:157} INFO - Started process (PID=2698) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:39:19.289+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:39:19.292+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:39:19.291+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:39:19.650+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:39:19.690+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.408 seconds
+[2024-10-27T22:39:49.952+0000] {processor.py:157} INFO - Started process (PID=2786) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:39:49.953+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:39:49.954+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:39:49.954+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:39:50.197+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:39:50.209+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.261 seconds
+[2024-10-27T22:40:20.454+0000] {processor.py:157} INFO - Started process (PID=2874) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:40:20.455+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:40:20.457+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:40:20.457+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:40:20.720+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:40:20.730+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.279 seconds
+[2024-10-27T22:40:51.108+0000] {processor.py:157} INFO - Started process (PID=2962) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:40:51.112+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:40:51.115+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:40:51.114+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:40:51.502+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:40:51.539+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.441 seconds
+[2024-10-27T22:41:21.743+0000] {processor.py:157} INFO - Started process (PID=3050) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:41:21.745+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:41:21.746+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:41:21.745+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:41:22.096+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:41:22.114+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.376 seconds
+[2024-10-27T22:41:52.485+0000] {processor.py:157} INFO - Started process (PID=3138) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:41:52.487+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:41:52.488+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:41:52.488+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:41:52.839+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:41:52.868+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.389 seconds
+[2024-10-27T22:42:23.065+0000] {processor.py:157} INFO - Started process (PID=3225) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:42:23.067+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:42:23.069+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:42:23.068+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:42:23.498+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:42:23.517+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.451 seconds
+[2024-10-27T22:42:53.742+0000] {processor.py:157} INFO - Started process (PID=3314) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:42:53.743+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:42:53.744+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:42:53.744+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:42:54.036+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:42:54.057+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.320 seconds
+[2024-10-27T22:43:24.171+0000] {processor.py:157} INFO - Started process (PID=3402) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:43:24.173+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:43:24.173+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:43:24.173+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:43:24.462+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:43:24.471+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.303 seconds
+[2024-10-27T22:43:54.660+0000] {processor.py:157} INFO - Started process (PID=3490) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:43:54.662+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:43:54.663+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:43:54.663+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:43:54.955+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:43:54.966+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.309 seconds
+[2024-10-27T22:44:25.290+0000] {processor.py:157} INFO - Started process (PID=3578) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:44:25.292+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:44:25.292+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:44:25.292+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:44:25.660+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:44:25.669+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.381 seconds
+[2024-10-27T22:44:55.698+0000] {processor.py:157} INFO - Started process (PID=3665) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:44:55.699+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:44:55.700+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:44:55.700+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:44:56.110+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:44:56.135+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.441 seconds
+[2024-10-27T22:45:26.841+0000] {processor.py:157} INFO - Started process (PID=3754) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:45:26.844+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:45:26.845+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:45:26.844+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:45:27.195+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:45:27.221+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.387 seconds
+[2024-10-27T22:45:57.651+0000] {processor.py:157} INFO - Started process (PID=3842) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:45:57.653+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:45:57.654+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:45:57.654+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:45:58.177+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:45:58.188+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.542 seconds
+[2024-10-27T22:46:28.281+0000] {processor.py:157} INFO - Started process (PID=3930) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:46:28.283+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:46:28.285+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:46:28.284+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:46:28.620+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:46:28.649+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.373 seconds
+[2024-10-27T22:46:59.061+0000] {processor.py:157} INFO - Started process (PID=4018) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:46:59.063+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:46:59.065+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:46:59.065+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:46:59.486+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:46:59.511+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.456 seconds
+[2024-10-27T22:47:29.770+0000] {processor.py:157} INFO - Started process (PID=4105) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:47:29.777+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:47:29.780+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:47:29.779+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:47:30.309+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:47:30.325+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.573 seconds
+[2024-10-27T22:48:01.175+0000] {processor.py:157} INFO - Started process (PID=4196) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:48:01.175+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:48:01.176+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:48:01.176+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:48:02.014+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:48:02.039+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.869 seconds
+[2024-10-27T22:48:32.474+0000] {processor.py:157} INFO - Started process (PID=4284) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:48:32.478+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:48:32.481+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:48:32.481+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:48:32.766+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:48:32.777+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.306 seconds
+[2024-10-27T22:49:02.851+0000] {processor.py:157} INFO - Started process (PID=4371) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:49:02.854+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:49:02.854+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:49:02.854+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:49:03.316+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:49:03.329+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.483 seconds
+[2024-10-27T22:49:33.732+0000] {processor.py:157} INFO - Started process (PID=4459) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:49:33.734+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:49:33.735+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:49:33.734+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:49:34.946+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:49:34.979+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 1.253 seconds
+[2024-10-27T22:50:05.758+0000] {processor.py:157} INFO - Started process (PID=4548) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:50:05.759+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:50:05.760+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:50:05.760+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:50:06.250+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:50:06.268+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.515 seconds
+[2024-10-27T22:50:36.498+0000] {processor.py:157} INFO - Started process (PID=4636) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:50:36.503+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:50:36.503+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:50:36.503+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:50:36.964+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:50:36.983+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.498 seconds
+[2024-10-27T22:51:07.141+0000] {processor.py:157} INFO - Started process (PID=4732) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:51:07.143+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:51:07.143+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:51:07.143+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:51:07.536+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:51:07.545+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.407 seconds
+[2024-10-27T22:51:37.616+0000] {processor.py:157} INFO - Started process (PID=4813) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:51:37.619+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:51:37.620+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:51:37.620+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:51:38.061+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:51:38.071+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.458 seconds
+[2024-10-27T22:52:08.224+0000] {processor.py:157} INFO - Started process (PID=4900) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:52:08.226+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:52:08.228+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:52:08.227+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:52:08.786+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:52:08.801+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.582 seconds
+[2024-10-27T22:52:39.359+0000] {processor.py:157} INFO - Started process (PID=4988) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:52:39.363+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:52:39.365+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:52:39.365+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:52:39.873+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:52:39.887+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.531 seconds
+[2024-10-27T22:53:10.815+0000] {processor.py:157} INFO - Started process (PID=5076) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:53:10.817+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:53:10.817+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:53:10.817+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:53:11.407+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:53:11.447+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.639 seconds
+[2024-10-27T22:53:42.325+0000] {processor.py:157} INFO - Started process (PID=5171) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:53:42.328+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:53:42.331+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:53:42.330+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:53:43.005+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:53:43.016+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.698 seconds
+[2024-10-27T22:54:13.746+0000] {processor.py:157} INFO - Started process (PID=5259) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:54:13.747+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:54:13.748+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:54:13.748+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:54:14.252+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:54:14.267+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.525 seconds
+[2024-10-27T22:54:44.396+0000] {processor.py:157} INFO - Started process (PID=5346) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:54:44.397+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:54:44.399+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:54:44.398+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:54:44.937+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:54:44.973+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.583 seconds
+[2024-10-27T22:55:15.624+0000] {processor.py:157} INFO - Started process (PID=5434) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:55:15.626+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:55:15.630+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:55:15.630+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:55:16.281+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:55:16.307+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.707 seconds
+[2024-10-27T22:55:46.893+0000] {processor.py:157} INFO - Started process (PID=5522) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:55:46.897+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:55:46.900+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:55:46.900+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:55:47.337+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:55:47.355+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.467 seconds
+[2024-10-27T22:56:18.335+0000] {processor.py:157} INFO - Started process (PID=5610) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:56:18.337+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:56:18.338+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:56:18.338+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:56:18.822+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:56:18.834+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.505 seconds
+[2024-10-27T22:56:48.961+0000] {processor.py:157} INFO - Started process (PID=5697) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:56:48.964+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:56:48.965+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:56:48.964+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:56:49.471+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:56:49.483+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.534 seconds
+[2024-10-27T22:57:20.209+0000] {processor.py:157} INFO - Started process (PID=5786) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:57:20.212+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:57:20.219+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:57:20.219+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:57:21.028+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:57:21.040+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.841 seconds
+[2024-10-27T22:57:51.611+0000] {processor.py:157} INFO - Started process (PID=5874) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:57:51.614+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:57:51.615+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:57:51.615+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:57:52.107+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:57:52.117+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.511 seconds
+[2024-10-27T22:58:22.172+0000] {processor.py:157} INFO - Started process (PID=5961) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:58:22.176+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:58:22.177+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:58:22.177+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:58:22.641+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:58:22.650+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.487 seconds
+[2024-10-27T22:58:53.444+0000] {processor.py:157} INFO - Started process (PID=6049) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:58:53.446+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:58:53.448+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:58:53.448+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:58:53.914+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:58:53.938+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.506 seconds
+[2024-10-27T22:59:24.897+0000] {processor.py:157} INFO - Started process (PID=6137) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:59:24.900+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:59:24.901+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:59:24.901+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:59:25.353+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:59:25.369+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.476 seconds
+[2024-10-27T22:59:55.408+0000] {processor.py:157} INFO - Started process (PID=6224) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:59:55.411+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T22:59:55.412+0000] {logging_mixin.py:150} INFO - [2024-10-27T22:59:55.412+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:59:55.826+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T22:59:55.833+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.430 seconds
+[2024-10-27T23:00:26.793+0000] {processor.py:157} INFO - Started process (PID=6313) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:00:26.795+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:00:26.796+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:00:26.796+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:00:27.299+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:00:27.312+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.656 seconds
+[2024-10-27T23:00:58.045+0000] {processor.py:157} INFO - Started process (PID=6401) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:00:58.048+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:00:58.053+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:00:58.051+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:00:58.575+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:00:58.589+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.549 seconds
+[2024-10-27T23:01:28.669+0000] {processor.py:157} INFO - Started process (PID=6488) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:01:28.672+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:01:28.674+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:01:28.673+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:01:29.195+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:01:29.211+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.552 seconds
+[2024-10-27T23:01:59.318+0000] {processor.py:157} INFO - Started process (PID=6577) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:01:59.320+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:01:59.321+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:01:59.321+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:01:59.770+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:01:59.794+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.480 seconds
+[2024-10-27T23:02:30.049+0000] {processor.py:157} INFO - Started process (PID=6666) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:02:30.052+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:02:30.053+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:02:30.053+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:02:30.619+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:02:30.635+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.602 seconds
+[2024-10-27T23:03:01.559+0000] {processor.py:157} INFO - Started process (PID=6754) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:03:01.561+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:03:01.562+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:03:01.562+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:03:02.120+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:03:02.131+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.577 seconds
+[2024-10-27T23:03:32.894+0000] {processor.py:157} INFO - Started process (PID=6842) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:03:32.895+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:03:32.897+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:03:32.897+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:03:33.368+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:03:33.390+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.501 seconds
+[2024-10-27T23:04:03.524+0000] {processor.py:157} INFO - Started process (PID=6930) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:04:03.525+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:04:03.527+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:04:03.527+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:04:04.024+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:04:04.039+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.520 seconds
+[2024-10-27T23:04:35.063+0000] {processor.py:157} INFO - Started process (PID=7018) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:04:35.066+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:04:35.068+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:04:35.067+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:04:35.526+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:04:35.538+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.488 seconds
+[2024-10-27T23:05:06.516+0000] {processor.py:157} INFO - Started process (PID=7106) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:05:06.518+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:05:06.519+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:05:06.519+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:05:07.002+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:05:07.013+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.501 seconds
+[2024-10-27T23:05:38.078+0000] {processor.py:157} INFO - Started process (PID=7194) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:05:38.081+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:05:38.082+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:05:38.082+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:05:38.610+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:05:38.631+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.575 seconds
+[2024-10-27T23:06:08.694+0000] {processor.py:157} INFO - Started process (PID=7281) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:06:08.696+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:06:08.697+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:06:08.696+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:06:09.213+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:06:09.234+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.551 seconds
+[2024-10-27T23:06:39.566+0000] {processor.py:157} INFO - Started process (PID=7369) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:06:39.568+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:06:39.570+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:06:39.570+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:06:39.990+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:06:39.998+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.452 seconds
+[2024-10-27T23:07:10.117+0000] {processor.py:157} INFO - Started process (PID=7457) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:07:10.122+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:07:10.124+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:07:10.124+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:07:10.583+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:07:10.593+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.494 seconds
+[2024-10-27T23:07:41.335+0000] {processor.py:157} INFO - Started process (PID=7546) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:07:41.342+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:07:41.345+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:07:41.344+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:07:41.837+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:07:41.846+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.517 seconds
+[2024-10-27T23:08:12.724+0000] {processor.py:157} INFO - Started process (PID=7634) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:08:12.726+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:08:12.727+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:08:12.727+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:08:13.248+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:08:13.259+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.540 seconds
+[2024-10-27T23:08:44.190+0000] {processor.py:157} INFO - Started process (PID=7729) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:08:44.193+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:08:44.196+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:08:44.196+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:08:44.687+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:08:44.701+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.520 seconds
+[2024-10-27T23:09:14.955+0000] {processor.py:157} INFO - Started process (PID=7817) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:09:14.957+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:09:14.959+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:09:14.958+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:09:15.436+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:09:15.461+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.517 seconds
+[2024-10-27T23:09:45.877+0000] {processor.py:157} INFO - Started process (PID=7905) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:09:45.879+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:09:45.880+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:09:45.880+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:09:46.337+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:09:46.353+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.480 seconds
+[2024-10-27T23:10:16.530+0000] {processor.py:157} INFO - Started process (PID=7993) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:10:16.532+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:10:16.534+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:10:16.534+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:10:17.044+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:10:17.065+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.540 seconds
+[2024-10-27T23:10:47.836+0000] {processor.py:157} INFO - Started process (PID=8081) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:10:47.837+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:10:47.838+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:10:47.838+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:10:48.306+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:10:48.316+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.485 seconds
+[2024-10-27T23:11:18.616+0000] {processor.py:157} INFO - Started process (PID=8169) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:11:18.618+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:11:18.619+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:11:18.619+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:11:19.066+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:11:19.075+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.463 seconds
+[2024-10-27T23:11:49.166+0000] {processor.py:157} INFO - Started process (PID=8257) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:11:49.169+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:11:49.169+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:11:49.169+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:11:49.668+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:11:49.679+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.518 seconds
+[2024-10-27T23:12:20.345+0000] {processor.py:157} INFO - Started process (PID=8345) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:12:20.347+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:12:20.349+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:12:20.349+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:12:20.786+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:12:20.799+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.459 seconds
+[2024-10-27T23:12:51.110+0000] {processor.py:157} INFO - Started process (PID=8433) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:12:51.111+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:12:51.113+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:12:51.113+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:12:51.574+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:12:51.592+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.488 seconds
+[2024-10-27T23:13:21.922+0000] {processor.py:157} INFO - Started process (PID=8521) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:13:21.925+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:13:21.926+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:13:21.925+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:13:22.412+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:13:22.424+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.506 seconds
+[2024-10-27T23:13:52.679+0000] {processor.py:157} INFO - Started process (PID=8609) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:13:52.683+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:13:52.688+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:13:52.688+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:13:53.121+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:13:53.137+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.471 seconds
+[2024-10-27T23:14:23.419+0000] {processor.py:157} INFO - Started process (PID=8697) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:14:23.421+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:14:23.422+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:14:23.422+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:14:23.887+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:14:23.901+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.486 seconds
+[2024-10-27T23:14:54.199+0000] {processor.py:157} INFO - Started process (PID=8785) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:14:54.201+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:14:54.202+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:14:54.202+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:14:54.746+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:14:54.763+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.568 seconds
+[2024-10-27T23:15:25.085+0000] {processor.py:157} INFO - Started process (PID=8873) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:15:25.087+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:15:25.089+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:15:25.088+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:15:25.579+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:15:25.588+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.508 seconds
+[2024-10-27T23:15:55.893+0000] {processor.py:157} INFO - Started process (PID=8961) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:15:55.894+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:15:55.896+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:15:55.896+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:15:56.365+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:15:56.388+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.500 seconds
+[2024-10-27T23:16:26.868+0000] {processor.py:157} INFO - Started process (PID=9049) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:16:26.873+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:16:26.879+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:16:26.879+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:16:27.346+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:16:27.363+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.505 seconds
+[2024-10-27T23:16:57.802+0000] {processor.py:157} INFO - Started process (PID=9137) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:16:57.804+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:16:57.805+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:16:57.804+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:16:58.260+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:16:58.272+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.473 seconds
+[2024-10-27T23:17:28.577+0000] {processor.py:157} INFO - Started process (PID=9225) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:17:28.580+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:17:28.582+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:17:28.581+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:17:29.089+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:17:29.108+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.537 seconds
+[2024-10-27T23:17:59.424+0000] {processor.py:157} INFO - Started process (PID=9313) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:17:59.426+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:17:59.427+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:17:59.427+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:17:59.928+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:17:59.941+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.522 seconds
+[2024-10-27T23:18:30.986+0000] {processor.py:157} INFO - Started process (PID=9401) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:18:30.989+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:18:30.993+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:18:30.992+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:18:31.950+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:18:31.986+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 1.005 seconds
+[2024-10-27T23:19:02.555+0000] {processor.py:157} INFO - Started process (PID=9489) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:19:02.567+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:19:02.571+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:19:02.570+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:19:03.254+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:19:03.267+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.723 seconds
+[2024-10-27T23:19:33.423+0000] {processor.py:157} INFO - Started process (PID=9577) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:19:33.424+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:19:33.426+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:19:33.426+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:19:33.978+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:19:33.993+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.575 seconds
+[2024-10-27T23:20:04.151+0000] {processor.py:157} INFO - Started process (PID=9665) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:20:04.156+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:20:04.159+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:20:04.159+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:20:04.629+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:20:04.646+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.501 seconds
+[2024-10-27T23:20:35.104+0000] {processor.py:157} INFO - Started process (PID=9753) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:20:35.110+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:20:35.112+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:20:35.111+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:20:35.557+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:20:35.566+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.475 seconds
+[2024-10-27T23:21:06.261+0000] {processor.py:157} INFO - Started process (PID=9841) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:21:06.263+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:21:06.264+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:21:06.264+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:21:06.733+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:21:06.747+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.491 seconds
+[2024-10-27T23:21:36.956+0000] {processor.py:157} INFO - Started process (PID=9929) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:21:36.959+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:21:36.960+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:21:36.960+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:21:37.414+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:21:37.429+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.477 seconds
+[2024-10-27T23:22:07.634+0000] {processor.py:157} INFO - Started process (PID=10017) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:22:07.638+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:22:07.641+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:22:07.641+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:22:08.074+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:22:08.085+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.457 seconds
+[2024-10-27T23:22:38.240+0000] {processor.py:157} INFO - Started process (PID=10105) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:22:38.245+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:22:38.247+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:22:38.246+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:22:38.628+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:22:38.636+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.408 seconds
+[2024-10-27T23:23:08.898+0000] {processor.py:157} INFO - Started process (PID=10193) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:23:08.899+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:23:08.900+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:23:08.900+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:23:09.344+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:23:09.351+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.456 seconds
+[2024-10-27T23:23:39.662+0000] {processor.py:157} INFO - Started process (PID=10281) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:23:39.666+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:23:39.667+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:23:39.666+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:23:40.248+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:23:40.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.601 seconds
+[2024-10-27T23:24:10.375+0000] {processor.py:157} INFO - Started process (PID=10369) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:24:10.377+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:24:10.379+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:24:10.378+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:24:11.028+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:24:11.063+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.695 seconds
+[2024-10-27T23:24:41.617+0000] {processor.py:157} INFO - Started process (PID=10457) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:24:41.620+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:24:41.627+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:24:41.626+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:24:42.134+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:24:42.146+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.542 seconds
+[2024-10-27T23:25:12.592+0000] {processor.py:157} INFO - Started process (PID=10545) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:25:12.600+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:25:12.605+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:25:12.605+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:25:13.198+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:25:13.210+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.628 seconds
+[2024-10-27T23:25:43.714+0000] {processor.py:157} INFO - Started process (PID=10633) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:25:43.716+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:25:43.717+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:25:43.716+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:25:44.192+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:25:44.205+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.497 seconds
+[2024-10-27T23:26:14.335+0000] {processor.py:157} INFO - Started process (PID=10721) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:26:14.339+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:26:14.340+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:26:14.340+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:26:14.962+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:26:14.990+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.670 seconds
+[2024-10-27T23:26:45.495+0000] {processor.py:157} INFO - Started process (PID=10809) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:26:45.497+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:26:45.503+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:26:45.500+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:26:45.987+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:26:46.003+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.513 seconds
+[2024-10-27T23:27:16.502+0000] {processor.py:157} INFO - Started process (PID=10897) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:27:16.506+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:27:16.507+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:27:16.507+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:27:16.981+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:27:16.993+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.498 seconds
+[2024-10-27T23:27:47.230+0000] {processor.py:157} INFO - Started process (PID=10985) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:27:47.232+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:27:47.233+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:27:47.233+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:27:47.755+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:27:47.767+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.543 seconds
+[2024-10-27T23:28:18.056+0000] {processor.py:157} INFO - Started process (PID=11080) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:28:18.057+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:28:18.060+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:28:18.060+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:28:18.533+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:28:18.547+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.497 seconds
+[2024-10-27T23:28:48.787+0000] {processor.py:157} INFO - Started process (PID=11168) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:28:48.789+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:28:48.792+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:28:48.791+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:28:49.271+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:28:49.280+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.499 seconds
+[2024-10-27T23:29:19.671+0000] {processor.py:157} INFO - Started process (PID=11256) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:29:19.676+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:29:19.679+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:29:19.679+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:29:20.203+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:29:20.214+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.553 seconds
+[2024-10-27T23:29:50.623+0000] {processor.py:157} INFO - Started process (PID=11344) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:29:50.625+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:29:50.626+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:29:50.626+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:29:51.159+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:29:51.174+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.557 seconds
+[2024-10-27T23:30:21.678+0000] {processor.py:157} INFO - Started process (PID=11432) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:30:21.680+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:30:21.683+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:30:21.683+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:30:22.197+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:30:22.224+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.551 seconds
+[2024-10-27T23:30:52.696+0000] {processor.py:157} INFO - Started process (PID=11520) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:30:52.699+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:30:52.702+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:30:52.702+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:30:53.258+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:30:53.270+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.596 seconds
+[2024-10-27T23:31:23.681+0000] {processor.py:157} INFO - Started process (PID=11608) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:31:23.687+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:31:23.691+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:31:23.689+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:31:24.214+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:31:24.231+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.555 seconds
+[2024-10-27T23:31:54.452+0000] {processor.py:157} INFO - Started process (PID=11696) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:31:54.458+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:31:54.459+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:31:54.459+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:31:55.367+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:31:55.396+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.958 seconds
+[2024-10-27T23:32:25.842+0000] {processor.py:157} INFO - Started process (PID=11784) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:32:25.844+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:32:25.845+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:32:25.845+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:32:26.237+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:32:26.252+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.414 seconds
+[2024-10-27T23:32:56.484+0000] {processor.py:157} INFO - Started process (PID=11872) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:32:56.487+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:32:56.492+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:32:56.490+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:32:56.947+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:32:56.966+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.487 seconds
+[2024-10-27T23:33:27.559+0000] {processor.py:157} INFO - Started process (PID=11960) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:33:27.561+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:33:27.562+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:33:27.562+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:33:28.002+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:33:28.014+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.461 seconds
+[2024-10-27T23:33:58.387+0000] {processor.py:157} INFO - Started process (PID=12048) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:33:58.389+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:33:58.390+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:33:58.390+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:33:58.922+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:33:58.955+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.575 seconds
+[2024-10-27T23:34:29.475+0000] {processor.py:157} INFO - Started process (PID=12136) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:34:29.482+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:34:29.489+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:34:29.489+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:34:29.996+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:34:30.020+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.566 seconds
+[2024-10-27T23:35:00.168+0000] {processor.py:157} INFO - Started process (PID=12224) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:35:00.170+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:35:00.173+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:35:00.172+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:35:00.666+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:35:00.694+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.545 seconds
+[2024-10-27T23:35:31.123+0000] {processor.py:157} INFO - Started process (PID=12312) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:35:31.125+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:35:31.127+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:35:31.126+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:35:31.571+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:35:31.580+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.462 seconds
+[2024-10-27T23:36:01.895+0000] {processor.py:157} INFO - Started process (PID=12400) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:36:01.898+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:36:01.901+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:36:01.900+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:36:02.368+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:36:02.390+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.516 seconds
+[2024-10-27T23:36:32.604+0000] {processor.py:157} INFO - Started process (PID=12488) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:36:32.607+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:36:32.608+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:36:32.607+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:36:33.454+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:36:33.477+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.895 seconds
+[2024-10-27T23:37:04.029+0000] {processor.py:157} INFO - Started process (PID=12576) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:37:04.031+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:37:04.031+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:37:04.031+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:37:04.729+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:37:04.769+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.746 seconds
+[2024-10-27T23:37:35.483+0000] {processor.py:157} INFO - Started process (PID=12664) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:37:35.486+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:37:35.487+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:37:35.486+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:37:35.995+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:37:36.010+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.533 seconds
+[2024-10-27T23:38:06.396+0000] {processor.py:157} INFO - Started process (PID=12752) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:38:06.398+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:38:06.401+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:38:06.401+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:38:06.877+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:38:06.900+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.510 seconds
+[2024-10-27T23:38:37.041+0000] {processor.py:157} INFO - Started process (PID=12840) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:38:37.042+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:38:37.044+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:38:37.043+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:38:37.511+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:38:37.531+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.495 seconds
+[2024-10-27T23:39:08.197+0000] {processor.py:157} INFO - Started process (PID=12928) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:39:08.200+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:39:08.204+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:39:08.204+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:39:08.673+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:39:08.684+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.507 seconds
+[2024-10-27T23:39:39.034+0000] {processor.py:157} INFO - Started process (PID=13016) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:39:39.039+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:39:39.042+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:39:39.042+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:39:39.683+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:39:39.699+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.672 seconds
+[2024-10-27T23:40:10.173+0000] {processor.py:157} INFO - Started process (PID=13104) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:40:10.177+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:40:10.178+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:40:10.178+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:40:10.610+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:40:10.617+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.450 seconds
+[2024-10-27T23:40:40.910+0000] {processor.py:157} INFO - Started process (PID=13192) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:40:40.917+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:40:40.920+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:40:40.919+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:40:41.428+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:40:41.459+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.570 seconds
+[2024-10-27T23:41:11.848+0000] {processor.py:157} INFO - Started process (PID=13280) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:41:11.850+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:41:11.851+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:41:11.851+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:41:12.339+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:41:12.356+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.513 seconds
+[2024-10-27T23:41:42.904+0000] {processor.py:157} INFO - Started process (PID=13368) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:41:42.907+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:41:42.910+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:41:42.910+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:41:43.500+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:41:43.520+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.623 seconds
+[2024-10-27T23:42:13.814+0000] {processor.py:157} INFO - Started process (PID=13456) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:42:13.817+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:42:13.818+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:42:13.818+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:42:14.421+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:42:14.440+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.633 seconds
+[2024-10-27T23:42:44.499+0000] {processor.py:157} INFO - Started process (PID=13543) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:42:44.501+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:42:44.503+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:42:44.503+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:42:44.849+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:42:44.863+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.373 seconds
+[2024-10-27T23:43:15.450+0000] {processor.py:157} INFO - Started process (PID=13632) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:43:15.452+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:43:15.455+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:43:15.454+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:43:15.833+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:43:15.850+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.429 seconds
+[2024-10-27T23:43:46.444+0000] {processor.py:157} INFO - Started process (PID=13720) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:43:46.447+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:43:46.448+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:43:46.448+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:43:46.867+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:43:46.881+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.444 seconds
+[2024-10-27T23:44:17.362+0000] {processor.py:157} INFO - Started process (PID=13807) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:44:17.367+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:44:17.371+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:44:17.369+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:44:17.742+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:44:17.756+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.407 seconds
+[2024-10-27T23:44:47.950+0000] {processor.py:157} INFO - Started process (PID=13895) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:44:47.952+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:44:47.955+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:44:47.955+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:44:48.328+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:44:48.349+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.404 seconds
+[2024-10-27T23:45:18.662+0000] {processor.py:157} INFO - Started process (PID=13983) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:45:18.663+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:45:18.665+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:45:18.665+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:45:19.016+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:45:19.044+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.387 seconds
+[2024-10-27T23:45:49.441+0000] {processor.py:157} INFO - Started process (PID=14071) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:45:49.446+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:45:49.449+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:45:49.448+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:45:49.770+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:45:49.796+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.372 seconds
+[2024-10-27T23:46:20.280+0000] {processor.py:157} INFO - Started process (PID=14159) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:46:20.282+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:46:20.284+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:46:20.283+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:46:20.558+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:46:20.580+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.310 seconds
+[2024-10-27T23:46:50.907+0000] {processor.py:157} INFO - Started process (PID=14247) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:46:50.910+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:46:50.911+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:46:50.910+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:46:51.232+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:46:51.250+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.346 seconds
+[2024-10-27T23:47:21.638+0000] {processor.py:157} INFO - Started process (PID=14335) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:47:21.639+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:47:21.641+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:47:21.641+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:47:21.990+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:47:22.006+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.373 seconds
+[2024-10-27T23:47:52.641+0000] {processor.py:157} INFO - Started process (PID=14430) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:47:52.643+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:47:52.645+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:47:52.644+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:47:53.197+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:47:53.253+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.617 seconds
+[2024-10-27T23:48:23.409+0000] {processor.py:157} INFO - Started process (PID=14517) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:48:23.410+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:48:23.413+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:48:23.411+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:48:23.707+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:48:23.718+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.313 seconds
+[2024-10-27T23:48:54.364+0000] {processor.py:157} INFO - Started process (PID=14606) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:48:54.366+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:48:54.367+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:48:54.366+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:48:54.671+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:48:54.685+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.330 seconds
+[2024-10-27T23:49:25.031+0000] {processor.py:157} INFO - Started process (PID=14694) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:49:25.033+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:49:25.034+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:49:25.033+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:49:25.516+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:49:25.568+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.542 seconds
+[2024-10-27T23:49:56.301+0000] {processor.py:157} INFO - Started process (PID=14782) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:49:56.305+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:49:56.307+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:49:56.306+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:49:56.746+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:49:56.781+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.495 seconds
+[2024-10-27T23:50:26.895+0000] {processor.py:157} INFO - Started process (PID=14869) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:50:26.896+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:50:26.898+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:50:26.897+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:50:27.222+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:50:27.244+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.355 seconds
+[2024-10-27T23:50:57.785+0000] {processor.py:157} INFO - Started process (PID=14958) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:50:57.790+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:50:57.793+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:50:57.792+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:50:58.194+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:50:58.209+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.429 seconds
+[2024-10-27T23:51:28.287+0000] {processor.py:157} INFO - Started process (PID=15045) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:51:28.290+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:51:28.291+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:51:28.291+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:51:28.624+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:51:28.639+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.370 seconds
+[2024-10-27T23:51:59.002+0000] {processor.py:157} INFO - Started process (PID=15133) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:51:59.004+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:51:59.006+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:51:59.005+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:51:59.396+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:51:59.422+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.429 seconds
+[2024-10-27T23:52:29.933+0000] {processor.py:157} INFO - Started process (PID=15222) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:52:29.935+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:52:29.937+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:52:29.936+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:52:30.284+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:52:30.311+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.387 seconds
+[2024-10-27T23:53:00.717+0000] {processor.py:157} INFO - Started process (PID=15310) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:53:00.727+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:53:00.729+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:53:00.728+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:53:01.397+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:53:01.427+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.774 seconds
+[2024-10-27T23:53:31.725+0000] {processor.py:157} INFO - Started process (PID=15397) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:53:31.728+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:53:31.729+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:53:31.729+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:53:32.391+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:53:32.428+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.714 seconds
+[2024-10-27T23:54:02.586+0000] {processor.py:157} INFO - Started process (PID=15488) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:54:02.586+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:54:02.586+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:54:02.586+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:54:03.336+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:54:03.387+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.802 seconds
+[2024-10-27T23:54:33.974+0000] {processor.py:157} INFO - Started process (PID=15576) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:54:33.975+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:54:33.975+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:54:33.975+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:54:34.289+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:54:34.296+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.327 seconds
+[2024-10-27T23:55:04.778+0000] {processor.py:157} INFO - Started process (PID=15665) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:55:04.779+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:55:04.780+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:55:04.780+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:55:05.274+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:55:05.313+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.537 seconds
+[2024-10-27T23:55:36.147+0000] {processor.py:157} INFO - Started process (PID=15753) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:55:36.149+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:55:36.152+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:55:36.152+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:55:36.453+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:55:36.467+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.324 seconds
+[2024-10-27T23:56:06.746+0000] {processor.py:157} INFO - Started process (PID=15841) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:56:06.755+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:56:06.757+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:56:06.757+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:56:07.186+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:56:07.205+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.467 seconds
+[2024-10-27T23:56:38.091+0000] {processor.py:157} INFO - Started process (PID=15929) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:56:38.095+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:56:38.097+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:56:38.096+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:56:38.716+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:56:38.746+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.659 seconds
+[2024-10-27T23:57:09.490+0000] {processor.py:157} INFO - Started process (PID=16017) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:57:09.491+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:57:09.492+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:57:09.492+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:57:09.825+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:57:10.001+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.514 seconds
+[2024-10-27T23:57:40.315+0000] {processor.py:157} INFO - Started process (PID=16105) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:57:40.317+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:57:40.318+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:57:40.318+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:57:40.660+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:57:40.681+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.372 seconds
+[2024-10-27T23:58:11.179+0000] {processor.py:157} INFO - Started process (PID=16193) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:58:11.181+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:58:11.182+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:58:11.181+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:58:11.704+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:58:11.721+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.545 seconds
+[2024-10-27T23:58:42.492+0000] {processor.py:157} INFO - Started process (PID=16281) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:58:42.494+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:58:42.495+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:58:42.494+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:58:42.968+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:58:42.985+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.498 seconds
+[2024-10-27T23:59:13.567+0000] {processor.py:157} INFO - Started process (PID=16369) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:59:13.568+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:59:13.569+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:59:13.569+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:59:14.406+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:59:14.420+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.859 seconds
+[2024-10-27T23:59:44.821+0000] {processor.py:157} INFO - Started process (PID=16457) to work on /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:59:44.830+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/src/blue_bikes_prediction.py for tasks to queue
+[2024-10-27T23:59:44.832+0000] {logging_mixin.py:150} INFO - [2024-10-27T23:59:44.831+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:59:45.310+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/src/blue_bikes_prediction.py
+[2024-10-27T23:59:45.320+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/src/blue_bikes_prediction.py took 0.506 seconds

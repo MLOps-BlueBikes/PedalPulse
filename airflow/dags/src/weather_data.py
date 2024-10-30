@@ -10,9 +10,9 @@ from math import radians, sin, cos, sqrt, atan2
 
 
 
-def add_weather_data(trip_data_path:str):
+def add_weather_data(trip_data_dict):
 
-    trip_data=pd.read_csv(trip_data_path)
+    trip_data=trip_data_dict['df']
     trip_data['started_at'] = pd.to_datetime(trip_data['started_at'])
     trip_data['ended_at'] = pd.to_datetime(trip_data['ended_at'])
 
@@ -26,9 +26,11 @@ def add_weather_data(trip_data_path:str):
 
     # Step 4: Drop unnecessary columns if needed (like 'DateTime' from weather data)
     merged_df = merged_df.drop(columns=['DateTime'])
-    merged_df_path=trip_data_path.split('.')[0]+"-weather-merged.csv"
-    merged_df.to_csv(f"./data/{merged_df_path}")
-    return merged_df_path
+    
+    merged_df_path=trip_data_dict['path'].split('.')[0]+"-weather-merged.csv"
+    merged_df.to_csv(f"data/{merged_df_path}")
+    
+    return {"df":merged_df,"path":merged_df_path}
 
 
 

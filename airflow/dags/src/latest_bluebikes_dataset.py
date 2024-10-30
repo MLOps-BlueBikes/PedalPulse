@@ -4,11 +4,16 @@ import os
 import pandas as pd
 from pathlib import Path
 import re
+from google.cloud import storage
+from io import BytesIO
+
 
 def get_latest_tripdata_df():
 
-    os.environ['AWS_ACCESS_KEY_ID']= 'XXXXXXXX'
-    os.environ['AWS_SECRET_ACCESS_KEY']= 'XXXXXXXX'
+    os.environ['AWS_ACCESS_KEY_ID']= 'AKIAQR5EPL343CENJXNI'
+    os.environ['AWS_SECRET_ACCESS_KEY']= 'hY+iAROrizFDglEzFgMN/JvlPS+XAfVLgHdfAECb'
+
+    gcp_bucket_name="trip_data_bucket_testing"
 
     # Create a session using your AWS credentials
     session = boto3.Session()
@@ -26,30 +31,43 @@ def get_latest_tripdata_df():
     # Specify the bucket name
     bucket_name = 'hubway-data'
 
-    l=[]
-    i=0
-    latest_filename=''
-    for obj in bucket.objects.all():
-        if re.match(r'.+(?:-tripdata.zip)$',obj._key):
-            l.append(obj._key)  # Prints the name of each object in the bucket
-            if int(obj._key.split("-")[0])>i:
-                i= int(obj._key.split("-")[0])
-    for f_name in l:
-        if all([str(i) in f_name and '-tripdata.zip' in f_name]):
-            latest_filename=f_name 
-            break 
+    temp_l=list(filter(rgx_match,[obj._key for obj in bucket.objects.all()]))
+
+    latest_filename=sorted(temp_l,key= lambda s:int(s[:6]),reverse=True)[0]
 
 
-    s3.Bucket(bucket_name).download_file(latest_filename, latest_filename)
+    s3.Bucket(bucket_name).download_file(Key=latest_filename,Filename="./dummy.zip")
 
-    with ZipFile(latest_filename,'r') as zip:
+    with ZipFile("./dummy.zip",'r') as zip:
+        bytes_data=zip.read(latest_filename.split(".")[0]+".csv")
+        trip_data_df = pd.read_csv(BytesIO(bytes_data))
 
-        zip.extractall()
-        trip_data_df=pd.read_csv(Path(os.getcwd(),latest_filename.split(".")[0]+".csv"))
-        os.system(f"rm -rf {latest_filename}")
-        lf_csv=latest_filename.split(".")[0]+".csv"
-        os.system(f"rm {lf_csv}")
     trip_data_df.dropna(inplace=True)
-    path_to_trip_df= f'./data/{lf_csv}'
-    trip_data_df.to_csv(path_to_trip_df)
-    return path_to_trip_df
+    df_csv_path="data/"+latest_filename.split(".")[0]+".csv"
+    trip_data_df.to_csv(df_csv_path)
+    source_file_path=df_csv_path
+    destination_blob_path=f"trip_data/{latest_filename.split('.')[0]}"
+    push_to_gcp_bucket(gcp_bucket_name,destination_blob_path,source_file_path)
+    return {"df":trip_data_df,"path":"data/"+latest_filename.split(".")[0]+".csv"}
+    print(trip_data_df.shape)
+
+def rgx_match(fpath):
+  regex_string=r'.+(?:-tripdata.zip)$'
+  return re.match(regex_string,fpath)
+
+
+def push_to_gcp_bucket(bucket_name,destination_blob,source_path):
+            os.environ['GOOGLE_APPLICATION_CREDENTIALS']="/Users/skc/Downloads/pedalpulse-440019-919eead68e28.json"
+
+            storage_client=storage.Client()
+            bucket=storage_client.get_bucket(bucket_name)
+            blob=bucket.blob(destination_blob)
+            blob.upload_from_filename(source_path)
+
+            print(f"Dataset {source_path} uploaded to GCP bucket: {bucket_name} at destination {destination_blob}")
+
+
+
+if __name__=="__main__":
+
+        get_latest_tripdata_df()

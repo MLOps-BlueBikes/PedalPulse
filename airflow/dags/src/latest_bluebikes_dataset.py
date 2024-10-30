@@ -10,8 +10,8 @@ from io import BytesIO
 
 def get_latest_tripdata_df():
 
-    os.environ['AWS_ACCESS_KEY_ID']= 'XXXXXXX'
-    os.environ['AWS_SECRET_ACCESS_KEY']= 'XXXXXXX'
+    #os.environ['AWS_ACCESS_KEY_ID']= 'XXXXXXX'
+    #os.environ['AWS_SECRET_ACCESS_KEY']= 'XXXXXXX'
 
     gcp_bucket_name="trip_data_bucket_testing"
 
@@ -57,7 +57,7 @@ def rgx_match(fpath):
 
 
 def push_to_gcp_bucket(bucket_name,destination_blob,source_path):
-            os.environ['GOOGLE_APPLICATION_CREDENTIALS']="/path/to/pedalpulse-440019-919eead68e28.json"
+            #os.environ['GOOGLE_APPLICATION_CREDENTIALS']="/path/to/pedalpulse-440019-919eead68e28.json"
 
             storage_client=storage.Client()
             bucket=storage_client.get_bucket(bucket_name)

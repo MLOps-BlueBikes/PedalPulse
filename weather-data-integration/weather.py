@@ -1,9 +1,3 @@
-!pip install selenium
-!apt-get update
-!apt install chromium-chromedriver
-!cp /usr/lib/chromium-browser/chromedriver /usr/bin
-
-
 import pandas as pd
 import numpy as np
 from math import radians, sin, cos, sqrt, atan2

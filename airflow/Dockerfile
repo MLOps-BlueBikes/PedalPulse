@@ -5,7 +5,7 @@ FROM  apache/airflow:2.6.3
 ENV AIRFLOW_HOME=/opt/airflow
 
 # Install Google Cloud SDK and any other packages apache/airflow:2.6.3
-RUN pip install google-cloud-storage 
+RUN pip install google-cloud-storage boto3 beautifulsoup4 pandas numpy selenium apache-airflow==2.6.3
 #pandas numpy
 
 # Debugging information

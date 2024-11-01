@@ -1,44 +1,51 @@
-
-
-
-# ingest_data.py
 import requests
 import os
+import ast  # for safely evaluating string lists as lists
+from datetime import datetime, timezone
 
-def ingest_data(urls,download_dir='downloads'):
+def ingest_data(urls, download_dir='downloads', **context):
     """
     Downloads ZIP files from a list of URLs.
     
     Args:
-        urls (list): List of URLs to download.
+        urls (list or str): List of URLs to download, or a string representation of a list.
         download_dir (str): Directory to save downloaded files.
     """
+    # Ensure urls is a list by evaluating it if it's a string representation
+    if isinstance(urls, str):
+        try:
+            urls = ast.literal_eval(urls)  # Safely evaluate string as list if needed
+        except (ValueError, SyntaxError) as e:
+            print(f"Error parsing urls: {e}")
+            return []
+
+    print("Final list of URLs for ingestion:", urls)
+
+    # Get the execution date from context
+    execution_date = context['execution_date']
+    current_date = datetime.now(timezone.utc)
+
+    # Skip if the execution date is the current month or last month
+    if (execution_date.year == current_date.year and execution_date.month == current_date.month) or \
+       (execution_date.year == current_date.year and execution_date.month == current_date.month - 1):
+        print(f"Skipping processing for {execution_date.strftime('%Y-%m')}")
+        return []
+
+    # Create download directory if it doesn't exist
     if not os.path.exists(download_dir):
         os.makedirs(download_dir)
-    
-    for url in urls:
-        response = requests.get(url)
-        file_path = os.path.join(download_dir, os.path.basename(url))
-        with open(file_path, 'wb') as f:
-            f.write(response.content)
-        print(f"Downloaded {file_path}")
-    
-    return [os.path.join(download_dir, os.path.basename(url)) for url in urls]
 
-if __name__ == "__main__":
-    urls = [
-        'https://s3.amazonaws.com/hubway-data/202310-bluebikes-tripdata.zip',
-        'https://s3.amazonaws.com/hubway-data/202311-bluebikes-tripdata.zip',
-        'https://s3.amazonaws.com/hubway-data/202312-bluebikes-tripdata.zip',
-        'https://s3.amazonaws.com/hubway-data/202401-bluebikes-tripdata.zip',
-        'https://s3.amazonaws.com/hubway-data/202402-bluebikes-tripdata.zip',
-        'https://s3.amazonaws.com/hubway-data/202403-bluebikes-tripdata.zip',
-        'https://s3.amazonaws.com/hubway-data/202404-bluebikes-tripdata.zip',
-        'https://s3.amazonaws.com/hubway-data/202405-bluebikes-tripdata.zip',
-        'https://s3.amazonaws.com/hubway-data/202406-bluebikes-tripdata.zip',
-        'https://s3.amazonaws.com/hubway-data/202407-bluebikes-tripdata.zip',
-        'https://s3.amazonaws.com/hubway-data/202408-bluebikes-tripdata.zip', 
-        'https://s3.amazonaws.com/hubway-data/202409-bluebikes-tripdata.zip'
-        
-    ]
-    path= ingest_data(urls)
+    downloaded_files = []
+    for url in urls:
+        print("Processing URL:", url)
+        try:
+            response = requests.get(url)
+            file_path = os.path.join(download_dir, os.path.basename(url))
+            with open(file_path, 'wb') as f:
+                f.write(response.content)
+            print(f"Downloaded {file_path}")
+            downloaded_files.append(file_path)
+        except requests.exceptions.RequestException as e:
+            print(f"Failed to download {url}: {e}")
+
+    return downloaded_files

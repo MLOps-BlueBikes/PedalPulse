@@ -24,6 +24,9 @@ Ensure you have the following installed to run the notebook:
 - Required Python packages:
   ```bash
   pip install pandas beautifulsoup4 selenium
+  pip install selenium
+  apt install chromium-chromedriver
+  cp /usr/lib/chromium-browser/chromedriver /usr/bin
 
 Workflow
 --------

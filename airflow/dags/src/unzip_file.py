@@ -2,6 +2,8 @@ import zipfile
 import os
 import ast  # For safe evaluation of string lists as lists
 import logging
+from airflow.exceptions import AirflowFailException
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -21,6 +23,7 @@ def unzip_file(zip_paths, extract_to='extracted_files'):
             logging.info(f"Parsed zip_paths successfully: {zip_paths}")
         except (ValueError, SyntaxError) as e:
             logging.error(f"Error parsing zip_paths: {e}")
+            raise AirflowFailException("Error parsing zip_paths: {e}")
             return []
 
     # Create the extraction directory if it doesn't exist
@@ -49,7 +52,9 @@ def unzip_file(zip_paths, extract_to='extracted_files'):
                         logging.warning(f"File {csv_file} in {zip_path} is truncated or corrupted and could not be extracted.")
         except zipfile.BadZipFile:
             logging.error(f"File {zip_path} is not a valid ZIP file or is corrupted.")
+            raise AirflowFailException(f"File {zip_path} is not a valid ZIP file or is corrupted.")
         except Exception as e:
             logging.error(f"Unexpected error while extracting {zip_path}: {e}")
+            raise AirflowFailException(f"Unexpected error while extracting {zip_path}: {e}")
 
     return extracted_files

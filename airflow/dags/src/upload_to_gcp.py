@@ -3,6 +3,8 @@ import time
 import os
 import ast
 from google.cloud import storage
+from airflow.exceptions import AirflowFailException
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -17,6 +19,7 @@ def upload_to_gcs(bucket_name, file_paths):
             file_paths = ast.literal_eval(file_paths)
         except (ValueError, SyntaxError) as e:
             logging.error(f"Error parsing file paths: {e}")
+            raise AirflowFailException(f"Error parsing file paths: {e}")
             return []
 
     for file_path in file_paths:
@@ -37,6 +40,7 @@ def upload_to_gcs(bucket_name, file_paths):
                 break
             except Exception as e:
                 logging.error(f"Error uploading {file_path}: {e}")
+                raise AirflowFailException(f'Failed to upload {file_path}:{e}')
                 retry_count += 1
                 time.sleep(2 ** retry_count)  # Exponential backoff
                 if retry_count == max_retries:

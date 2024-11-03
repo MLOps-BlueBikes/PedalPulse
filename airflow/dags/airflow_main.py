@@ -6,6 +6,8 @@ from src.ingest_data import ingest_data
 from src.unzip_file import unzip_file
 from src.upload_to_gcp import upload_to_gcs
 from src.track_with_dvc import track_with_dvc
+from airflow.exceptions import AirflowFailException
+
 # Enable pickle support for XCom, allowing complex data to be passed between tasks
 download_dir = '/opt/airflow/downloads'
 extract_dir = '/opt/airflow/extracted_files'
@@ -24,6 +26,9 @@ default_args = {
     'start_date': datetime(2023, 10, 1),  # Adjust as needed
     'retries': 1,  # Number of retries in case of task failure
     'retry_delay': timedelta(minutes=10),  # Delay before retries
+    'email':["muskankh03@gmail.com"],
+    'email_on_failure':True,
+    'email_on_retry':True'
 }
 
 # Create a DAG instance
@@ -42,10 +47,14 @@ def get_monthly_url(logical_date):
     """
     Generates the URL for the data file based on the logical date (execution date).
     """
-    year = logical_date.year
-    month = logical_date.month
-    return f"{base_url}/{year}{month:02d}-bluebikes-tripdata.zip"
-
+    try:
+        year = logical_date.year
+        month = logical_date.month
+        return f"{base_url}/{year}{month:02d}-bluebikes-tripdata.zip"
+    except Exception as e:
+        raise AirflowFailException(f"Failed to obtain dataset urls: {e}")
+        
+    
 # Define the task to generate the monthly URL
 get_monthly_url_task = PythonOperator(
     task_id='get_monthly_url_task',

@@ -3,6 +3,7 @@ import os
 import ast  # for safely evaluating string lists as lists
 import logging
 from datetime import datetime, timezone
+from airflow.exceptions import AirflowFailException
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -22,6 +23,7 @@ def ingest_data(urls, download_dir='downloads', **context):
             logging.info("Parsed URLs successfully.")
         except (ValueError, SyntaxError) as e:
             logging.error(f"Error parsing URLs: {e}")
+            raise AirflowFailException("Failed to parse URLs")
             return []
 
     logging.info(f"Final list of URLs for ingestion: {urls}")
@@ -54,5 +56,6 @@ def ingest_data(urls, download_dir='downloads', **context):
             downloaded_files.append(file_path)
         except requests.exceptions.RequestException as e:
             logging.error(f"Failed to download {url}: {e}")
+            raise AirflowFailException("Failed to download {url}: {e}")
 
     return downloaded_files

@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 from src.ingest_data import ingest_data
 from src.unzip_file import unzip_file
 from src.upload_to_gcp import upload_to_gcs
-
+from src.track_with_dvc import track_with_dvc
 # Enable pickle support for XCom, allowing complex data to be passed between tasks
 download_dir = '/opt/airflow/downloads'
 extract_dir = '/opt/airflow/extracted_files'
@@ -77,7 +77,7 @@ unzip_file_task = PythonOperator(
 )
 
 
-bucket_name = 'blue_bikes_bucket'
+bucket_name = 'bluebikes_bucket_before_preprocessing'
 
 # Define the upload task
 upload_to_gcs_task = PythonOperator(
@@ -89,10 +89,17 @@ upload_to_gcs_task = PythonOperator(
     },
     dag=dag
 )
+# dvc_track_task = PythonOperator(
+#     task_id='dvc_track_task',
+#     python_callable=track_with_dvc,
+#     op_kwargs={'file_path': extract_dir},
+#     dag=dag
+# )
 
 
 # Set task dependencies
-get_monthly_url_task >> ingest_data_task >> unzip_file_task >> upload_to_gcs_task
+get_monthly_url_task >> ingest_data_task >> unzip_file_task >> upload_to_gcs_task 
+#>> dvc_track_task
 
 if __name__ == "__main__":
     dag.cli()

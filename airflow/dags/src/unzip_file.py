@@ -1,6 +1,10 @@
 import zipfile
 import os
 import ast  # For safe evaluation of string lists as lists
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def unzip_file(zip_paths, extract_to='extracted_files'):
     """
@@ -14,27 +18,38 @@ def unzip_file(zip_paths, extract_to='extracted_files'):
     if isinstance(zip_paths, str):
         try:
             zip_paths = ast.literal_eval(zip_paths)
+            logging.info(f"Parsed zip_paths successfully: {zip_paths}")
         except (ValueError, SyntaxError) as e:
-            print(f"Error parsing zip_paths: {e}")
+            logging.error(f"Error parsing zip_paths: {e}")
             return []
 
+    # Create the extraction directory if it doesn't exist
     if not os.path.exists(extract_to):
         os.makedirs(extract_to)
+        logging.info(f"Created extraction directory: {extract_to}")
 
     extracted_files = []
     for zip_path in zip_paths:
         # Check if the path exists
         if not os.path.isfile(zip_path):
-            print(f"File not found: {zip_path}")
+            logging.warning(f"File not found: {zip_path}")
             continue
+
         # Extract files if it exists
-        with zipfile.ZipFile(zip_path, 'r') as z:
-            csv_files = [f for f in z.namelist() if f.endswith('.csv') and not f.startswith('__MACOSX')]
-            for csv_file in csv_files:
-                try:
-                    z.extract(csv_file, extract_to)
-                    extracted_files.append(os.path.join(extract_to, csv_file))
-                    print(f"Extracted {csv_file}")
-                except EOFError:
-                    print(f"Warning: File {csv_file} in {zip_path} is truncated or corrupted and could not be extracted.")
+        try:
+            with zipfile.ZipFile(zip_path, 'r') as z:
+                csv_files = [f for f in z.namelist() if f.endswith('.csv') and not f.startswith('__MACOSX')]
+                for csv_file in csv_files:
+                    try:
+                        z.extract(csv_file, extract_to)
+                        extracted_file_path = os.path.join(extract_to, csv_file)
+                        extracted_files.append(extracted_file_path)
+                        logging.info(f"Extracted {csv_file} to {extracted_file_path}")
+                    except EOFError:
+                        logging.warning(f"File {csv_file} in {zip_path} is truncated or corrupted and could not be extracted.")
+        except zipfile.BadZipFile:
+            logging.error(f"File {zip_path} is not a valid ZIP file or is corrupted.")
+        except Exception as e:
+            logging.error(f"Unexpected error while extracting {zip_path}: {e}")
+
     return extracted_files

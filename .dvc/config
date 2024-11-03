@@ -1,0 +1,4 @@
+[core]
+    remote = gcp_remote
+['remote "gcp_remote"']
+    url = ../gcs:/bluebikes_bucket_before_preprocessing/dvc

@@ -57,9 +57,6 @@ Requirements
 
 To install the required Python packages, run:
 
-To install the required Python packages, run:
-
-```bash
 pip install pandas google-cloud-storage tensorflow_data_validation pandera
 
 ## Setup

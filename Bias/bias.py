@@ -85,8 +85,9 @@ def main():
     # Define columns
     label_col = 'true_label'
     pred_col = 'predicted_label'
-    sensitive_feature = 'gender'
-    group_to_balance = 'female'  # Example underrepresented group
+    # we dont have any sensitive feature
+    #sensitive_feature = 'gender'
+    #group_to_balance = 'female' 
 
     # Detect bias
     metrics_before = detect_bias(df, label_col, pred_col, sensitive_feature)

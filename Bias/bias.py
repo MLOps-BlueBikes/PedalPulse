@@ -25,20 +25,6 @@ def load_data_from_gcp(bucket_name, blob_name):
         logging.error(f"Error loading data from GCP: {e}")
         return None
 
-# Function to detect bias using Fairlearn's MetricFrame
-def detect_bias(df, label_col, pred_col, sensitive_features):
-    for feature in sensitive_features:
-        logging.info(f"Detecting bias for sensitive feature: {feature}")
-        metrics_frame = MetricFrame(
-            metrics={'accuracy': accuracy_score, 'recall': recall_score, 'precision': precision_score},
-            y_true=df[label_col],
-            y_pred=df[pred_col],
-            sensitive_features=df[feature]
-        )
-        logging.info(f"Metrics by group for {feature}:")
-        logging.info(metrics_frame.by_group)
-        print(f"Metrics by group for {feature}:\n{metrics_frame.by_group}")
-
 # Main function
 def main():
     # GCP bucket details
@@ -49,14 +35,13 @@ def main():
     df = load_data_from_gcp(bucket_name, blob_name)
     if df is None:
         return
-
     # Define columns
     label_col = 'true_label'
     pred_col = 'predicted_label'
     sensitive_features = ['member_casual', 'rideable_type']
 
     # Detect bias
-    detect_bias(df, label_col, pred_col, sensitive_features)
+    #detect_bias(df, label_col, pred_col, sensitive_features)
 
 if __name__ == "__main__":
     main()

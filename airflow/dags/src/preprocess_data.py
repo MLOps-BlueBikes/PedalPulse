@@ -1,4 +1,4 @@
-import pandas as pd
+'''import pandas as pd
 import numpy as np
 #from src.ingest_data import load_blue_bikes_data, load_weather_data
 
@@ -27,3 +27,4 @@ def preprocess(df, df_weather):
     merged_df = pd.merge(df, df_weather, left_on='date', right_on = 'Date',how='inner')
 
     return merged_df
+    '''

@@ -57,15 +57,13 @@ Requirements
 
 To install the required Python packages, run:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install pandas google-cloud-storage tensorflow_data_validation pandera   `
+To install the required Python packages, run:
 
-Setup
------
+```bash
+pip install pandas google-cloud-storage tensorflow_data_validation pandera
 
-1.  bashCopy codeexport GOOGLE\_APPLICATION\_CREDENTIALS="./data/pedal-pulse-raw-data-5b8626b891ce.json"
-    
-2.  **GCP Bucket**: Ensure your data is stored in a GCP bucket in CSV format, with each file named by month, e.g., 202401-bluebikes-tripdata.csv.
-    
+
+
 
 Script Details
 --------------

@@ -88,8 +88,15 @@ Usage
 -----
 
 To run the script, use:
+# Data Fetching Script
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codepython your_script_name.py   `
+This script fetches data for each month within a specified date range, validates the data, and generates statistics and schema files.
+
+## Usage
+
+To run the script, use the following command in your terminal:
+
+python your_script_name.py
 
 The script fetches data for each month in the specified date range (from start\_month to end\_month), validates it, and generates statistics and schema files.
 

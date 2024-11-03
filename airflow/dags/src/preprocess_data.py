@@ -26,5 +26,4 @@ def preprocess(df, df_weather):
 
     merged_df = pd.merge(df, df_weather, left_on='date', right_on = 'Date',how='inner')
 
-    return merged_df
-    '''
+    return merged_df'''

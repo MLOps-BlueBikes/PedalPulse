@@ -62,8 +62,12 @@ To install the required Python packages, run:
 ```bash
 pip install pandas google-cloud-storage tensorflow_data_validation pandera
 
+## Setup
 
+1. **Google Cloud Authentication**: Set up your Google Cloud credentials by saving the JSON key file to a secure location and then set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable:
 
+   ```bash
+   export GOOGLE_APPLICATION_CREDENTIALS="./data/pedal-pulse-raw-data-5b8626b891ce.json"
 
 Script Details
 --------------

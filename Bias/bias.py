@@ -1,20 +1,29 @@
+import os
 import pandas as pd
 from fairlearn.metrics import MetricFrame
 from sklearn.metrics import accuracy_score, recall_score, precision_score
 from sklearn.utils import resample
+from google.cloud import storage
 import logging
+
+# Set up Google Cloud credentials
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./data/pedal-pulse-raw-data-5b8626b891ce.json"
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Load the dataset
-def load_data(file_path):
+# Function to fetch data from GCP bucket
+def load_data_from_gcp(bucket_name, blob_name):
     try:
-        df = pd.read_csv(file_path)
-        logging.info("Data loaded successfully.")
+        client = storage.Client()
+        bucket = client.bucket(bucket_name)
+        blob = bucket.blob(blob_name)
+        content = blob.download_as_text()
+        df = pd.read_csv(pd.io.common.StringIO(content))
+        logging.info("Data loaded successfully from GCP.")
         return df
     except Exception as e:
-        logging.error(f"Error loading data: {e}")
+        logging.error(f"Error loading data from GCP: {e}")
         return None
 
 # Function to detect bias using Fairlearn's MetricFrame
@@ -64,8 +73,12 @@ def document_process(metrics_before, metrics_after, output_file="bias_mitigation
 
 # Main function
 def main():
-    # Step 1: Load Data
-    df = load_data('your_data.csv')
+    # GCP bucket details
+    bucket_name = "your_gcp_bucket_name"
+    blob_name = "your_data.csv"
+    
+    # Load data from GCP
+    df = load_data_from_gcp(bucket_name, blob_name)
     if df is None:
         return
 
@@ -75,16 +88,16 @@ def main():
     sensitive_feature = 'gender'
     group_to_balance = 'female'  # Example underrepresented group
 
-    # Step 2: Detect Bias
+    # Detect bias
     metrics_before = detect_bias(df, label_col, pred_col, sensitive_feature)
 
-    # Step 3: Mitigate Bias
+    # Mitigate bias
     balanced_df = mitigate_bias(df, sensitive_feature, group_to_balance)
 
-    # Step 4: Re-evaluate Metrics after Mitigation
+    # Re-evaluate metrics after mitigation
     metrics_after = detect_bias(balanced_df, label_col, pred_col, sensitive_feature)
 
-    # Step 5: Document the Process
+    # Document the process
     document_process(metrics_before, metrics_after)
 
 if __name__ == "__main__":

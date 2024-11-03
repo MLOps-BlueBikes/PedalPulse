@@ -1,45 +1,78 @@
+# Import necessary libraries
+import os
 import pandas as pd
+from io import StringIO
+from google.cloud import storage
 import tensorflow_data_validation as tfdv
-import logging
+import pandera as pa
+from pandera import Column, DataFrameSchema, Check
 
-# Set up logging configuration
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Set up Google Cloud credentials
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./data/pedal-pulse-raw-data-5b8626b891ce.json"
 
-# Function to generate statistics and validate schema
-def generate_statistics_and_validate_schema(data_path, schema_path):
+# Define a function to fetch data from GCP bucket
+def read_from_gcp_bucket(bucket_name, blob_name):
+    client = storage.Client()
+    bucket = client.bucket(bucket_name)
+    blob = bucket.blob(blob_name)
+    content = blob.download_as_text()
+    df = pd.read_csv(StringIO(content))
+    return df
+
+# Define Pandera schema for data validation
+schema = DataFrameSchema({
+    "ride_id": Column(pa.String, checks=Check(lambda x: x.notnull()), nullable=False),
+    "rideable_type": Column(pa.String, checks=Check.isin(["classic_bike", "electric_bike"]), nullable=False),
+    "started_at": Column(pa.String, checks=Check(lambda x: x.notnull()), nullable=False),
+    "ended_at": Column(pa.String, checks=Check(lambda x: x.notnull()), nullable=False),
+    "start_station_name": Column(pa.String, checks=Check(lambda x: x.notnull()), nullable=False),
+    "start_station_id": Column(pa.String, checks=Check(lambda x: x.notnull()), nullable=False),
+    "end_station_name": Column(pa.String, checks=Check(lambda x: x.notnull()), nullable=False),
+    "end_station_id": Column(pa.String, checks=Check(lambda x: x.notnull()), nullable=False),
+    "start_lat": Column(pa.Float, checks=Check(lambda x: x.notnull()), nullable=False),
+    "start_lng": Column(pa.Float, checks=Check(lambda x: x.notnull()), nullable=False),
+    "end_lat": Column(pa.Float, checks=Check(lambda x: x.notnull()), nullable=False),
+    "end_lng": Column(pa.Float, checks=Check(lambda x: x.notnull()), nullable=False),
+    "member_casual": Column(pa.String, checks=Check.isin(["casual", "member"]), nullable=False)
+})
+
+# Function to validate schema using Pandera
+def validate_schema(df):
     try:
-        # Load the data
-        df = pd.read_csv(data_path)
-        logging.info(f"Data loaded from {data_path} successfully.")
+        schema.validate(df)
+        print("Schema validation passed.")
+    except pa.errors.SchemaError as e:
+        print("Schema validation failed:", e)
 
-        # Generate statistics from the DataFrame
-        stats = tfdv.generate_statistics_from_dataframe(df)
-        logging.info("Statistics generated successfully.")
+# Function to process data and validate schema for each month
+def process_monthly_data(bucket_name, start_month, end_month):
+    for month in pd.date_range(start=start_month, end=end_month, freq='MS').strftime("%Y%m"):
+        print(f"\nProcessing data for {month}...")
+        
+        # Load data from GCP
+        blob_name = f"{month}-bluebikes-tripdata.csv"
+        df = read_from_gcp_bucket(bucket_name, blob_name)
+        
+        # Validate data with Pandera
+        validate_schema(df)
+        
+        # Generate and save statistics with TFDV
+        statistics = tfdv.generate_statistics_from_dataframe(df)
+        tfdv.write_stats_text(statistics, f"statistics_{month}.pbtxt")
+        
+        # Infer schema from data and save it
+        schema = tfdv.infer_schema(statistics)
+        tfdv.write_schema_text(schema, f"schema_{month}.pbtxt")
+        
+        print(f"Statistics and schema saved for {month}.")
 
-        # Write statistics to a file
-        tfdv.write_statistics(stats, 'statistics_output')
-        logging.info("Statistics written to 'statistics_output'.")
+# Main function to run the script
+def main():
+    bucket_name = "raw_data_bucket_pedal_pulse"
+    start_month = "2023-12"
+    end_month = "2024-09"
+    process_monthly_data(bucket_name, start_month, end_month)
 
-        # Load schema from a file or define inline
-        schema = tfdv.load_schema(schema_path)  # Load your schema from the provided schema path
-        logging.info(f"Schema loaded from {schema_path} successfully.")
-
-        # Validate the dataset against the schema
-        anomalies = tfdv.validate_statistics(stats, schema)
-
-        # Output anomalies if any
-        if anomalies:
-            logging.warning(f"Data validation issues found: {anomalies}")
-        else:
-            logging.info("Data validation successful.")
-    
-    except Exception as e:
-        logging.error(f"An error occurred: {e}")
-
+# Execute the main function
 if __name__ == "__main__":
-    # Example paths for testing
-    data_path = 'sample_test_data.csv'  # Path to your sample data CSV
-    schema_path = 'schema.pbtxt'  # Path to your schema file
-
-    # Call the function with test data
-    generate_statistics_and_validate_schema(data_path, schema_path)
+    main()

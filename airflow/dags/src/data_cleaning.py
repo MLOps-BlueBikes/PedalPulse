@@ -5,4 +5,4 @@ def remove_missing_values(df):
     return df
 
 def remove_duplicates(df):
-    return df.dropna()
+    return df.drop_duplicates()

@@ -7,8 +7,9 @@ import tensorflow_data_validation as tfdv
 import pandera as pa
 from pandera import Column, DataFrameSchema, Check
 
-# Set up Google Cloud credentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./data/pedal-pulse-raw-data-5b8626b891ce.json"
+# Load the Google Cloud Storage client using the credentials file directly
+client = storage.Client.from_service_account_json("./pedalpulse-440019-919eead68e28 (1).json")
+
 
 # Define a function to fetch data from GCP bucket
 def read_from_gcp_bucket(bucket_name, blob_name):

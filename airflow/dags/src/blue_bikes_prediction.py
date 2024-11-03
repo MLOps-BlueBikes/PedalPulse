@@ -1,4 +1,4 @@
-import pandas as pd
+'''import pandas as pd
 import numpy as np
 from google.cloud import storage
 
@@ -116,3 +116,4 @@ def save_to_gcp(bucket_name, source_file, destination_blob):
 #         return None
 
 
+'''

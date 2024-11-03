@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pedalpulse-440019",
+  "private_key_id": "919eead68e2860d5554046d9f4ee8bb4152d1bfd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjcKhjeSO+FnNj\n6jBySMXalRAzGU2yM0LU8mosIFgANgjlYX4qRB5O3L9oWjHXbGS+tetwBqyYetNY\nO8ZHQz6j6lXh84GqChRqpfIxBhXiAJMufBh5OGRQB9pfaJnyq8jI/YcR35WJjFnI\nv1DxuWNRzEL8bzoRsjx/sAClG0kbqH9vOedsNT2at+hICOKD0A4mSoGbM632r9TD\nka/brOHWR6G0Xyynr08Wypks/zwc3biRjt2MH+Tq+avp9AvKGqPIENBwnSGhbesl\nRTcnnvfs/z/2xYE4uHNav/wCdA3s0rvXZP34kROVHdfQF+y61IJLvlKNZAuCcRHR\n06v8ARy/AgMBAAECggEAJcxFt85ckc0yXRMA/SU5+HMYb52Pa4OYYkJtQasYZOSW\nAuT6bjTG4q1OBB4lNVt2vLkICSSaz3ZuJDY+4/35bY1Wu4fX7zXgob61as9LmLUm\nwK1v9clY5nH/qSZ9mzZQVpLHvUEunV7dVv7wiVOZfXEYWtJzUJiR9FiAKvBHbJh6\nagz5RAhow2MAuu2XSvxf4T36/h675puLU/aZDdPJ+m7tq/MdoYGYnSJDlZ0mrRPz\nVbah/+o5z+vD1lLLur5kiNw94CjKNyVzm82tCbAxiX1ZpIjZo5WBgBRMQEXGQXwQ\ncQXExRlWVHD5mvHUq1MvX2InGM3k+xD+DwmJhO4KXQKBgQD1kjgVXIv7D4PSMUzx\ncnqZu4NqguhI12OJ8TFwzjcFi1h/vSX0PlfZg9NMdEBXI9gGn+o1VbSHJryHCTOW\nAM4nkkP1IFBeKYuxNg++9075mXTZVYDC2GUht5kAwLr24ZUP4D5TLyuK5OOk/ZhB\nOOvi6wJHiyBxGC1sDz/DVmoyUwKBgQDtGVKNIkXOHmH/7PV/yR+z9X5Be6edXFQz\n/KaSUbusdKgrf+tZC3KCnRxxi2BXKg/B0UExR0FPrxI3+St/qEWgh9AbRZz2zcP1\nS4o1ChOs6fj2mR/WYEBlTwK6yzZeYsy15OIP6xB7/UenXx3FT9LpVViSd3hFLTw6\nlx2V4FN2ZQKBgQDdlwiWdgE2FcTsaWI1yQhKKoMmHGQAPqNqOMNVOC88CIZeFc7m\nu07ITwTey1O3jfeD2s8bO3AAOHsMGsh6xdVAreI2kecTYMfVq6O/vSd9YPSonFfo\n+h0ftK0Smdbbqai5P67dnwXaejnUiqTVzchE5a0T473tb1SlWok9+X8wUwKBgFmt\nfj/LesOfUknOgny2wbr7W6nA74DhbyfKo+Yr6+Qqq4DofUfMwJ8Odbesk9/kFNmm\nIBZXcSiGe0mYgQ9jwhIZzGjER75BzaB11eyBxzdbt8Lt39DhzvmCjPHB8up4TB1w\nWODUdAOxpOx1WXlL2+ZNVZbwgRkJJwKyLYqGsorRAoGAOAGIvoZMh912U5vgWv3D\nXSyRWOWFyozDtJb44h432dcf7/HsZTfho26CCrhPJLapmWpGiEIvdDfKXV4KJ3nD\nV5S/lWP+bjWsqA95uk4CrHJOzcFjv+YzkDzHdV4wJmvk/rtzwPRcV3KmfV5pGv5y\no5oe8qM6oDvn0hjSqlvLK1g=\n-----END PRIVATE KEY-----\n",
+  "client_email": "airflow-data-pipeline@pedalpulse-440019.iam.gserviceaccount.com",
+  "client_id": "103527858214232920145",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/airflow-data-pipeline%40pedalpulse-440019.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -38,6 +38,10 @@ This project aims to predict the demand for BlueBikes using historical data and 
 2. **Station Data**: Downloadable station data from [BlueBikes Station Data](https://www.bluebikes.com/system-data).
 3. **Real-time Station Data**: Accessible through the General Bikeshare Feed Specification (GBFS) API.
 
+
+<img width="736" alt="Screenshot 2024-11-03 at 3 50 38 PM" src="https://github.com/user-attachments/assets/9c6f43b7-0803-435e-b2ff-945b816cf2bf">
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -68,6 +72,13 @@ This project aims to predict the demand for BlueBikes using historical data and 
    ```bash
    jupyter notebook
    ```
+
+### Data Pipeline
+
+
+
+
+
 
 ### Usage
 

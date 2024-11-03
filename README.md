@@ -63,8 +63,32 @@ This project aims to predict the demand for BlueBikes using historical data and 
    pip install -r requirements.txt
    ```
 
-3. **Set up Airflow:**
-   Follow instructions to install and configure Apache Airflow.
+3. **Run Docker Airflow:**
+   With Docker running, initialize the database. This step only has to be done once.
+   ```docker
+   docker compose up airflow-init
+   ```
+   Run airflow
+   ```docker
+   docker-compose up
+   ```
+
+   Wait until terminal outputs something similar to
+   `app-airflow-webserver-1  | 127.0.0.1 - - [17/Feb/2023:09:34:29 +0000] "GET /health HTTP/1.1" 200 141 "-" "curl/7.74.0"`
+
+4. **Check Airflow:**
+   
+   Visit localhost:8080, login with the following credentials:
+   ```
+   user: airflow
+   password: airflow
+   ```
+   Run the DAG by clicking on the play button on the right side of the window
+
+5. **Stop Docker containers:**
+   ```docker
+   docker compose down
+   ```
 
 4. **Run Jupyter Notebooks (optional):**
    For data exploration, use Jupyter to run the notebooks in the `notebooks/` folder.

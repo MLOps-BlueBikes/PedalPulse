@@ -102,3 +102,30 @@ The retraining pipeline can be automated using Airflow to trigger the retraining
 ### Monitoring and Logging
 The system is set up to use **Prometheus** and **Grafana** for monitoring, with **ELK Stack** or **GCP Stackdriver** for logging.
 
+### Data Preprocessing
+
+In this project, data preprocessing is a critical step to ensure high-quality input data for our machine learning models, ultimately enhancing the accuracy of demand forecasting for Bluebikes. Below are the key steps involved in preprocessing the data:
+
+1. **Data Collection**  
+   We begin by downloading trip data from the official Bluebikes website’s S3 buckets. This data includes information on individual bike trips, such as start and end times, bike type, trip duration, and station details.
+
+2. **Data Type Conversion**  
+   To facilitate effective analysis, specific fields are converted to appropriate data types:
+   - **Date fields**: Converted to a readable datetime format for temporal analysis.
+   - **Categorical fields**: Fields such as membership type and bike type are transformed to categorical types to optimize storage and computation during modeling.
+
+3. **Temporal Feature Extraction**  
+   From the trip start and end times, we derive additional temporal features that enhance forecasting accuracy:
+   - **Year, month, day, hour**: To capture seasonal, monthly, weekly, and hourly patterns.
+   - **Day name**: Useful for distinguishing between weekday and weekend usage.
+   - **Trip duration**: Calculated in minutes to assess trip lengths and categorize short vs. long trips.
+
+4. **Handling Missing and Invalid Data**  
+   - **Dropping Missing Station IDs**: Rows with missing station IDs are removed to maintain data integrity, as station IDs are crucial for demand forecasting.
+   - **Trip Duration Validation**: Trips with a duration less than 5 minutes or exceeding 1440 minutes (24 hours) are excluded.
+   - **Trip Distance Validation**: Trips with a distance of less than 0 km are considered invalid and removed.
+
+5. **Data Upload to GCP**  
+   After preprocessing, the cleaned dataset is uploaded to Google Cloud Platform (GCP). This allows for scalable data storage and facilitates downstream model training and deployment within the MLOps pipeline.
+
+These preprocessing steps ensure that our data is relevant, consistent, and robust, improving the overall performance and reliability of the demand forecasting model.

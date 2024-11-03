@@ -69,6 +69,13 @@ This project aims to predict the demand for BlueBikes using historical data and 
    jupyter notebook
    ```
 
+### Data Pipeline
+
+
+
+
+
+
 ### Usage
 
 1. **Data Ingestion:**

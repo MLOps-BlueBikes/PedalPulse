@@ -1,0 +1,8 @@
+# env
+.env
+
+# Data files
+dags/data
+
+# Secret keys
+keys/

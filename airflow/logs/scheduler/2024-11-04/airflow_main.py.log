@@ -1,0 +1,85 @@
+[2024-11-04T19:19:30.802+0000] {processor.py:157} INFO - Started process (PID=37) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:19:30.805+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:19:30.809+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:19:30.808+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:19:33.457+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:19:33.728+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:19:33.727+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:19:33.739+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:19:33.738+0000] {dag.py:2763} INFO - Creating ORM DAG for bluebikes_data_pipeline
+[2024-11-04T19:19:33.748+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:19:33.748+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-06-01T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-11-04T19:19:33.766+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 2.968 seconds
+[2024-11-04T19:20:04.215+0000] {processor.py:157} INFO - Started process (PID=53) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:20:04.217+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:20:04.219+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:20:04.218+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:20:04.999+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:20:05.030+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:20:05.029+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:20:05.055+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:20:05.054+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-06-01T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-11-04T19:20:05.074+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 0.865 seconds
+[2024-11-04T19:20:35.604+0000] {processor.py:157} INFO - Started process (PID=76) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:20:35.611+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:20:35.611+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:20:35.611+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:20:36.754+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:20:36.773+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:20:36.773+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:20:36.785+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:20:36.785+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-06-01T00:00:00+00:00, run_after=2024-07-01T00:00:00+00:00
+[2024-11-04T19:20:36.793+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 1.193 seconds
+[2024-11-04T19:21:07.280+0000] {processor.py:157} INFO - Started process (PID=97) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:21:07.301+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:21:07.306+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:21:07.304+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:21:08.712+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:21:08.736+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:21:08.736+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:21:08.752+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:21:08.752+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-11-01T00:00:00+00:00, run_after=2024-12-01T00:00:00+00:00
+[2024-11-04T19:21:08.767+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 1.506 seconds
+[2024-11-04T19:21:39.608+0000] {processor.py:157} INFO - Started process (PID=118) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:21:39.612+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:21:39.618+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:21:39.616+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:21:41.732+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:21:41.774+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:21:41.772+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:21:41.822+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:21:41.821+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-11-01T00:00:00+00:00, run_after=2024-12-01T00:00:00+00:00
+[2024-11-04T19:21:41.834+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 2.237 seconds
+[2024-11-04T19:22:12.844+0000] {processor.py:157} INFO - Started process (PID=134) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:22:12.850+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:22:12.856+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:22:12.855+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:22:18.541+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:22:18.631+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:22:18.630+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:22:18.661+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:22:18.661+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-11-01T00:00:00+00:00, run_after=2024-12-01T00:00:00+00:00
+[2024-11-04T19:22:18.689+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 5.884 seconds
+[2024-11-04T19:22:49.279+0000] {processor.py:157} INFO - Started process (PID=150) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:22:49.282+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:22:49.285+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:22:49.285+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:22:51.528+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:22:51.572+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:22:51.572+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:22:51.624+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:22:51.623+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-11-01T00:00:00+00:00, run_after=2024-12-01T00:00:00+00:00
+[2024-11-04T19:22:51.638+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 2.378 seconds
+[2024-11-04T19:23:22.143+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:23:22.146+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:23:22.148+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:23:22.148+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:23:25.751+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:23:25.847+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:23:25.842+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:23:25.923+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:23:25.922+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-11-01T00:00:00+00:00, run_after=2024-12-01T00:00:00+00:00
+[2024-11-04T19:23:25.951+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 3.820 seconds
+[2024-11-04T19:23:56.868+0000] {processor.py:157} INFO - Started process (PID=185) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:23:56.889+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:23:56.898+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:23:56.897+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:24:01.090+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:24:01.128+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:24:01.128+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:24:01.160+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:24:01.160+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-11-01T00:00:00+00:00, run_after=2024-12-01T00:00:00+00:00
+[2024-11-04T19:24:01.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 4.433 seconds
+[2024-11-04T19:24:31.800+0000] {processor.py:157} INFO - Started process (PID=201) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:24:31.806+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:24:31.810+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:24:31.808+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:24:34.311+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:24:34.431+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:24:34.431+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:24:34.491+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:24:34.491+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-11-01T00:00:00+00:00, run_after=2024-12-01T00:00:00+00:00
+[2024-11-04T19:24:34.513+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 2.751 seconds
+[2024-11-04T19:25:05.449+0000] {processor.py:157} INFO - Started process (PID=217) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:25:05.450+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:25:05.451+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:25:05.451+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:25:07.002+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:25:07.054+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:25:07.052+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:25:07.085+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:25:07.085+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-11-01T00:00:00+00:00, run_after=2024-12-01T00:00:00+00:00
+[2024-11-04T19:25:07.099+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 1.658 seconds
+[2024-11-04T19:25:37.517+0000] {processor.py:157} INFO - Started process (PID=233) to work on /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:25:37.519+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/airflow_main.py for tasks to queue
+[2024-11-04T19:25:37.520+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:25:37.519+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:25:38.182+0000] {processor.py:836} INFO - DAG(s) dict_keys(['bluebikes_data_pipeline']) retrieved from /opt/airflow/dags/airflow_main.py
+[2024-11-04T19:25:38.206+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:25:38.206+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2024-11-04T19:25:38.235+0000] {logging_mixin.py:150} INFO - [2024-11-04T19:25:38.235+0000] {dag.py:3508} INFO - Setting next_dagrun for bluebikes_data_pipeline to 2024-11-01T00:00:00+00:00, run_after=2024-12-01T00:00:00+00:00
+[2024-11-04T19:25:38.247+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airflow_main.py took 0.737 seconds

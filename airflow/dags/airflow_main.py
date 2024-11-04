@@ -21,7 +21,7 @@ os.makedirs(clean_dir, exist_ok=True)
 # Define default arguments for the DAG
 default_args = {
     'owner': 'Muskan',
-    'start_date': datetime(2024, 4, 1),  # Adjust as needed
+    'start_date': datetime(2024, 6, 1),  # Adjust as needed
     'retries': 1,  # Number of retries in case of task failure
     'retry_delay': timedelta(minutes=10),  # Delay before retries
 }

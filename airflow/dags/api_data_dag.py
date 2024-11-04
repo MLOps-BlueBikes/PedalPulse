@@ -2,7 +2,8 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 from datetime import datetime, timedelta
-from src.get_api_data import load_data, preprocess_data, save_to_gcp
+from src.load_api_data import load_api_data
+from src.preprocess_api_data import preprocess_api_data
 from airflow import configuration as conf
 
 # Enable pickle support for XCom, allowing data to be passed between tasks
@@ -27,14 +28,14 @@ dag = DAG(
 # Task to load data, calls the 'load_data' Python function
 load_data_task = PythonOperator(
     task_id='load_data_task',
-    python_callable=load_data,
+    python_callable=load_api_data,
     dag=dag,
 )
 
 # Task to perform data preprocessing, depends on 'load_data_task'
 preprocess_data_task = PythonOperator(
     task_id='preprocess_data_task',
-    python_callable=preprocess_data,
+    python_callable=preprocess_api_data,
     op_args=[load_data_task.output],
     dag=dag,
 )

@@ -27,8 +27,7 @@ default_args = {
     'retries': 1,  # Number of retries in case of task failure
     'retry_delay': timedelta(minutes=10),  # Delay before retries
     'email':["muskankh03@gmail.com"],
-    'email_on_failure':True,
-    'email_on_retry':True'
+    'email_on_failure':True
 }
 
 # Create a DAG instance

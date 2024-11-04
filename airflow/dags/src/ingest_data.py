@@ -47,6 +47,7 @@ def ingest_data(urls, download_dir='downloads', **context):
     for url in urls:
         logging.info(f"Processing URL: {url}")
         try:
+            logging.info(f"Trying to request {url}")
             response = requests.get(url)
             response.raise_for_status()  # Raises an HTTPError if the request was unsuccessful
             file_path = os.path.join(download_dir, os.path.basename(url))

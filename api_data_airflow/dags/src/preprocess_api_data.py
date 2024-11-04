@@ -16,11 +16,9 @@ def preprocess_api_data(output_paths):
 
         cleaned_df = merged_df[['station_id', 'short_name', 'name', 'num_bikes_available', 'num_ebikes_available', 'num_docks_available', 'capacity', 'last_reported']]
         cleaned_df['num_cl_bikes_available'] = cleaned_df['num_bikes_available'] - cleaned_df['num_ebikes_available']
-        current_time = datetime.now()
-        formatted_time = current_time.strftime('%Y%m%d_%H%M')
 
-        output_path = f'/opt/airflow/dags/data/api_data_{formatted_time}.csv'
-        #cleaned_df.to_csv(output_path, index=False)
+        output_path = f'/opt/airflow/dags/data/api_data_preprocessed.csv'
+        cleaned_df.to_csv(output_path, index=False)
         logging.info(f'Data preprocessing completed. Data saved at: {output_path}')
         return output_path
     

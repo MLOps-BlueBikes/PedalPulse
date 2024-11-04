@@ -1,7 +1,7 @@
 import logging
 import time
 import os
-import ast
+from datetime import datetime
 from google.cloud import storage
 from airflow.exceptions import AirflowFailException
 
@@ -10,10 +10,18 @@ from airflow.exceptions import AirflowFailException
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def upload_to_gcs(bucket_name, file_path):
+
+    # Generate the formatted timestamp
+    current_time = datetime.now()
+    formatted_time = current_time.strftime('%Y%m%d_%H%M')
+
+    # New file name
+    file_name = f'api_data_{formatted_time}.csv'
+
     client = storage.Client()
     bucket = client.get_bucket(bucket_name)
 
-    blob_name = os.path.basename(file_path)
+    blob_name = os.path.basename(file_name)
     blob = bucket.blob(blob_name)
 
     # Check if file exists before attempting upload

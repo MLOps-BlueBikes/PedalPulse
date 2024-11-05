@@ -47,6 +47,7 @@ This project aims to predict the demand for BlueBikes using historical data and 
 ### Prerequisites
 - Python 3.8+
 - Docker
+- DVC
 - Google Cloud SDK (for GCP)
 - Apache Airflow (for orchestrating pipelines)
 

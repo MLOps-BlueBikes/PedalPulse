@@ -1,0 +1,63 @@
+[2024-11-04T19:21:49.532+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bluebikes_data_pipeline.clean_and_preprocess_task scheduled__2024-08-01T00:00:00+00:00 [queued]>
+[2024-11-04T19:21:49.583+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bluebikes_data_pipeline.clean_and_preprocess_task scheduled__2024-08-01T00:00:00+00:00 [queued]>
+[2024-11-04T19:21:49.583+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 4
+[2024-11-04T19:21:49.617+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): clean_and_preprocess_task> on 2024-08-01 00:00:00+00:00
+[2024-11-04T19:21:49.631+0000] {standard_task_runner.py:57} INFO - Started process 182 to run task
+[2024-11-04T19:21:49.670+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'bluebikes_data_pipeline', 'clean_and_preprocess_task', 'scheduled__2024-08-01T00:00:00+00:00', '--job-id', '1813', '--raw', '--subdir', 'DAGS_FOLDER/***_main.py', '--cfg-path', '/tmp/tmpsptng04t']
+[2024-11-04T19:21:49.676+0000] {standard_task_runner.py:85} INFO - Job 1813: Subtask clean_and_preprocess_task
+[2024-11-04T19:21:53.575+0000] {task_command.py:410} INFO - Running <TaskInstance: bluebikes_data_pipeline.clean_and_preprocess_task scheduled__2024-08-01T00:00:00+00:00 [running]> on host 724f9f0bb0f4
+[2024-11-04T19:21:54.571+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Muskan' AIRFLOW_CTX_DAG_ID='bluebikes_data_pipeline' AIRFLOW_CTX_TASK_ID='clean_and_preprocess_task' AIRFLOW_CTX_EXECUTION_DATE='2024-08-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-01T00:00:00+00:00'
+[2024-11-04T19:21:54.592+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2024-11-04T19:21:54.593+0000] {preprocess_ride_data.py:65} INFO - Starting data cleaning and preprocessing for file: 202408-bluebikes-tripdata.csv
+[2024-11-04T19:21:58.667+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:21:59.280+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:21:59.588+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:21:59.965+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:22:24.574+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:22:24.608+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:22:24.789+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:22:24.886+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:22:31.376+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:22:31.392+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:22:31.476+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:22:31.496+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:22:35.094+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:22:35.187+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:22:35.278+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:22:35.308+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:22:40.968+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:22:41.018+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:22:41.187+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:22:41.278+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:22:47.678+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:22:47.773+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:22:47.884+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:22:47.993+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:22:58.080+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:22:58.269+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:22:58.497+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:22:58.674+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:23:02.581+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:23:02.665+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:23:02.709+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:23:02.788+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:23:09.500+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:23:09.588+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:23:09.705+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:23:09.799+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:23:15.079+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:23:15.101+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:23:15.194+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:23:15.268+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:23:22.905+0000] {preprocess_ride_data.py:12} INFO - Removing missing values.
+[2024-11-04T19:23:23.074+0000] {preprocess_ride_data.py:16} INFO - Removing duplicate rows.
+[2024-11-04T19:23:23.292+0000] {preprocess_ride_data.py:21} INFO - Converting data types.
+[2024-11-04T19:23:23.387+0000] {preprocess_ride_data.py:39} INFO - Extracting temporal features.
+[2024-11-04T19:23:30.275+0000] {preprocess_ride_data.py:94} INFO - Data cleaning and preprocessing completed for file: 202408-bluebikes-tripdata.csv. Output saved to: /opt/***/cleaned_files/preprocessed_202408-bluebikes-tripdata.csv
+[2024-11-04T19:23:30.280+0000] {preprocess_ride_data.py:95} INFO - Data cleaning and preprocessing completed for file: 202408-bluebikes-tripdata.csv
+[2024-11-04T19:23:30.286+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-11-04T19:23:30.372+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=bluebikes_data_pipeline, task_id=clean_and_preprocess_task, execution_date=20240801T000000, start_date=20241104T192149, end_date=20241104T192330
+[2024-11-04T19:23:30.669+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-11-04T19:23:31.075+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

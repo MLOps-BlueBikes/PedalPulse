@@ -4,12 +4,15 @@ import ast  # For safe evaluation of string lists as lists
 import logging
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
-def unzip_file(zip_paths, extract_to='extracted_files'):
+
+def unzip_file(zip_paths, extract_to="extracted_files"):
     """
     Unzips files from a list of ZIP paths.
-    
+
     Args:
         zip_paths (list or str): List of ZIP file paths or a string representation of the list.
         extract_to (str): Directory to save extracted files.
@@ -37,8 +40,12 @@ def unzip_file(zip_paths, extract_to='extracted_files'):
 
         # Extract files if it exists
         try:
-            with zipfile.ZipFile(zip_path, 'r') as z:
-                csv_files = [f for f in z.namelist() if f.endswith('.csv') and not f.startswith('__MACOSX')]
+            with zipfile.ZipFile(zip_path, "r") as z:
+                csv_files = [
+                    f
+                    for f in z.namelist()
+                    if f.endswith(".csv") and not f.startswith("__MACOSX")
+                ]
                 for csv_file in csv_files:
                     try:
                         z.extract(csv_file, extract_to)
@@ -46,7 +53,9 @@ def unzip_file(zip_paths, extract_to='extracted_files'):
                         extracted_files.append(extracted_file_path)
                         logging.info(f"Extracted {csv_file} to {extracted_file_path}")
                     except EOFError:
-                        logging.warning(f"File {csv_file} in {zip_path} is truncated or corrupted and could not be extracted.")
+                        logging.warning(
+                            f"File {csv_file} in {zip_path} is truncated or corrupted and could not be extracted."
+                        )
         except zipfile.BadZipFile:
             logging.error(f"File {zip_path} is not a valid ZIP file or is corrupted.")
         except Exception as e:

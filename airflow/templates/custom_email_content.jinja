@@ -1,0 +1,30 @@
+<h1 style="color: red;">Task Failure Alert</h1>
+
+<p><strong>Task ID:</strong> {{ task_instance.task_id }}</p>
+<p><strong>DAG ID:</strong> {{ task_instance.dag_id }}</p>
+<p><strong>Execution Date:</strong> {{ task_instance.execution_date }}</p>
+
+<h2>Failure Details:</h2>
+<p><strong>Exception:</strong> {{ exception_html }}</p>
+
+{% if task_instance.log_url %}
+    <p><strong>Logs:</strong> <a href="{{ task_instance.log_url }}" target="_blank">View Task Logs</a></p>
+{% endif %}
+
+<h2>Task Instance Context:</h2>
+<ul>
+    <li><strong>Start Date:</strong> {{ task_instance.start_date }}</li>
+    <li><strong>End Date:</strong> {{ task_instance.end_date }}</li>
+    <li><strong>Duration:</strong> {{ task_instance.duration }} seconds</li>
+    <li><strong>State:</strong> {{ task_instance.state }}</li>
+</ul>
+
+<h3>Stack Trace:</h3>
+<pre>{{ task_instance.log_url }}</pre>
+
+<h2>Suggested Actions:</h2>
+<ul>
+    <li>Check the logs above for more detailed error information.</li>
+    <li>If the error is transient, retry the task from the Airflow UI.</li>
+    <li>For persistent errors, review the task's code and dependencies for issues.</li>
+</ul>

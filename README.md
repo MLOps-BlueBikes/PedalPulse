@@ -98,7 +98,7 @@ This project aims to predict the demand for BlueBikes using historical data and 
    jupyter notebook
    ```
 
-### Data Pipeline
+### Data Pipeline 
 
 ### Data Preprocessing
 
@@ -127,6 +127,24 @@ In this project, data preprocessing is a critical step to ensure high-quality in
    After preprocessing, the cleaned dataset is uploaded to Google Cloud Platform (GCP). This allows for scalable data storage and facilitates downstream model training and deployment within the MLOps pipeline.
 
 These preprocessing steps ensure that our data is relevant, consistent, and robust, improving the overall performance and reliability of the demand forecasting model.
+
+### Unit testing
+
+1. **Monthly URL Generation:**
+Dynamically generates URLs for monthly Bluebikes data files.
+
+2. **Data Download & Extraction:**
+Downloads and extracts data, with fallback to previous months if the file is missing.
+
+3. **Data Quality Tests:**
+
+**Missing Values:** Checks for acceptable levels of missing values in critical columns.
+- **Column Data Types:** Validates key column types (e.g., ride_id as string, started_at as datetime).
+- **Date Format:** Ensures dates follow YYYY-MM-DD HH:MM:SS.
+- **Trip Duration:** Confirms non-negative trip durations.
+- **Latitude & Longitude:** Validates coordinates are within range.
+- **Unique Ride IDs:** Ensures ride_id values are unique.
+- **Membership Type:** Checks member_casual only has member or casual.
 
 
 ### Usage

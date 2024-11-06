@@ -146,6 +146,12 @@ Downloads and extracts data, with fallback to previous months if the file is mis
 - **Unique Ride IDs:** Ensures ride_id values are unique.
 - **Membership Type:** Checks member_casual only has member or casual.
 
+### Alerts
+
+Email alerts are configured to notify the owner whenever any task fails. This setup provides proactive monitoring for critical points in the data pipeline, helping maintain seamless data operations.   
+- **Ingestion Task Alerts**: Alerts here are essential, as they provide immediate notification if data cannot be fetched from the source (Bluebikes)
+- **Preprocessing Task Alerts**: Email alerts during preprocessing allow for swift intervention. This is critical because preprocessing often involves data validation, cleaning, and transformation steps; without real-time alerts, errors could go unnoticed and lead to incorrect final data output.
+- **Uploading to Remote GCS Bucket Alerts**: Failure alerts for this task help identify connectivity issues, permissions errors, or storage capacity problems. Immediate notifications, the owner can address these issues without delay, ensuring that data is successfully stored and accessible for future use to prevent data loss. 
 
 ### Usage
 

@@ -3,6 +3,8 @@ import os
 import ast  # for safely evaluating string lists as lists
 import logging
 from datetime import datetime, timezone
+from airflow.exceptions import AirflowSkipException
+
 
 # Configure logging
 logging.basicConfig(
@@ -25,7 +27,7 @@ def ingest_data(urls, download_dir="downloads", **context):
             logging.info("Parsed URLs successfully.")
         except (ValueError, SyntaxError) as e:
             logging.error(f"Error parsing URLs: {e}")
-            return []
+            raise e 
 
     logging.info(f"Final list of URLs for ingestion: {urls}")
 
@@ -42,7 +44,7 @@ def ingest_data(urls, download_dir="downloads", **context):
         and execution_date.month == current_date.month - 1
     ):
         logging.info(f"Skipping processing for {execution_date.strftime('%Y-%m')}")
-        return []
+        raise AirflowSkipException
 
     # Create download directory if it doesn't exist
     if not os.path.exists(download_dir):
@@ -62,5 +64,6 @@ def ingest_data(urls, download_dir="downloads", **context):
             downloaded_files.append(file_path)
         except requests.exceptions.RequestException as e:
             logging.error(f"Failed to download {url}: {e}")
+            raise e 
 
     return downloaded_files

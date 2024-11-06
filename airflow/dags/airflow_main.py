@@ -1,6 +1,7 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 import os
+import pendulum
 from datetime import datetime, timedelta, timezone
 from src.ingest_data import ingest_data
 from src.unzip_file import unzip_file
@@ -20,18 +21,22 @@ os.makedirs(clean_dir, exist_ok=True)
 
 # Define default arguments for the DAG
 default_args = {
-    "owner": "Muskan",
-    "start_date": datetime(2024, 6, 1),  # Adjust as needed
-    "retries": 1,  # Number of retries in case of task failure
-    "retry_delay": timedelta(minutes=10),  # Delay before retries
+    'owner': 'Muskan',
+    #'start_date': datetime(2024, 6, 1),  # Adjust as needed
+    'retries': 1,  # Number of retries in case of task failure
+    'retry_delay': timedelta(minutes=1),  # Delay before retries,
+    'email_on_failure':True,
+    'email_on_retry':False,
+     "email": ["mlopsgcpproject@gmail.com"]
 }
 
 # Create a DAG instance
 dag = DAG(
     "bluebikes_data_pipeline",
     default_args=default_args,
-    description="DAG for Blue Bikes Prediction Project",
-    schedule_interval="@monthly",
+    description='DAG for Blue Bikes Prediction Project',
+    start_date= pendulum.datetime(2024, 1, 1),
+    schedule_interval='@monthly',  
     catchup=True,
 )
 

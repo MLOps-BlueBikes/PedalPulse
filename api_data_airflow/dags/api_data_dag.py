@@ -7,34 +7,34 @@ from src.preprocess_api_data import preprocess_api_data
 from src.upload_to_gcp import upload_to_gcs
 
 # Enable pickle support for XCom, allowing data to be passed between tasks
-#conf.set('core', 'enable_xcom_pickling', 'True')
+# conf.set('core', 'enable_xcom_pickling', 'True')
 
 # Define default arguments for your DAG
 default_args = {
-    'owner': 'Ritika',
-    'start_date': datetime(2023, 10, 28),
-    'retries': 0, # Number of retries in case of task failure
-    'retry_delay': timedelta(minutes=5), # Delay before retries
+    "owner": "Ritika",
+    "start_date": datetime(2023, 10, 28),
+    "retries": 0,  # Number of retries in case of task failure
+    "retry_delay": timedelta(minutes=5),  # Delay before retries
 }
 
 dag = DAG(
-    'get_api_dag',
+    "get_api_dag",
     default_args=default_args,
-    description='DAG to get API data',
-    schedule='0 * * * *',
+    description="DAG to get API data",
+    schedule="0 * * * *",
     catchup=False,
 )
 
 # Task to load data, calls the 'load_data' Python function
 load_data_task = PythonOperator(
-    task_id='load_data_task',
+    task_id="load_data_task",
     python_callable=load_api_data,
     dag=dag,
 )
 
 # Task to perform data preprocessing, depends on 'load_data_task'
 preprocess_data_task = PythonOperator(
-    task_id='preprocess_data_task',
+    task_id="preprocess_data_task",
     python_callable=preprocess_api_data,
     op_args=[load_data_task.output],
     dag=dag,
@@ -42,13 +42,13 @@ preprocess_data_task = PythonOperator(
 
 # Task to save preprocessed file to GCP
 upload_to_gcp_task = PythonOperator(
-    task_id='upload_to_gcp_task',
+    task_id="upload_to_gcp_task",
     python_callable=upload_to_gcs,
     op_kwargs={
-        'bucket_name': 'preprocessed-api-data',
-        'file_path': preprocess_data_task.output
+        "bucket_name": "preprocessed-api-data",
+        "file_path": preprocess_data_task.output,
     },
-    dag=dag
+    dag=dag,
 )
 
 # Set task dependencies

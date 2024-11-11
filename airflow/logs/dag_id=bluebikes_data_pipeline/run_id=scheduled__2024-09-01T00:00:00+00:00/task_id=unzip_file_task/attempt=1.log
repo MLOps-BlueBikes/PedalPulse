@@ -1,0 +1,15 @@
+[2024-11-04T19:21:23.873+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bluebikes_data_pipeline.unzip_file_task scheduled__2024-09-01T00:00:00+00:00 [queued]>
+[2024-11-04T19:21:23.884+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bluebikes_data_pipeline.unzip_file_task scheduled__2024-09-01T00:00:00+00:00 [queued]>
+[2024-11-04T19:21:23.885+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2024-11-04T19:21:23.967+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): unzip_file_task> on 2024-09-01 00:00:00+00:00
+[2024-11-04T19:21:23.976+0000] {standard_task_runner.py:57} INFO - Started process 163 to run task
+[2024-11-04T19:21:23.988+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'bluebikes_data_pipeline', 'unzip_file_task', 'scheduled__2024-09-01T00:00:00+00:00', '--job-id', '1807', '--raw', '--subdir', 'DAGS_FOLDER/***_main.py', '--cfg-path', '/tmp/tmpa0ehfagi']
+[2024-11-04T19:21:24.085+0000] {standard_task_runner.py:85} INFO - Job 1807: Subtask unzip_file_task
+[2024-11-04T19:21:27.168+0000] {task_command.py:410} INFO - Running <TaskInstance: bluebikes_data_pipeline.unzip_file_task scheduled__2024-09-01T00:00:00+00:00 [running]> on host 724f9f0bb0f4
+[2024-11-04T19:21:27.387+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Muskan' AIRFLOW_CTX_DAG_ID='bluebikes_data_pipeline' AIRFLOW_CTX_TASK_ID='unzip_file_task' AIRFLOW_CTX_EXECUTION_DATE='2024-09-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-01T00:00:00+00:00'
+[2024-11-04T19:21:27.395+0000] {unzip_file.py:21} INFO - Parsed zip_paths successfully: ['/opt/***/downloads/202409-bluebikes-tripdata.zip']
+[2024-11-04T19:21:34.866+0000] {unzip_file.py:47} INFO - Extracted 202409-bluebikes-tripdata.csv to /opt/***/extracted_files/202409-bluebikes-tripdata.csv
+[2024-11-04T19:21:35.079+0000] {python.py:183} INFO - Done. Returned value was: ['/opt/***/extracted_files/202409-bluebikes-tripdata.csv']
+[2024-11-04T19:21:38.570+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=bluebikes_data_pipeline, task_id=unzip_file_task, execution_date=20240901T000000, start_date=20241104T192123, end_date=20241104T192138
+[2024-11-04T19:21:39.369+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-11-04T19:21:40.077+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -3,3 +3,8 @@
 
 # Ignore data files
 dags/data
+
+#ignore logs
+logs/*
+
+*.pyc

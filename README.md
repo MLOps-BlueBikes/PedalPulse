@@ -47,6 +47,7 @@ This project aims to predict the demand for BlueBikes using historical data and 
 ### Prerequisites
 - Python 3.8+
 - Docker
+- DVC
 - Google Cloud SDK (for GCP)
 - Apache Airflow (for orchestrating pipelines)
 
@@ -97,7 +98,7 @@ This project aims to predict the demand for BlueBikes using historical data and 
    jupyter notebook
    ```
 
-### Data Pipeline
+### Data Pipeline 
 
 ### Data Preprocessing
 
@@ -127,6 +128,30 @@ In this project, data preprocessing is a critical step to ensure high-quality in
 
 These preprocessing steps ensure that our data is relevant, consistent, and robust, improving the overall performance and reliability of the demand forecasting model.
 
+### Unit testing
+
+1. **Monthly URL Generation:**
+Dynamically generates URLs for monthly Bluebikes data files.
+
+2. **Data Download & Extraction:**
+Downloads and extracts data, with fallback to previous months if the file is missing.
+
+3. **Data Quality Tests:**
+
+**Missing Values:** Checks for acceptable levels of missing values in critical columns.
+- **Column Data Types:** Validates key column types (e.g., ride_id as string, started_at as datetime).
+- **Date Format:** Ensures dates follow YYYY-MM-DD HH:MM:SS.
+- **Trip Duration:** Confirms non-negative trip durations.
+- **Latitude & Longitude:** Validates coordinates are within range.
+- **Unique Ride IDs:** Ensures ride_id values are unique.
+- **Membership Type:** Checks member_casual only has member or casual.
+
+### Alerts
+
+Email alerts are configured to notify the owner whenever any task fails. This setup provides proactive monitoring for critical points in the data pipeline, helping maintain seamless data operations.   
+- **Ingestion Task Alerts**: Alerts here are essential, as they provide immediate notification if data cannot be fetched from the source (Bluebikes)
+- **Preprocessing Task Alerts**: Email alerts during preprocessing allow for swift intervention. This is critical because preprocessing often involves data validation, cleaning, and transformation steps; without real-time alerts, errors could go unnoticed and lead to incorrect final data output.
+- **Uploading to Remote GCS Bucket Alerts**: Failure alerts for this task help identify connectivity issues, permissions errors, or storage capacity problems. Immediate notifications, the owner can address these issues without delay, ensuring that data is successfully stored and accessible for future use to prevent data loss. 
 
 ### Usage
 

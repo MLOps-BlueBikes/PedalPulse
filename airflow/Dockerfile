@@ -12,7 +12,3 @@ RUN pip install google-cloud-storage
 RUN python --version
 RUN pip --version
 RUN airflow version
-# If you have other dependencies, list them here
-# RUN pip install <other-dependency>
-RUN pip install pandas
-RUN pip install requests

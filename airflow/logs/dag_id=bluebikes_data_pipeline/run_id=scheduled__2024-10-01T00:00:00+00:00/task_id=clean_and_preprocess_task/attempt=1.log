@@ -1,0 +1,18 @@
+[2024-11-04T19:21:45.073+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bluebikes_data_pipeline.clean_and_preprocess_task scheduled__2024-10-01T00:00:00+00:00 [queued]>
+[2024-11-04T19:21:45.082+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bluebikes_data_pipeline.clean_and_preprocess_task scheduled__2024-10-01T00:00:00+00:00 [queued]>
+[2024-11-04T19:21:45.082+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 4
+[2024-11-04T19:21:45.100+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): clean_and_preprocess_task> on 2024-10-01 00:00:00+00:00
+[2024-11-04T19:21:45.121+0000] {standard_task_runner.py:57} INFO - Started process 175 to run task
+[2024-11-04T19:21:45.172+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'bluebikes_data_pipeline', 'clean_and_preprocess_task', 'scheduled__2024-10-01T00:00:00+00:00', '--job-id', '1809', '--raw', '--subdir', 'DAGS_FOLDER/***_main.py', '--cfg-path', '/tmp/tmpsodz8liz']
+[2024-11-04T19:21:45.180+0000] {standard_task_runner.py:85} INFO - Job 1809: Subtask clean_and_preprocess_task
+[2024-11-04T19:21:47.333+0000] {task_command.py:410} INFO - Running <TaskInstance: bluebikes_data_pipeline.clean_and_preprocess_task scheduled__2024-10-01T00:00:00+00:00 [running]> on host 724f9f0bb0f4
+[2024-11-04T19:21:47.505+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Muskan' AIRFLOW_CTX_DAG_ID='bluebikes_data_pipeline' AIRFLOW_CTX_TASK_ID='clean_and_preprocess_task' AIRFLOW_CTX_EXECUTION_DATE='2024-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-01T00:00:00+00:00'
+[2024-11-04T19:21:47.508+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:313: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2024-11-04T19:21:47.508+0000] {preprocess_ride_data.py:65} INFO - Starting data cleaning and preprocessing for file: 202410-bluebikes-tripdata.csv
+[2024-11-04T19:21:47.508+0000] {preprocess_ride_data.py:69} ERROR - File /opt/***/extracted_files/202410-bluebikes-tripdata.csv does not exist. Skipping processing.
+[2024-11-04T19:21:47.509+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-11-04T19:21:47.564+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=bluebikes_data_pipeline, task_id=clean_and_preprocess_task, execution_date=20241001T000000, start_date=20241104T192145, end_date=20241104T192147
+[2024-11-04T19:21:47.666+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-11-04T19:21:49.185+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

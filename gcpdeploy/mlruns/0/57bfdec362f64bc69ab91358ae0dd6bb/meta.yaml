@@ -1,0 +1,15 @@
+artifact_uri: file:///app/mlruns/0/57bfdec362f64bc69ab91358ae0dd6bb/artifacts
+end_time: 1731685014365
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 57bfdec362f64bc69ab91358ae0dd6bb
+run_name: Decision Tree with GridSearch
+run_uuid: 57bfdec362f64bc69ab91358ae0dd6bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731684739402
+status: 3
+tags: []
+user_id: root

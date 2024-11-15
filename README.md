@@ -106,6 +106,7 @@ In this project, data preprocessing is a critical step to ensure high-quality in
 
 1. **Data Collection**  
    We begin by downloading trip data from the official Bluebikes website’s S3 buckets. This data includes information on individual bike trips, such as start and end times, bike type, trip duration, and station details.
+   We are also scraping a [weather website](https://www.wunderground.com/history/daily/us/ma/east-boston/KBOS/date/) to get Boston's weather on an hourly basis. This weather data is then intgerated with trip history data based on the hour the ride was taken on a particular day. This is all done via AirFlow.
 
 2. **Data Type Conversion**  
    To facilitate effective analysis, specific fields are converted to appropriate data types:
@@ -179,6 +180,7 @@ Email alerts are configured to notify the owner whenever any task fails. This se
    docker build -t bluebikes-api .
    docker run -p 8000:8000 bluebikes-api
    ```
+## Model Pipeline
 
 ### Model Retraining
 The retraining pipeline can be automated using Airflow to trigger the retraining process periodically or when new data becomes available.

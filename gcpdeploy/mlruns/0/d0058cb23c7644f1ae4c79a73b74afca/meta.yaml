@@ -1,0 +1,15 @@
+artifact_uri: file:///app/mlruns/0/d0058cb23c7644f1ae4c79a73b74afca/artifacts
+end_time: 1731684739398
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d0058cb23c7644f1ae4c79a73b74afca
+run_name: Linear Regression with GridSearch
+run_uuid: d0058cb23c7644f1ae4c79a73b74afca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731684689936
+status: 3
+tags: []
+user_id: root

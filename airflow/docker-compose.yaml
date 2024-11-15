@@ -27,7 +27,7 @@ x-airflow-common:
 
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
-    GOOGLE_APPLICATION_CREDENTIALS: /opt/airflow/keys/gcp_key/pedalpulse-440019-edc2a9d73d26.json
+    GOOGLE_APPLICATION_CREDENTIALS: /opt/airflow/keys/pedalpulse-key.json
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
     - ${AIRFLOW_PROJ_DIR:-.}/dags/data:/opt/airflow/dags/data
@@ -37,6 +37,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/keys:/opt/airflow/keys
     - ${AIRFLOW_PROJ_DIR:-.}/keys/gcp_key:/opt/airflow/keys/gcp_key
     - ${AIRFLOW_PROJ_DIR:-.}/templates:/opt/airflow/templates
+    - /var/run/docker.sock:/var/run/docker.sock
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
@@ -137,6 +138,8 @@ services:
     environment:
       <<: *airflow-common-env
       DUMB_INIT_SETSID: "0"
+      PYTHONPATH: "/opt/airflow/dags:/opt/airflow"
+      OBJC_DISABLE_INITIALIZE_FORK_SAFETY: "YES"
     restart: always
     depends_on:
       <<: *airflow-common-depends-on
@@ -185,5 +188,21 @@ services:
     volumes:
       - ${AIRFLOW_PROJ_DIR:-.}:/sources
 
+  selenium:
+    image: selenium/standalone-chromium:latest
+    platform: linux/arm64  # Adjust if needed for your architecture
+    shm_size: 2g
+    ports:
+      - "4444:4444"
+    healthcheck:
+      test: ["CMD", "/opt/bin/check-grid.sh"]
+      interval: 15s
+      timeout: 30s
+      retries: 5
+
 volumes:
   postgres-db-volume:
+
+networks:
+  default:
+    name: airflow_network

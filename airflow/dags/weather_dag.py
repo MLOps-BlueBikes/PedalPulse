@@ -3,7 +3,7 @@ from airflow.operators.python import PythonOperator
 import os
 from datetime import datetime, timedelta
 
-from src.weather_v1 import scrape_multiple_days, read_bike_trip_data, match_rides_with_weather, upload_to_gcp
+from src.weather import scrape_multiple_days, read_bike_trip_data, match_rides_with_weather, upload_to_gcp
 
 # Define paths
 weather_dir = '/opt/airflow/weather_file'

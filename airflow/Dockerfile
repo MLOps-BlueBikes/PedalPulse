@@ -3,8 +3,11 @@
 FROM  apache/airflow:2.6.3
 # Set environment variables
 ENV AIRFLOW_HOME=/opt/airflow
+ENV PYTHONPATH="/opt/airflow/dags:/opt/airflow/plugins:$PYTHONPATH"
+
 # Install Google Cloud SDK and any other packages apache/airflow:2.6.3
-RUN pip install google-cloud-storage boto3 beautifulsoup4 pandas numpy selenium
+RUN pip install google-cloud-storage boto3 beautifulsoup4 pandas numpy selenium 
+RUN pip install --upgrade requests urllib3 cryptography
 #RUN pip install apache-airflow-providers-google==10.17.0
 #pandas numpy
 

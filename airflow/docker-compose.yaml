@@ -47,7 +47,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins 
     - ${AIRFLOW_PROJ_DIR:-.}/keys:/opt/airflow/keys
-    - ${AIRFLOW_PROJ_DIR:-.}/.aws:/usr/local/airflow/.aws
+    - ${AIRFLOW_PROJ_DIR:-.}/.aws/credentials:/opt/airflow/.aws/credentials
     #- ${AIRFLOW_PROJ_DIR:-.}/keys/pedalpulse-440019-919eead68e28.json:/opt/airflow/keys/gcp_key.json  # Mount the GCP key file
 
   user: "${AIRFLOW_UID:-50000}:0"
@@ -106,7 +106,7 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
-#    environment:
+#   environment:
 #     - AWS_ACCESS_KEY_ID=AKIAQR5EPL346VTJOGQV
 #      - AWS_SECRET_ACCESS_KEY=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
 
@@ -126,9 +126,6 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
-#    environment:
-#      - AWS_ACCESS_KEY_ID=AKIAQR5EPL346VTJOGQV
-#      - AWS_SECRET_ACCESS_KEY=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
 
 
   airflow-worker:
@@ -172,9 +169,9 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
-#    environment:  
-#      - AWS_ACCESS_KEY_ID=AKIAQR5EPL346VTJOGQV
-#      - AWS_SECRET_ACCESS_KEY=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
+ #   environment:  
+ #     - AWS_ACCESS_KEY_ID=AKIAQR5EPL346VTJOGQV
+ #     - AWS_SECRET_ACCESS_KEY=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
 
   airflow-init:
     <<: *airflow-common

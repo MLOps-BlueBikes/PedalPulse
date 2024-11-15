@@ -206,28 +206,3 @@ def match_rides_with_weather(data_files):
     merged_weather.to_csv(output_path, index=False)
     logging.info(f"Weather-trip data merged and saved to {output_path}.")
     return output_path
-
-# Upload file to GCP bucket
-def upload_to_gcp(file_path, bucket_name, month):
-    client = storage.Client()
-    bucket = client.get_bucket(bucket_name)
-    file_name = f'bike_weather_{month}.csv'
-    blob_name = f'merged_data/{file_name}'
-    blob = bucket.blob(blob_name)
-
-    retry_count = 0
-    max_retries = 10
-    while retry_count < max_retries:
-        try:
-            blob.upload_from_filename(file_path)
-            logging.info(f"Uploaded {file_path} to gs://{bucket_name}/{blob_name}")
-            break
-        except Exception as e:
-            retry_count += 1
-            time.sleep(2**retry_count)  # Exponential backoff
-            if retry_count == max_retries:
-                logging.error(
-                    f"Failed to upload {file_path} after {max_retries} retries"
-                )
-            logging.error(f"Error uploading {file_path}: {e}")
-            raise AirflowFailException(f"Failed to upload {file_path}:{e}")

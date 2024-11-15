@@ -182,6 +182,18 @@ Email alerts are configured to notify the owner whenever any task fails. This se
    ```
 ## Model Pipeline
 
+### Data loading
+The ride history data is retrieved from a Google Cloud Platform (GCP) bucket, where each month's processed and cleaned ride history is stored. This data is integrated with scraped weather data to create the final dataset, which serves as the input for training machine learning models. The entire process ensures that the data pipeline efficiently handles the pre-processing, versioning, and integration of the various data sources, providing a reliable foundation for model development.
+
+### Model Training and Selection
+The dataset is split into 70% for training, 15% for testing, and 15% for validation to ensure robust model evaluation. Various models, including Logistic Regression and Decision Trees, were trained and evaluated for performance. Hyperparameter tuning was performed on these models to identify the optimal configuration. The best-performing model, based on the defined evaluation metrics, was selected for further use.
+
+### Model Validation
+The model validation process involves evaluating performance using relevant metrics such as Mean Squared Error (MSE) and R-squared (R2) to assess model accuracy and fit. Validation is conducted on a hold-out dataset that was not used during the training phase, ensuring an unbiased evaluation of the model's generalization ability. These metrics are crucial in selecting the best-performing model for the task.
+
+### Model Registry
+Once the best model has been selected and validated, including completing any necessary bias checks, the model is pushed to a model registry for version control and to ensure reproducibility. In this case, both the trained model and the associated Docker image are deployed to Google Cloud Artifact Registry. This process ensures that the model is properly versioned, facilitating easy access for future updates, deployments, and monitoring. Storing the model in the registry enhances collaboration, supports model governance, and provides a reliable means of tracking the model's lifecycle throughout its deployment stages.
+
 ### Model Retraining
 The retraining pipeline can be automated using Airflow to trigger the retraining process periodically or when new data becomes available.
 

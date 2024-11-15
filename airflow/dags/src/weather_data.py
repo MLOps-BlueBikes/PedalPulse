@@ -1,148 +1,190 @@
 import pandas as pd
-import time
+import numpy as np
+import os
+from math import radians, sin, cos, sqrt, atan2
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import numpy as np
-from math import radians, sin, cos, sqrt, atan2
+import time
+import logging
 
 
-
-def add_weather_data(trip_data_dict):
-
-    trip_data=trip_data_dict['df']
-    trip_data['started_at'] = pd.to_datetime(trip_data['started_at'])
-    trip_data['ended_at'] = pd.to_datetime(trip_data['ended_at'])
-
-    dates_list=sorted(trip_data['started_at'].apply(lambda x: x.date()).unique())
-    weather_df=scrape_multiple_days(dates_list)
-    rides_df = trip_data.sort_values('started_at')
-    weather_df= weather_df.sort_values('DateTime')
-
-    # Using 'started_at' to find the nearest weather data
-    merged_df = pd.merge_asof(rides_df, weather_df, left_on='started_at', right_on='DateTime', direction='backward')
-
-    # Step 4: Drop unnecessary columns if needed (like 'DateTime' from weather data)
-    merged_df = merged_df.drop(columns=['DateTime'])
-    
-    merged_df_path=trip_data_dict['path'].split('.')[0]+"-weather-merged.csv"
-    merged_df.to_csv(f"data/{merged_df_path}")
-    
-    return {"df":merged_df,"path":merged_df_path}
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
+# Function to calculate Haversine distance between two lat-long points
+def haversine(lat1, lon1, lat2, lon2):
+    lat1, lon1, lat2, lon2 = map(radians, [lat1, lon1, lat2, lon2])
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+    a = sin(dlat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(dlon / 2) ** 2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+    R = 6371.0  # Earth radius in kilometers
+    return R * c
 
 
-
-# Set up the WebDriver with Chrome options
+# Set up Selenium WebDriver
 def set_up_driver():
     options = webdriver.ChromeOptions()
-    options.add_argument('--headless')  # Ensures Chrome runs without a UI
-    options.add_argument('--disable-gpu')  # Disable GPU (helps in some headless cases)
-    options.add_argument('--no-sandbox')  # Bypass OS security model
-    options.add_argument('--disable-dev-shm-usage')  # Overcome limited resource problems
-    options.add_argument('--remote-debugging-port=9222')  # Open port for debugging
-
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     driver = webdriver.Chrome(options=options)
     return driver
 
-# Function to scrape weather data for a given date
+
+# Scrape weather data for a specific date
 def scrape_wunderground_data(date):
     driver = set_up_driver()
-
-    # URL format based on the provided link
-    url = f"https://www.wunderground.com/history/daily/us/ma/east-boston/KBOS/date/{date}"
+    url = (
+        f"https://www.wunderground.com/history/daily/us/ma/east-boston/KBOS/date/{date}"
+    )
     driver.get(url)
 
-    # Wait for the page to load completely
     try:
-        # Wait until the table with aria-labelledby="History observation" is present
         WebDriverWait(driver, 20).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, 'table[aria-labelledby="History observation"]'))
+            EC.presence_of_element_located(
+                (By.CSS_SELECTOR, 'table[aria-labelledby="History observation"]')
+            )
         )
     except Exception as e:
-        print(f"Error: Unable to load table for {date}. {str(e)}")
+        logging.error(f"Error: Unable to load table for {date}. {str(e)}")
         driver.quit()
         return None
 
-    # Extract the page source after the table has loaded
-    soup = BeautifulSoup(driver.page_source, 'html.parser')
-
-    # Now, try to find the table in the loaded HTML
-    table = soup.find('table', {'aria-labelledby': 'History observation'})
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    table = soup.find("table", {"aria-labelledby": "History observation"})
 
     if not table:
-        print(f"No weather data table found for {date}")
+        logging.error(f"No weather data table found for {date}")
         driver.quit()
         return None
 
-    rows = table.find_all('tr')
-    weather_data = []
-
-    for row in rows[1:]:  # Skip the header row
-        cols = row.find_all('td')
-        cols = [col.text.strip() for col in cols]
-        weather_data.append(cols)
-
-    # Define columns for the regular weather data
-    columns = ['Time', 'Temperature (°F)', 'Dew Point', 'Humidity', 'Wind', 'Wind Speed', 'Wind Gust', 'Pressure', 'Precip.', 'Condition']
-
-    df = pd.DataFrame(weather_data, columns=columns[:len(weather_data[0])])  # Adjust based on actual columns in the table
-
+    rows = table.find_all("tr")
+    weather_data = [
+        [col.text.strip() for col in row.find_all("td")] for row in rows[1:]
+    ]
+    columns = [
+        "Time",
+        "Temperature (°F)",
+        "Dew Point",
+        "Humidity",
+        "Wind",
+        "Wind Speed",
+        "Wind Gust",
+        "Pressure",
+        "Precip.",
+        "Condition",
+    ]
+    df = pd.DataFrame(weather_data, columns=columns[: len(weather_data[0])])
     driver.quit()
-
     return df
 
 
-# Function to loop through multiple dates and save data
-def scrape_multiple_days(dates_list):
-    # Create a date range
-
-
+# Scrape data for multiple dates and save as CSV
+def scrape_multiple_days(start_date, end_date):
+    date_range = pd.date_range(start=start_date, end=end_date)
     all_data = []
 
-    for date in dates_list:
-        date_str = date.strftime('%Y-%m-%d')
-        print(f"Scraping data for {date_str}")
+    for date in date_range:
+        date_str = date.strftime("%Y-%m-%d")
+        logging.info(f"Scraping data for {date_str}")
         df = scrape_wunderground_data(date_str)
-
         if df is not None:
-            df['Date'] = date_str  # Add the date to each row
+            df["Date"] = date_str
             all_data.append(df)
+        time.sleep(2)  # Avoid being blocked
 
-        # Avoid being blocked
-        time.sleep(2)
-
-    # Combine all data into a single DataFrame
     if all_data:
         final_df = pd.concat(all_data, ignore_index=True)
-
+        final_df.to_csv("weather_data.csv", index=False)
+        logging.info("Weather data saved to 'weather_data.csv'")
     else:
-        print("No data was scraped.")
-    df_weather_scrap = final_df.dropna()
-    '''
-    df_weather_scrap.loc[:, 'DateTime'] = df_weather_scrap['Date'] + ' ' + df_weather_scrap['Time']
-    df_weather_scrap.loc[:, 'DateTime'] = pd.to_datetime(df_weather_scrap['DateTime'], format='%Y-%m-%d %I:%M %p')
-    '''
-    # Use .assign() to create DateTime and convert to datetime format in one step
-    df_weather_scrap = df_weather_scrap.assign(
-        DateTime=pd.to_datetime(df_weather_scrap['Date'] + ' ' + df_weather_scrap['Time'], format='%Y-%m-%d %I:%M %p')
+        logging.warning("No data scraped.")
+
+
+# Load Bluebikes trip data with error handling
+def read_bike_trip_data(file_name):
+    try:
+        df = pd.read_csv(file_name, on_bad_lines="skip")
+        df["started_at"] = pd.to_datetime(df["started_at"])
+        df["ended_at"] = pd.to_datetime(df["ended_at"])
+        return df
+    except pd.errors.ParserError as e:
+        logging.error(f"ParserError: {e}")
+        return None
+    except Exception as e:
+        logging.error(f"Error: {e}")
+        return None
+
+
+# Process Bluebikes and weather data for specified months
+def process_bike_trip_weather_data(preprocessed_filepath):
+    
+    logging.info(f"Processing data for {os.pathpreprocessed_filepath}...")
+    df = read_bike_trip_data(preprocessed_filepath)
+
+    if df is not None:
+        unique_station_names = df["start_station_name"].unique()
+        unique_stations_with_ids = df[
+            df["start_station_name"].isin(unique_station_names)
+        ]
+
+        station_name_id_mapping = unique_stations_with_ids[
+            ["start_station_name", "start_station_id", "start_lat", "start_lng"]
+        ]
+        station_name_id_mapping.to_csv(
+            f"station_name_id_mapping_{month}.csv", index=False
+        )
+        logging.info(f"Station data for {month} processed successfully.")
+    else:
+        logging.warning(
+            f"Skipping processing for {month} due to data loading issues."
+        )
+
+
+# Match rides with closest weather data by timestamp
+def match_rides_with_weather(rides_df, weather_df):
+    rides_df["started_at"] = pd.to_datetime(rides_df["started_at"])
+    weather_df["DateTime"] = pd.to_datetime(
+        weather_df["Date"] + " " + weather_df["Time"], format="%Y-%m-%d %I:%M %p"
     )
-    df_weather_scrap = df_weather_scrap.drop(columns=['Date', 'Time'])
+    closest_weather_data = []
 
+    for idx, ride_row in rides_df.iterrows():
+        time_diffs = abs(weather_df["DateTime"] - ride_row["started_at"])
+        nearest_index = time_diffs.idxmin()
+        closest_weather = weather_df.iloc[nearest_index]
 
+        combined_data = ride_row.to_dict()
+        combined_data.update(closest_weather.to_dict())
+        closest_weather_data.append(combined_data)
 
-    return df_weather_scrap
+    merged_weather = pd.DataFrame(closest_weather_data)
 
-'''
-if __name__=="__main__":
-    print("Hi")
-    df=pd.read_csv("/Users/skc/PedalPulse/airflow/dags/data/202409-bluebikes-tripdata.csv")
-    print(f"OLD DATAFRAME SHAPE: {df.shape}")
-    new_df=add_weather_data('/Users/skc/PedalPulse/airflow/dags/data/202409-bluebikes-tripdata.csv')
-    print(f"New DATAFRAME SHAPE: {new_df.shape}")
-'''
+    # Convert columns with numeric values
+    for column in [
+        "Temperature (°F)",
+        "Dew Point",
+        "Humidity",
+        "Wind Speed",
+        "Pressure",
+        "Precip.",
+    ]:
+        merged_weather[column] = (
+            merged_weather[column].str.extract("([0-9.]+)").astype(float)
+        )
+    merged_weather["Wind Gust"] = (
+        merged_weather["Wind Gust"].str.extract("([0-9.]+)").astype(float)
+    )
 
-
+    merged_weather.to_csv("weather_trip_history_merged.csv", index=False)
+    logging.info(
+        "Weather-trip data merged and saved to 'weather_trip_history_merged.csv'."
+    )

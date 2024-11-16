@@ -7,3 +7,4 @@ google-cloud-storage
 gunicorn
 mlflow==1.30.0
 gcsfs
+google-cloud-aiplatform 

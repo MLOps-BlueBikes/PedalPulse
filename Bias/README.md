@@ -7,7 +7,8 @@ This document provides a comprehensive analysis of model performance and bias ev
 The data was loaded from a CSV file and underwent the following preprocessing steps:
 - **Datetime Conversion**: The 'started_at' column was parsed to a datetime format.
 - **Handling Missing Values**: Rows with null values in 'started_at' were dropped.
-- **Resampling**: Data was resampled hourly, grouped by 'start_station_name', and aggregated using various metrics (e.g., sum for 'duration' and 'distance_km', mean for 'Temperature (\u00b0F)').
+- 
+- **Resampling**: Data was resampled hourly, grouped by 'start_station_name', and aggregated using various metrics (e.g., sum for 'duration' and 'distance_km', mean for 'Temperature'.
 - **One-Hot Encoding**: Categorical variables ('day_name', 'Condition') were one-hot encoded.
 - **Feature Preparation**: Frequency mapping was applied to 'start_station_name', and features were filled to handle any remaining NaNs.
 

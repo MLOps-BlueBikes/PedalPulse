@@ -38,26 +38,8 @@ For bias analysis, data was segmented by station frequency:
 - **Least Frequent Station**: Similarly, the least frequent station was used for comparison.
 
 **Results**
-Initial results for the overall test set, most frequent station, and least frequent station showed variance in MSE and R\u00b2 scores:
+Initial results for the overall test set, most frequent station, and least frequent station showed variance in MSE and R\u00b2 scores
 
-
-**Visualizations**
-A bar plot was generated to visually compare the MSE across different data slices:
-
-![image](https://github.com/user-attachments/assets/f10e3c93-44b4-4c9f-bf1a-40e18f7446b8)
-
-![image](https://github.com/user-attachments/assets/f8f6ecd2-cda1-4a19-8489-b0e6870eef12)
-
-
-
-- **Overall data slice**
-- **Most frequent station data slice**
-- **Least frequent station data slice**
-
-**Impact of Noise on Model Performance**
-To demonstrate decreased accuracy, noise was introduced by shuffling target labels in the training set. The model's evaluation with noisy data revealed:
-- **Increased MSE**
-- **Decreased R\u00b2 score**
 
 **Conclusion**
 The analysis confirmed that model accuracy can significantly vary when focusing on specific data slices and under noisy conditions. This highlights the importance of bias evaluation and robust training data for improved model reliability.

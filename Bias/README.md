@@ -1,4 +1,4 @@
-**Documentation: Bias Analysis and Model Performance Evaluation**
+**Bias Analysis and Model Performance Evaluation**
 
 **Introduction**
  a comprehensive analysis of model performance and bias evaluation using station-based data for bike usage prediction. The analysis includes a baseline evaluation, slicing techniques for focused bias analysis, and simulated scenarios to demonstrate accuracy fluctuations.
@@ -51,6 +51,6 @@ The analysis confirmed that model accuracy can significantly vary when focusing 
 
 - **Improvement in Model Performance**:
    Enhanced performance on the least frequent station subset due to the sampling strategy, improving from 86% to 91% accuracy.
-- 
+
 
 

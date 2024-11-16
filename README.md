@@ -204,3 +204,6 @@ The system is set up to use **Prometheus** and **Grafana** for monitoring, with 
 
 Most Frequent Station: The model's performance was evaluated on data filtered to the most frequently occurring station.
 Least Frequent Station: Similarly, the least frequent station was used for comparison.
+
+![image](https://github.com/user-attachments/assets/ddf5a7ec-bd72-4639-aef9-9dfc21e38c2e)
+

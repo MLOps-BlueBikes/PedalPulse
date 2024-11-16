@@ -46,9 +46,11 @@ The analysis confirmed that model accuracy can significantly vary when focusing 
 
 
 ## 5. Results and Observations
+
+![image](https://github.com/user-attachments/assets/f115e4ff-ec1e-469a-a31a-95b32853f6b5)
+
 - **Improvement in Model Performance**:
-  The decision tree model showed enhanced performance on the least frequent station subset due to the sampling strategy, improving from 86% to 91% accuracy.
-- **Insights**:
-  The use of a decision tree helped capture station-specific variations better than the initial linear regression, demonstrating its suitability for this dataset.
+   Enhanced performance on the least frequent station subset due to the sampling strategy, improving from 86% to 91% accuracy.
+- 
 
 

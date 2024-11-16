@@ -7,4 +7,7 @@ dags/data
 #ignore logs
 logs/*
 
+# Ignore keys
+keys/*
+
 *.pyc

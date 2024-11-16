@@ -106,6 +106,7 @@ In this project, data preprocessing is a critical step to ensure high-quality in
 
 1. **Data Collection**  
    We begin by downloading trip data from the official Bluebikes website’s S3 buckets. This data includes information on individual bike trips, such as start and end times, bike type, trip duration, and station details.
+   We are also scraping a [weather website](https://www.wunderground.com/history/daily/us/ma/east-boston/KBOS/date/) to get Boston's weather on an hourly basis. This weather data is then intgerated with trip history data based on the hour the ride was taken on a particular day. This is all done via AirFlow.
 
 2. **Data Type Conversion**  
    To facilitate effective analysis, specific fields are converted to appropriate data types:
@@ -179,9 +180,40 @@ Email alerts are configured to notify the owner whenever any task fails. This se
    docker build -t bluebikes-api .
    docker run -p 8000:8000 bluebikes-api
    ```
+## Model Pipeline
+
+### Data loading
+The ride history data is retrieved from a Google Cloud Platform (GCP) bucket, where each month's processed and cleaned ride history is stored. This data is integrated with scraped weather data to create the final dataset, which serves as the input for training machine learning models. The entire process ensures that the data pipeline efficiently handles the pre-processing, versioning, and integration of the various data sources, providing a reliable foundation for model development.
+
+### Model Training and Selection
+The dataset is split into 70% for training, 15% for testing, and 15% for validation to ensure robust model evaluation. Various models, including Logistic Regression and Decision Trees, were trained and evaluated for performance. Hyperparameter tuning was performed on these models to identify the optimal configuration. The best-performing model, based on the defined evaluation metrics, was selected for further use.
+
+### Model Validation
+The model validation process involves evaluating performance using relevant metrics such as Mean Squared Error (MSE) and R-squared (R2) to assess model accuracy and fit. Validation is conducted on a hold-out dataset that was not used during the training phase, ensuring an unbiased evaluation of the model's generalization ability. These metrics are crucial in selecting the best-performing model for the task.
+
+### Model Registry
+Once the best model has been selected and validated, including completing any necessary bias checks, the model is pushed to a model registry for version control and to ensure reproducibility. In this case,the trained model is pushed to model registry of VertexAI and the associated Docker image to Google Cloud Artifact Registry. This process ensures that the model is properly versioned, facilitating easy access for future updates, deployments, and monitoring. Storing the model in the registry enhances collaboration, supports model governance, and provides a reliable means of tracking the model's lifecycle throughout its deployment stages.
 
 ### Model Retraining
 The retraining pipeline can be automated using Airflow to trigger the retraining process periodically or when new data becomes available.
 
 ### Monitoring and Logging
 The system is set up to use **Prometheus** and **Grafana** for monitoring, with **ELK Stack** or **GCP Stackdriver** for logging.
+
+###  Bias Analysis For bias analysis
+
+Most Frequent Station: The model's performance was evaluated on data filtered to the most frequently occurring station.
+Least Frequent Station: Similarly, the least frequent station was used for comparison.
+
+![image](https://github.com/user-attachments/assets/ddf5a7ec-bd72-4639-aef9-9dfc21e38c2e)
+
+Bias analysis aims to evaluate and address disparities in model performance across different subsets of the data. In this project, bias was analyzed based on station frequency and bike types to ensure the model performed equitably across all scenarios.
+
+Most Frequent Station
+The model's performance was assessed on data from the most frequently occurring station. This subset typically contains a larger volume of data, which often leads to higher model accuracy due to the abundance of training samples. The higher representation of this station allowed the model to learn patterns effectively, resulting in improved metrics such as reduced Mean Squared Error (MSE) and higher R² scores.
+
+Least Frequent Station
+Conversely, data from the least frequent station posed a greater challenge due to its limited representation in the dataset. Models trained without addressing this imbalance struggled to generalize effectively for this subset, leading to lower accuracy. However, targeted sampling strategies were employed to increase the representation of this station during training, improving accuracy from 86% to 89%. This highlights the impact of bias-aware techniques in enhancing performance for underrepresented groups.
+
+Key Takeaway
+Bias analysis revealed that without intervention, the model favored data-rich subsets like the most frequent station. By addressing this bias through targeted sampling, the model achieved more balanced performance, demonstrating the importance of equitable data distribution in machine learning applications.

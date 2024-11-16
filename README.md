@@ -207,3 +207,13 @@ Least Frequent Station: Similarly, the least frequent station was used for compa
 
 ![image](https://github.com/user-attachments/assets/ddf5a7ec-bd72-4639-aef9-9dfc21e38c2e)
 
+Bias analysis aims to evaluate and address disparities in model performance across different subsets of the data. In this project, bias was analyzed based on station frequency and bike types to ensure the model performed equitably across all scenarios.
+
+Most Frequent Station
+The model's performance was assessed on data from the most frequently occurring station. This subset typically contains a larger volume of data, which often leads to higher model accuracy due to the abundance of training samples. The higher representation of this station allowed the model to learn patterns effectively, resulting in improved metrics such as reduced Mean Squared Error (MSE) and higher R² scores.
+
+Least Frequent Station
+Conversely, data from the least frequent station posed a greater challenge due to its limited representation in the dataset. Models trained without addressing this imbalance struggled to generalize effectively for this subset, leading to lower accuracy. However, targeted sampling strategies were employed to increase the representation of this station during training, improving accuracy from 86% to 89%. This highlights the impact of bias-aware techniques in enhancing performance for underrepresented groups.
+
+Key Takeaway
+Bias analysis revealed that without intervention, the model favored data-rich subsets like the most frequent station. By addressing this bias through targeted sampling, the model achieved more balanced performance, demonstrating the importance of equitable data distribution in machine learning applications.

@@ -23,18 +23,17 @@ For bias analysis, data was segmented by station frequency:
 
 **Results**
 Initial results for the overall test set, most frequent station, and least frequent station showed variance in MSE and R\u00b2 scores:
-- **Overall Performance**:
-  - MSE: [value]
-  - R\u00b2: [value]
-- **Most Frequent Station**:
-  - MSE: [value]
-  - R\u00b2: [value]
-- **Least Frequent Station**:
-  - MSE: [value]
-  - R\u00b2: [value]
+
 
 **Visualizations**
 A bar plot was generated to visually compare the MSE across different data slices:
+
+![image](https://github.com/user-attachments/assets/f10e3c93-44b4-4c9f-bf1a-40e18f7446b8)
+
+![image](https://github.com/user-attachments/assets/f8f6ecd2-cda1-4a19-8489-b0e6870eef12)
+
+
+
 - **Overall data slice**
 - **Most frequent station data slice**
 - **Least frequent station data slice**

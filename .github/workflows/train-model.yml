@@ -1,0 +1,27 @@
+name: Trigger Model Training on DVC File Commit
+
+on:
+  push:
+    paths:
+      - '**/*.dvc'  # Triggers the workflow only if a .dvc file is changed
+
+jobs:
+  trigger_training:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Google Cloud SDK
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
+      # Step 3: Trigger the Cloud Run
+      - name: Trigger Cloud Function to start model training
+        run: |
+          curl -X POST https://us-east1-pedalpulse-440019.cloudfunctions.net/main

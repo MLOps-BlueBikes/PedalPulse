@@ -199,3 +199,8 @@ The retraining pipeline can be automated using Airflow to trigger the retraining
 
 ### Monitoring and Logging
 The system is set up to use **Prometheus** and **Grafana** for monitoring, with **ELK Stack** or **GCP Stackdriver** for logging.
+
+###  Bias Analysis For bias analysis
+
+Most Frequent Station: The model's performance was evaluated on data filtered to the most frequently occurring station.
+Least Frequent Station: Similarly, the least frequent station was used for comparison.

@@ -195,7 +195,7 @@ The model validation process involves evaluating performance using relevant metr
 Once the best model has been selected and validated, including completing any necessary bias checks, the model is pushed to a model registry for version control and to ensure reproducibility. In this case,the trained model is pushed to model registry of VertexAI and the associated Docker image to Google Cloud Artifact Registry. This process ensures that the model is properly versioned, facilitating easy access for future updates, deployments, and monitoring. Storing the model in the registry enhances collaboration, supports model governance, and provides a reliable means of tracking the model's lifecycle throughout its deployment stages.
 
 ### Model Retraining
-The retraining pipeline can be automated using Airflow to trigger the retraining process periodically or when new data becomes available.
+The model retraining process is automated through a GitHub Actions workflow, which is triggered by a push event to the tracked DVC directory. This workflow invokes an endpoint on Google Cloud Run, initiating the execution of the training script. Upon completion, the updated model is pushed to the artifacts registry, and key performance metrics are recorded for further analysis.
 
 ### Monitoring and Logging
 The system is set up to use **Prometheus** and **Grafana** for monitoring, with **ELK Stack** or **GCP Stackdriver** for logging.

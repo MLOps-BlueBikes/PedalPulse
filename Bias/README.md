@@ -1,21 +1,36 @@
 **Documentation: Bias Analysis and Model Performance Evaluation**
 
 **Introduction**
-This document provides a comprehensive analysis of model performance and bias evaluation using station-based data for bike usage prediction. The analysis includes a baseline evaluation, slicing techniques for focused bias analysis, and simulated scenarios to demonstrate accuracy fluctuations.
+ a comprehensive analysis of model performance and bias evaluation using station-based data for bike usage prediction. The analysis includes a baseline evaluation, slicing techniques for focused bias analysis, and simulated scenarios to demonstrate accuracy fluctuations.
 
 **Data Preprocessing Overview**
 The data was loaded from a CSV file and underwent the following preprocessing steps:
 - **Datetime Conversion**: The 'started_at' column was parsed to a datetime format.
 - **Handling Missing Values**: Rows with null values in 'started_at' were dropped.
-- 
 - **Resampling**: Data was resampled hourly, grouped by 'start_station_name', and aggregated using various metrics (e.g., sum for 'duration' and 'distance_km', mean for 'Temperature'.
+
+```python
+hourly_station_data = data_cleaned.groupby('start_station_name').resample('h').agg({
+    'month': 'first',                # Keep first value (since it's constant for each hour)
+    'hour': 'first',                 # Same as above
+    'day_name': 'first',             # Same
+    'duration': 'sum',               # Sum durations for the hour
+    'distance_km': 'sum',            # Sum distances for the hour
+    'Temperature (°F)': 'mean',      # Average temperature
+    'Humidity': 'mean',              # Average humidity
+    'Wind Speed': 'mean',            # Average wind speed
+    'Precip.': 'sum',                # Total precipitation for the hour
+    'Condition': 'first',            # Keep first condition as representative
+    'BikeUndocked': 'sum'            # Sum undocked bikes
+```
+
 - **One-Hot Encoding**: Categorical variables ('day_name', 'Condition') were one-hot encoded.
 - **Feature Preparation**: Frequency mapping was applied to 'start_station_name', and features were filled to handle any remaining NaNs.
 
 **Model Training and Evaluation**
 A linear regression model was implemented using a pipeline that includes standard scaling and regression. The model was trained on the prepared data and evaluated using:
 - **Mean Squared Error (MSE)**
-- **R-squared (R\u00b2) score**
+- **R-squared score**
 
 **Bias Analysis**
 For bias analysis, data was segmented by station frequency:
@@ -46,4 +61,12 @@ To demonstrate decreased accuracy, noise was introduced by shuffling target labe
 
 **Conclusion**
 The analysis confirmed that model accuracy can significantly vary when focusing on specific data slices and under noisy conditions. This highlights the importance of bias evaluation and robust training data for improved model reliability.
+
+
+## 5. Results and Observations
+- **Improvement in Model Performance**:
+  The decision tree model showed enhanced performance on the least frequent station subset due to the sampling strategy, improving from 86% to 91% accuracy.
+- **Insights**:
+  The use of a decision tree helped capture station-specific variations better than the initial linear regression, demonstrating its suitability for this dataset.
+
 

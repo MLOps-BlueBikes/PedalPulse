@@ -1,7 +1,7 @@
 Bluebikes Data Validation and Processing Pipeline
 =================================================
 
-This project is designed to validate, process, and analyze monthly Bluebikes trip data stored in a Google Cloud Platform (GCP) bucket. Using the Pandera and TensorFlow Data Validation (TFDV) libraries, this pipeline validates data schema, generates statistics, and infers schemas from the dataset. The pipeline processes data for each month within a specified date range and outputs validation statistics and inferred schemas as .pbtxt files.
+This process is for validating process, and analyzing monthly Bluebikes trip data stored in a Google Cloud Platform (GCP) bucket. Using the Pandera and TensorFlow Data Validation (TFDV) libraries, this pipeline validates data schema, generates statistics, and infers schemas from the dataset. The pipeline processes data for each month within a specified date range and outputs validation statistics and inferred schemas as .pbtxt files.
 
 Table of Contents
 -----------------

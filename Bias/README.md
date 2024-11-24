@@ -22,6 +22,7 @@ hourly_station_data = data_cleaned.groupby('start_station_name').resample('h').a
     'Precip.': 'sum',                # Total precipitation for the hour
     'Condition': 'first',            # Keep first condition as representative
     'BikeUndocked': 'sum'            # Sum undocked bikes
+    'rideable_type': 'first'         # classic or electric bike 
 ```
 
 - **One-Hot Encoding**: Categorical variables ('day_name', 'Condition') were one-hot encoded.

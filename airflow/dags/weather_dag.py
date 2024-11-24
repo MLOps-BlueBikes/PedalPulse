@@ -64,6 +64,7 @@ read_bike_data_task = PythonOperator(
 scrape_weather_data_task = PythonOperator(
     task_id="scrape_weather_data_task",
     python_callable=scrape_multiple_days,
+    op_args=[read_bike_data_task.output],
     dag=dag,
 )
 

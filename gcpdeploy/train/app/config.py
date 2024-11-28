@@ -1,11 +1,10 @@
-import os
+import os  
+GCP_BUCKET_NAME = "test-blue-bikes"  
+GCP_DATA_FILE = "data_cleaned.csv"
 
-
-GCP_BUCKET_NAME = "trip_data_bucket_testing"  
-GCP_DATA_FILE = "Final-data/data_cleaned.csv"
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # gcpdeploy directory
 MODEL_SAVE_PATH = os.path.join(BASE_DIR, 'models')
-#MODEL_SAVE_PATH = "models/"  
+
 LOG_PATH = "logs/training.log"
 
 #import os

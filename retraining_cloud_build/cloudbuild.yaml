@@ -27,5 +27,5 @@ steps:
         python train_deploy.py
     when:
        success: true
-    waitFor:['retraining-step']
+    waitFor: ['retraining-step']
 

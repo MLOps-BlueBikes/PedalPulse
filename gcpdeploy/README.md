@@ -7,6 +7,7 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
 2. **Model Serving**: Hosting the trained model on Vertex AI for predictions.
 3. **Streamlit App**: A user-facing application that interacts with the model to provide predictions.
 4. **CI/CD Pipelines**: Automating the building, training, and deployment of the model and application using Cloud Build.
+5. **Retraining**: Preconfigured trigger based retraining and redeployment of served model based on performance and bias checks.
 
 ---
 
@@ -15,7 +16,7 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
 
 ├── train/scripts          # Contains scripts for training and saving the model
 │   ├── load_data.py       # Loading data from gcp bucket
-│   ├── model.py           # Script for training the model
+│   ├── model.py           # Script for initial training/retraining of the model 
 │   └── train_deploy.py    # Script for deploying the model to Vertex AI
 │
 ├── serve/                 # Contains the model-serving code (Flask API)
@@ -51,6 +52,10 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
    - Automates the building, training, and deployment process.
    - Rebuilds and redeploys images when the repository is updated.
 
+5. **Experiment Tracking**:
+   - Tracks the regression metrics for training runs using an Mlflow tracking server, hosted on GCP
+   - Maintains a log of the production model's training and test performance metrics. 
+   [Mlflow sample run](imgs/mlflow_runs.png)
 ---
 
 ## **Setup Instructions**
@@ -145,7 +150,7 @@ gcloud run deploy streamlit-app \
 ---
 
 ## **CI/CD Pipeline**
-### **Training and Model Deployment**
+### **Training/Retraining and Model Deployment**
 The `cloudbuild.yaml` file contains the steps to:
 1. Build and push the training Docker image.
 2. Train the model and save it to GCS.
@@ -155,7 +160,9 @@ Trigger the pipeline:
 ```bash
 gcloud builds submit --config cloudbuild.yaml .
 ```
-
+Google Cloud Trigger:
+[Github Trigger](imgs/gcp_trigger_retraining.png)
+This trigger enables the `cloudbuild.yaml` build workflow, which contains model training/retraining and deployment steps.    
 ### **Streamlit Deployment**
 The pipeline rebuilds and deploys the Streamlit app when code changes:
 ```bash

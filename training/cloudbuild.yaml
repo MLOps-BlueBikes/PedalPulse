@@ -25,9 +25,9 @@ steps:
         pip install google-cloud-aiplatform google-cloud-storage
         python train_deploy.py
 
-  options:
+options:
       defaultLogsBucketBehavior: 'REGIONAL_USER_OWNED_BUCKET'
       
-  serviceAccount: 'mlops-project-sa@pedalpulse-skc.iam.gserviceaccount.com'
+serviceAccount: 'mlops-project-sa@pedalpulse-skc.iam.gserviceaccount.com'
 
 

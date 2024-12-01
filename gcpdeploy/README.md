@@ -168,11 +168,4 @@ Google Cloud Trigger:
 This trigger enables the `cloudbuild.yaml` build workflow, which contains model training/retraining and deployment steps.    
 Model retraining automatically initiates after a push to the main branch. The process fetches recent data from Google Cloud Storage, trains multiple candidate models, and selects a champion model based on performance metrics and bias indicators. If the new model outperforms the current production model, it is deployed.
 
-### **Streamlit Deployment**
-The pipeline rebuilds and deploys the Streamlit app when code changes:
-```bash
-gcloud builds submit --config cloudbuild-streamlit.yaml .
-```
-
----
 

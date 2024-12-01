@@ -1,0 +1,28 @@
+steps:
+  #Step 1: Pull the Docker image from GCR
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['pull', 'gcr.io/blue-bike-prediction/model-trainer:latest']
+
+  #Step 2: Run the Docker container to train models and save to GCS
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'run'
+      - '--rm'
+      - '-v'
+      - '/workspace/key.json:/workspace/key.json:ro'
+      - '-e'
+      - 'GOOGLE_APPLICATION_CREDENTIALS=/workspace/key.json'
+      - 'gcr.io/pedalpulse-skc/bb_retraining:latest'
+      
+
+
+  #Step 3: Push the saved model to Vertex AI Model Registry
+  - name: 'python:3.9-slim'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        pip install google-cloud-aiplatform google-cloud-storage
+        python train_deploy.py
+
+

@@ -1,0 +1,64 @@
+steps:
+  # Step 1: Build and push the training Docker image (model-trainer)
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/${_PROJECT_ID}/model-trainer:latest', './train']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/${_PROJECT_ID}/model-trainer:latest']
+
+  # Step 2: Pull and run the updated model-trainer image to train and save the model
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'run'
+      - '--rm'
+      - '-v'
+      - '/workspace/key.json:/workspace/key.json:ro'
+      - '-e'
+      - 'GOOGLE_APPLICATION_CREDENTIALS=/workspace/key.json'
+      - 'gcr.io/${_PROJECT_ID}/model-trainer:latest'
+
+  # Step 3: Deploy the trained model to Vertex AI and get the endpoint
+  - name: 'python:3.9-slim'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        pip install google-cloud-aiplatform google-cloud-storage
+        python train/scripts/train_deploy.py  # Ensure this script creates a new endpoint
+
+  # Step 4: Build and push the updated Streamlit Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/${_PROJECT_ID}/streamlit:latest', './streamlit']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/${_PROJECT_ID}/streamlit:latest']
+
+  # Step 5: Deploy the updated Streamlit app to Cloud Run
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - 'bluebike'
+      - '--image=gcr.io/${_PROJECT_ID}/streamlit:latest'
+      - '--platform=managed'
+      - '--region=${_REGION}'
+      - '--allow-unauthenticated'
+      - '--project=${_PROJECT_ID}'
+
+  # Step 6: Add IAM Policy Binding to Allow Unauthenticated Access
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'services'
+      - 'add-iam-policy-binding'
+      - 'bluebike'
+      - '--platform=managed'
+      - '--region=${_REGION}'
+      - '--member=allUsers'
+      - '--role=roles/run.invoker'
+      - '--project=${_PROJECT_ID}'
+substitutions:
+  _PROJECT_ID: "blue-bike-prediction"
+  _REGION: "us-central1"
+
+timeout: 3600s

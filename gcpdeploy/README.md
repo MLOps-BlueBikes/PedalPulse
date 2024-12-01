@@ -54,7 +54,8 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
 
 5. **Experiment Tracking**:
    - Tracks the regression metrics for training runs using an Mlflow tracking server, hosted on GCP
-   - Maintains a log of the production model's training and test performance metrics. 
+   - Maintains a log of the production model's training and test performance metrics.
+
    [Mlflow sample run](imgs/mlflow_runs.png)
 ---
 
@@ -161,7 +162,10 @@ Trigger the pipeline:
 gcloud builds submit --config cloudbuild.yaml .
 ```
 Google Cloud Trigger:
+
 [Github Trigger](imgs/gcp_trigger_retraining.png)
+
+
 This trigger enables the `cloudbuild.yaml` build workflow, which contains model training/retraining and deployment steps.    
 ### **Streamlit Deployment**
 The pipeline rebuilds and deploys the Streamlit app when code changes:

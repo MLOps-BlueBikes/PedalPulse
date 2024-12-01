@@ -25,7 +25,7 @@ steps:
         pip install google-cloud-aiplatform google-cloud-storage
         python train_deploy.py
 
-logsBucket: 'skc-pedalpulse-testing'      
+logsBucket: '644185389530-us-east1-cloudbuild-logs'      
 serviceAccount: 'mlops-project-sa@pedalpulse-skc.iam.gserviceaccount.com'
 
 

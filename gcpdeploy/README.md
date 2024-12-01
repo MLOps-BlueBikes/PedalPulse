@@ -7,7 +7,7 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
 2. **Model Serving**: Hosting the trained model on Vertex AI for predictions.
 3. **Streamlit App**: A user-facing application that interacts with the model to provide predictions.
 4. **CI/CD Pipelines**: Automating the building, training, and deployment of the model and application using Cloud Build.
-5. **Retraining**: Preconfigured trigger based retraining and redeployment of served model based on performance and bias checks.
+5. **Retraining**: Preconfigured trigger-based retraining and redeployment of served model based on performance and bias checks.
 
 ---
 

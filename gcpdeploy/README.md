@@ -165,6 +165,8 @@ Google Cloud Trigger:
 
 ![Github Trigger](https://github.com/MLOps-BlueBikes/PedalPulse/blob/main/gcpdeploy/imgs/gcp_trigger_retraining.png)
 
+The retraining process is triggered on a successful push to the **main** branch of this repository
+
 
 This trigger enables the `cloudbuild.yaml` build workflow, which contains model training/retraining and deployment steps.    
 ### **Streamlit Deployment**

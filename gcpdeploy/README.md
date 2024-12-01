@@ -56,7 +56,7 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
    - Tracks the regression metrics for training runs using an Mlflow tracking server, hosted on GCP
    - Maintains a log of the production model's training and test performance metrics.
 
-   [Mlflow sample run](imgs/mlflow_runs.png)
+   [Mlflow sample run](https://github.com/MLOps-BlueBikes/PedalPulse/blob/main/gcpdeploy/imgs/mlflow_runs.png)
 ---
 
 ## **Setup Instructions**
@@ -163,7 +163,7 @@ gcloud builds submit --config cloudbuild.yaml .
 ```
 Google Cloud Trigger:
 
-[Github Trigger](imgs/gcp_trigger_retraining.png)
+![Github Trigger](https://github.com/MLOps-BlueBikes/PedalPulse/blob/main/gcpdeploy/imgs/gcp_trigger_retraining.png)
 
 
 This trigger enables the `cloudbuild.yaml` build workflow, which contains model training/retraining and deployment steps.    

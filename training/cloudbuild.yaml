@@ -1,7 +1,7 @@
 steps:
   #Step 1: Pull the Docker image from GCR
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['pull', 'gcr.io/blue-bike-prediction/model-trainer:latest']
+    args: ['pull', 'gcr.io/pedalpulse-skc/bb_retraining:latest']
 
   #Step 2: Run the Docker container to train models and save to GCS
   - name: 'gcr.io/cloud-builders/docker'

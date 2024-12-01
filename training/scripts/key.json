@@ -1,0 +1,15 @@
+
+
+{
+  "type": "service_account",
+  "project_id": "pedalpulse-skc",
+  "private_key_id": "70b8212eeb8dfb4380d1d273f9955b12b6e00784",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD4CcFn95oovSvG\nElaMoQIJwRyxu6HvPwcHB8nf91lzkZi5O5lkyOmTlds6CCrmARJ75hg1kwS7QUAJ\nK24hbmf3Q0nQdnNlZwykndCJf+aXpPPxiCmeNifwENG1R9RnMvfXRqiNP2/BAboY\nMhh9itZ2rThgi26YdrN93PoqmOPsCNPKk4htixbDLIcstJPjLTvIM8LFDWOcaFFb\nj+VFyJWNTTfRerVk66Rfa5bdf9kuIabqZP5r9ZrmfixuDGQvqYoDJWR/E+p98dMq\nAXMKxI8X/VHsWAe4ZXRBNZotenXLWEzuELlTPwanlsF3i2DDjKwGHwV7o+4SLpYE\nLhcbY+B1AgMBAAECggEAW2IwvQ7G38KOiZvBAm/hkdlxqnPQPhaRDsCKWndFoCQg\nygIQykaRc/wOuItAztvPRRGpkrd3U0w/fQFgwnVsXXePjvvNGSuFx3KTXc1fFjjC\nXZcGilE2lqaDtM/hjCIFmO1h9SRNlqT9vKNcTYik6jV4o21LkmWNTM5o5t/MfW2r\ndjvwoyWWC5TZ8nb2OvqH1nhbYFrhQRFeu3cajAI9w7g//+HVuU0IIR/20Acz1Ba/\n7pQ2ClzaSBeussq0bXx7NRA7OEjKp/ZJZQtyafkPInBho2ItjkRrBiKH9cXvPWx0\nEaxGhNSDuomjr50CvPHbc1csEkKikXYYgx9SWAueYwKBgQD+LwHVsZQ4sMkrZV7g\ncGAFTFwfhowKN78lh6roxlKR7OnXNFOLxGWHxNJ36mWY8USVG3NIOpLrWcPBHEbP\nIOeGhCEDr/moyfJlPbkaCvgXwwACDNORQRgulYKFB610lQkSY/4PwdwqHn9kAewx\nh1MRKklvGVMJoRtvWLwWn01uXwKBgQD5z4GH6QcEpvMsoGCTs0GOBxY1lNZ63DZJ\nK+wss1HMfpfJuX1Xz0MFQtX6seBhGiEZfdsIK3hyE+CS+lnP20H6JlFzAKW8rXOP\nErkm96aq4CKVeZk+fGmX5aAHc5IIuxIQRYZZKztXJs767cQZKrbTV0LAJceKSzpT\nwQnx8eg5qwKBgQCkzd2mrCiqSRVl6agGZVYcmVHxrs8FoPdyYfBSVKQcsTs8qVSx\n/njF+rtrvLJ645PQCahJYJD5v43Im4jdqzvyX6D4PxTkd2uOcOKfHBWXcnuC2MYk\nG8yOB6pEjqHMQQVMw0Bq/wq81GFMemKmClO1gXFzczv/tlGPdD0ffdI6iQKBgDJy\n0HLVAYDUAlnpzXcmhT+ceMS7WREYtbHTN+/TCtrkWdz4I7L+/Ubrt3DYSTry3upZ\n+0jMFpfbIcgs3MRYQBu3b01tPQs8cBDdtByFeNgbSYCsPOFcmKp/SfEXSs+Oj9hP\nYhFR5Lr18GjGaYq3kJJflfBd8M0h4haV7l84/i/fAoGBALsisv9IcV98XIm/3FPN\nE0SsOUkD7nCquJfZ8yLv9Y+z6KweoCJigv4w09z86YmT6jVOjh0vIcKVGFJt5M7n\nAuOwsgXmLxEr+d68FOnI+Bv196v8xo/K8RKd6KtJ/+SHbo9tAbD6pB6hpHCJLlwy\n46uFSqx9O+S79mh3aoWF+YHS\n-----END PRIVATE KEY-----\n",
+  "client_email": "mlops-project-sa@pedalpulse-skc.iam.gserviceaccount.com",
+  "client_id": "107586237621758600737",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mlops-project-sa%40pedalpulse-skc.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

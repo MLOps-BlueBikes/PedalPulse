@@ -56,7 +56,7 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
    - Tracks the regression metrics for training runs using an Mlflow tracking server, hosted on GCP
    - Maintains a log of the production model's training and test performance metrics.
 
-   [Mlflow sample run](https://github.com/MLOps-BlueBikes/PedalPulse/blob/main/gcpdeploy/imgs/mlflow_runs.png)
+   ![Mlflow sample run](https://github.com/MLOps-BlueBikes/PedalPulse/blob/main/gcpdeploy/imgs/mlflow_runs.png)
 ---
 
 ## **Setup Instructions**

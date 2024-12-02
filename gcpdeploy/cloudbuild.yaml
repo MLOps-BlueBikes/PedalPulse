@@ -57,6 +57,10 @@ steps:
       - '--member=allUsers'
       - '--role=roles/run.invoker'
       - '--project=${_PROJECT_ID}'
+
+options:
+  logging: 'CLOUD_LOGGING_ONLY'
+
 substitutions:
   _PROJECT_ID: "blue-bike-prediction"
   _REGION: "us-central1"

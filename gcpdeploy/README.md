@@ -63,9 +63,9 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
 
 ### **Prerequisites**
 1. A Google Cloud Platform (GCP) project with the following APIs enabled:
-   - Vertex AI API
-   - Cloud Storage API
-   - Cloud Build API
+   - Vertex AI APIs
+   - Cloud Storage APIs
+   - Cloud Build APIs
 2. A Google Cloud Storage bucket for storing models.
 3. `gcloud` CLI installed and authenticated.
 4. Docker installed locally (optional for manual builds).

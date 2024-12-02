@@ -106,6 +106,12 @@ gcloud services enable cloudbuild.googleapis.com
 gcloud services enable storage.googleapis.com
 ```
 
+#### **6. Create model-serving image**
+```bash
+docker build -t gcr.io/<project_name>/model-server:latest .
+docker push gcr.io/<project_name>/model-server:latest
+```
+
 ---
 
 ## **Training the Model**

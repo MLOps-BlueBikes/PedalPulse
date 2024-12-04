@@ -72,6 +72,6 @@ options:
 
 substitutions:
   _PROJECT_ID: "blue-bike-prediction"
-  _REGION: "us-central1"
+  _REGION: "us-east1"
 
 timeout: 3600s

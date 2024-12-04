@@ -86,27 +86,27 @@ Modify the following environment variables as needed:
 - `PROJECT_ID`: Your GCP project ID.
 - `REGION`: GCP region (e.g., `us-central1`).
 - `BUCKET_NAME`: GCS bucket for storing the trained model.
-
-#### **3. Configure Google Cloud**
+#### **3. Enable Notebooks API*
+#### **4. Configure Google Cloud**
 ```bash
 gcloud config set project <PROJECT_ID>
 gcloud config set compute/region <REGION>
 ```
 
-#### **4. Set Up Cloud Storage**
+#### **5. Set Up Cloud Storage**
 Create a Cloud Storage bucket to store models:
 ```bash
 gcloud storage buckets create gs://<BUCKET_NAME>
 ```
 
-#### **5. Enable Required APIs**
+#### **6. Enable Required APIs**
 ```bash
 gcloud services enable aiplatform.googleapis.com
 gcloud services enable cloudbuild.googleapis.com
 gcloud services enable storage.googleapis.com
 ```
 
-#### **6. Create model-serving image**
+#### **7. Create model-serving image**
 ```bash
 docker build -t gcr.io/<project_name>/model-server:latest .
 docker push gcr.io/<project_name>/model-server:latest

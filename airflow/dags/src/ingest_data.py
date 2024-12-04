@@ -27,7 +27,7 @@ def ingest_data(urls, download_dir="downloads", **context):
             logging.info("Parsed URLs successfully.")
         except (ValueError, SyntaxError) as e:
             logging.error(f"Error parsing URLs: {e}")
-            raise e 
+            raise e
 
     logging.info(f"Final list of URLs for ingestion: {urls}")
 
@@ -64,6 +64,6 @@ def ingest_data(urls, download_dir="downloads", **context):
             downloaded_files.append(file_path)
         except requests.exceptions.RequestException as e:
             logging.error(f"Failed to download {url}: {e}")
-            raise e 
+            raise e
 
     return downloaded_files

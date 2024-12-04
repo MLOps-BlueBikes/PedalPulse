@@ -1,4 +1,3 @@
-
 from flask import Flask, jsonify, request
 import os
 import joblib
@@ -26,24 +25,26 @@ blob.download_to_filename(MODEL_FILE_NAME)
 print("Loading model...")
 model = joblib.load(MODEL_FILE_NAME)
 
+
 # Health check endpoint
-@app.route(os.environ.get('AIP_HEALTH_ROUTE', '/health'), methods=['GET'])
+@app.route(os.environ.get("AIP_HEALTH_ROUTE", "/health"), methods=["GET"])
 def health_check():
     return {"status": "healthy"}
 
+
 # Prediction endpoint
-@app.route(os.environ.get('AIP_PREDICT_ROUTE', '/predict'), methods=['POST'])
+@app.route(os.environ.get("AIP_PREDICT_ROUTE", "/predict"), methods=["POST"])
 def predict():
     try:
         # Parse request data
         request_json = request.get_json()
-        request_instances = request_json.get('instances', [])
+        request_instances = request_json.get("instances", [])
 
         # Convert input data to DataFrame for prediction
         input_data = pd.DataFrame(request_instances)
 
         # Ensure the input data matches the model's expected features
-        if hasattr(model, 'feature_names_in_'):
+        if hasattr(model, "feature_names_in_"):
             expected_features = model.feature_names_in_
             input_data = input_data[expected_features]
 
@@ -54,13 +55,13 @@ def predict():
         predictions = predictions.tolist()
 
         # Create response
-        response = {'predictions': predictions}
+        response = {"predictions": predictions}
         return jsonify(response)
 
     except Exception as e:
         error_message = str(e)
-        return jsonify({'error': error_message}), 400
+        return jsonify({"error": error_message}), 400
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)

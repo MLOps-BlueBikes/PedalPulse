@@ -1,4 +1,5 @@
-!pip install tensorflow_data_validation
+import os
+os.system('pip install tensorflow_data_validation')
 !pip install pandera
 
 import logging

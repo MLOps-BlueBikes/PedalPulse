@@ -89,7 +89,9 @@ def clean_and_preprocess_data(extract_dir, clean_dir, chunk_size=50000, **contex
 
     # Remove the output file if it already exists to avoid appending to old data
     if os.path.exists(output_path):
-        logging.warning(f"Output file {output_path} already exists. Hence, removing it....")
+        logging.warning(
+            f"Output file {output_path} already exists. Hence, removing it...."
+        )
         os.remove(output_path)
 
     # Process data in chunks to handle large files
@@ -98,20 +100,25 @@ def clean_and_preprocess_data(extract_dir, clean_dir, chunk_size=50000, **contex
             # Step 1: Clean data
             chunk = remove_missing_values(chunk)
             chunk = remove_duplicates(chunk)
-            
+
             # Step 2: Preprocess data
             chunk = data_type_conversion(chunk)
             chunk = extract_temporal_features(chunk)
             chunk = remove_invalid_data(chunk)
-            
-            # Write each processed chunk to the output file
-            chunk.to_csv(output_path, mode='a', header=not os.path.exists(output_path), index=False)
-        except Exception as e:
-            logging.error(f"Error encountered during chunk processing for {file_path} : {e}")
-            raise e
-        
 
-    
+            # Write each processed chunk to the output file
+            chunk.to_csv(
+                output_path,
+                mode="a",
+                header=not os.path.exists(output_path),
+                index=False,
+            )
+        except Exception as e:
+            logging.error(
+                f"Error encountered during chunk processing for {file_path} : {e}"
+            )
+            raise e
+
     # Push the processed file name to XCom
     # context['ti'].xcom_push(key='cleaned_file', value=f"preprocessed_{filename}")
     context["ti"].xcom_push(key="cleaned_file", value=output_path)

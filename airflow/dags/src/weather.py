@@ -26,8 +26,7 @@ def set_up_driver():
     options.add_argument("--disable-dev-shm-usage")
 
     driver = webdriver.Remote(
-        command_executor='http://selenium:4444/wd/hub',
-        options=options
+        command_executor="http://selenium:4444/wd/hub", options=options
     )
     return driver
 
@@ -79,6 +78,7 @@ def scrape_wunderground_data(date):
     driver.quit()
     return df
 
+
 # Load Bluebikes trip data with error handling
 def read_bike_trip_data(month):
     try:
@@ -87,11 +87,11 @@ def read_bike_trip_data(month):
 
         client = storage.Client()
         # Get the bucket
-        bucket_name = 'trip_data_bucket_testing'
+        bucket_name = "trip_data_bucket_testing"
         bucket = client.bucket(bucket_name)
         logging.info(f"Trying to fetch gcs bucket:{bucket_name}")
         # Get the blob
-        blob_name = f'Preprocessed_data/{file_name}'
+        blob_name = f"Preprocessed_data/{file_name}"
         blob = bucket.blob(blob_name)
         # Download the contents
         destination_file_name = f"/opt/airflow/dags/data/{file_name}"
@@ -107,6 +107,7 @@ def read_bike_trip_data(month):
         logging.error(f"Error: {e}")
         return None
 
+
 # Get date range for month
 def get_month_start_end(month, year):
     """Get start and end date of given month."""
@@ -115,8 +116,9 @@ def get_month_start_end(month, year):
     # Last day of the current month
     _, last_day = calendar.monthrange(year, month)
     end_date = date(year, month, last_day)
-    
+
     return start_date, end_date
+
 
 # Scrape data for multiple dates and save as CSV
 def scrape_multiple_days(file_name):
@@ -124,7 +126,7 @@ def scrape_multiple_days(file_name):
     output_files.append(file_name)
 
     # Extract the year and month part from the file name (e.g., '202401')
-    year_month = file_name.split('_')[1].split('-')[0]  # '202401'
+    year_month = file_name.split("_")[1].split("-")[0]  # '202401'
     # Extract the year and month components
     year = int(year_month[:4])  # First 4 digits: year
     month = int(year_month[4:])  # Last 2 digits: month
@@ -154,9 +156,10 @@ def scrape_multiple_days(file_name):
         logging.warning("No data scraped.")
         return None
 
+
 # Match rides with closest weather data by timestamp
 def match_rides_with_weather(data_files):
-    
+
     rides_file, weather_file = data_files
 
     rides_df = pd.read_csv(rides_file)
@@ -196,23 +199,24 @@ def match_rides_with_weather(data_files):
     )
 
     # Drop columns 'Date' and 'DateTime'
-    merged_weather.drop(columns=['Date', 'DateTime'], inplace=True)
+    merged_weather.drop(columns=["Date", "DateTime"], inplace=True)
 
     # Add 'bike_undocked' column for all records
-    merged_weather['bike_undocked'] = 1
+    merged_weather["bike_undocked"] = 1
 
-    #merged_weather.to_csv("weather_trip_history_merged.csv", index=False)
+    # merged_weather.to_csv("weather_trip_history_merged.csv", index=False)
     output_path = f"/opt/airflow/dags/data/weather_trip_history_merged.csv"
     merged_weather.to_csv(output_path, index=False)
     logging.info(f"Weather-trip data merged and saved to {output_path}.")
     return output_path
 
+
 # Upload file to GCP bucket
 def upload_to_gcp(file_path, bucket_name, month):
     client = storage.Client()
     bucket = client.get_bucket(bucket_name)
-    file_name = f'bike_weather_{month}.csv'
-    blob_name = f'merged_data/{file_name}'
+    file_name = f"bike_weather_{month}.csv"
+    blob_name = f"merged_data/{file_name}"
     blob = bucket.blob(blob_name)
 
     retry_count = 0

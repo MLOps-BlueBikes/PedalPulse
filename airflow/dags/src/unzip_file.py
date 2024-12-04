@@ -24,7 +24,7 @@ def unzip_file(zip_paths, extract_to="extracted_files"):
             logging.info(f"Parsed zip_paths successfully: {zip_paths}")
         except (ValueError, SyntaxError) as e:
             logging.error(f"Error parsing zip_paths: {e}")
-            raise e(f"Error parsing zip_paths: {zip_paths}") 
+            raise e(f"Error parsing zip_paths: {zip_paths}")
 
     # Create the extraction directory if it doesn't exist
     if not os.path.exists(extract_to):
@@ -53,9 +53,13 @@ def unzip_file(zip_paths, extract_to="extracted_files"):
                         extracted_files.append(extracted_file_path)
                         logging.info(f"Extracted {csv_file} to {extracted_file_path}")
                     except EOFError:
-                        logging.warning(f"File {csv_file} in {zip_path} is truncated or corrupted and could not be extracted.")
-                        raise EOFError(f"File {csv_file} in {zip_path} is truncated or corrupted and could not be extracted.")
-        
+                        logging.warning(
+                            f"File {csv_file} in {zip_path} is truncated or corrupted and could not be extracted."
+                        )
+                        raise EOFError(
+                            f"File {csv_file} in {zip_path} is truncated or corrupted and could not be extracted."
+                        )
+
         except zipfile.BadZipFile as e:
             logging.error(f"File {zip_path} is not a valid ZIP file or is corrupted.")
             raise e(f"File {zip_path} is not a valid ZIP file or is corrupted.")

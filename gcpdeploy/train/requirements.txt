@@ -1,0 +1,10 @@
+pandas
+scikit-learn==0.24.2
+mlflow
+joblib
+flask
+google-cloud-storage
+gunicorn
+mlflow==1.30.0
+google-cloud-aiplatform  
+gcsfs  

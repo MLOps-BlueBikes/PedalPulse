@@ -24,9 +24,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 logger = logging.getLogger()
 dt_model_path = os.path.join(MODEL_SAVE_PATH, "decision_tree_model.pkl")
 lr_model_path = os.path.join(MODEL_SAVE_PATH, "linear_regression_model.pkl")
-mlflow.set_tracking_uri("https://35.243.198.94:5000/")
+mlflow.set_tracking_uri("http://35.243.198.94:5000/")
 mlflow.set_experiment("PedalPulse")
-mlflow_client=mlflow.MlflowClient(tracking_uri="https://35.243.198.94:5000/")
+mlflow_client=mlflow.MlflowClient(tracking_uri="http://35.243.198.94:5000/")
 
 # GCS and Environment Configurations
 BUCKET_NAME = os.getenv("BUCKET_NAME", "pedalpulse-testing-bucket")

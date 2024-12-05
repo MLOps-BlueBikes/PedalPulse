@@ -8,7 +8,7 @@ logger = logging.getLogger()
 # Constants
 PROJECT_ID = "pedalpulse-443700"
 REGION = "us-east1"
-BUCKET_NAME = "dataset"
+BUCKET_NAME = "pedalpulse-testing-bucket"
 MODEL_FOLDER = "models/"
 CONTAINER_URI = "gcr.io/pedalpulse-443700/model-trainer:latest"
 MODEL_SERVING_CONTAINER_IMAGE_URI = 'gcr.io/pedalpulse-443700/model-serve:latest'
@@ -69,7 +69,8 @@ def deploy_model(model):
             logger.info(f"Endpoint {ENDPOINT_ID} not found. Creating a new endpoint...")
             endpoint = aiplatform.Endpoint.create(
                 display_name="blue-bike-endpoint",  # You can choose a different name
-                location=REGION
+                location=REGION,
+                
             )
             logger.info(f"Created new endpoint: {endpoint.resource_name}")
 
@@ -80,7 +81,8 @@ def deploy_model(model):
             deployed_model_display_name="blue-bike-model-deployed",
             endpoint=endpoint,
             machine_type="n1-standard-4",  # You can choose another machine type based on requirements
-            sync=True
+            sync=True,
+            service_account="pedalpulse-sai@pedalpulse-443700.iam.gserviceaccount.com"
         )
 
         logger.info(f"Model deployed to endpoint: {endpoint.name}")

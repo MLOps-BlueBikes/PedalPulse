@@ -1,19 +1,11 @@
 steps:
+
   # Step 1: Build and push the training Docker image (model-trainer)
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/${_PROJECT_ID}/model-trainer:latest', './train']
 
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/${_PROJECT_ID}/model-trainer:latest']
-
-  - name: 'gcr.io/cloud-builders/gcloud'
-    id: 'Fetch Service Account Key'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-          # Fetch the service account key from Secret Manager
-          gcloud secrets versions access latest --secret="my-service-account-key" > /workspace/key.json
 
   # Step 2: Pull and run the updated model-trainer image to train and save the model
   - name: 'gcr.io/cloud-builders/docker'
@@ -71,7 +63,8 @@ options:
   logging: 'CLOUD_LOGGING_ONLY'
 
 substitutions:
-  _PROJECT_ID: "blue-bike-prediction"
+  _PROJECT_ID: "pedalpulse-443700"
   _REGION: "us-east1"
 
 timeout: 3600s
+

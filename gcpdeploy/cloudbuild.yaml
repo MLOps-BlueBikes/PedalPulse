@@ -63,7 +63,7 @@ options:
   logging: 'CLOUD_LOGGING_ONLY'
 
 substitutions:
-  _PROJECT_ID: "pedalpulse-443700"
+  _PROJECT_ID: "blue-bike-prediction-443821"
   _REGION: "us-east1"
 
 timeout: 3600s

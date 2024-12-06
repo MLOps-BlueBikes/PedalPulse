@@ -31,7 +31,7 @@ logger = logging.getLogger()
 dt_model_path = os.path.join(MODEL_SAVE_PATH, "decision_tree_model.pkl")
 lr_model_path = os.path.join(MODEL_SAVE_PATH, "linear_regression_model.pkl")
 mlflow.set_tracking_uri("http://35.192.77.77:5000")
-mlflow.set_experiment("PedalPulse")
+mlflow.set_experiment("PedalPulse-Bluebikes")
 mlflow_client = mlflow.MlflowClient(tracking_uri="http://35.192.77.77:5000")
 
 # Email settings

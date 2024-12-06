@@ -2,7 +2,7 @@ from google.cloud import storage
 import pandas as pd
 import os
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "scripts/key.json"
+#os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "scripts/key.json"
 
 
 def load_data_from_gcs(bucket_name, file_path):

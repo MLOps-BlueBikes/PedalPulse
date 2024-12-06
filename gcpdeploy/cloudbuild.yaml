@@ -13,7 +13,7 @@ steps:
   
   # Step 1: Build and push the training Docker image (model-trainer)
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/${_PROJECT_ID}/model-trainer:latest', './train']
+    args: ['build', '-t', 'gcr.io/${_PROJECT_ID}/model-trainer:latest', '/workspace/gcpdeploy/train']
 
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/${_PROJECT_ID}/model-trainer:latest']
@@ -36,11 +36,11 @@ steps:
       - '-c'
       - |
         pip install google-cloud-aiplatform google-cloud-storage
-        python train/scripts/train_deploy.py  # Ensure this script creates a new endpoint
+        python /workspace/gcpdeploy/train/scripts/train_deploy.py  # Ensure this script creates a new endpoint
 
   # Step 4: Build and push the updated Streamlit Docker image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/${_PROJECT_ID}/streamlit:latest', './streamlit']
+    args: ['build', '-t', 'gcr.io/${_PROJECT_ID}/streamlit:latest', '/workspace/gcpdeploy/streamlit']
 
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/${_PROJECT_ID}/streamlit:latest']

@@ -1,6 +1,6 @@
 import os
 
-GCP_BUCKET_NAME = "test-blue-bikes"
+GCP_BUCKET_NAME = "blue-bikes"
 GCP_DATA_FILE = "data_cleaned.csv"
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # gcpdeploy directory

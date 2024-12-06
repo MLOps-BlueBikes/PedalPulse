@@ -1,4 +1,12 @@
 steps:
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: Print PWD
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - 'pwd'
+  
   # Step 1: Build and push the training Docker image (model-trainer)
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/${_PROJECT_ID}/model-trainer:latest', './train']

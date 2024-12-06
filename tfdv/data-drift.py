@@ -43,7 +43,7 @@ schema = DataFrameSchema(
         "start_station_name": Column(pa.String, checks=Check(lambda x: x.notnull()), nullable=False),
         "start_station_id": Column(pa.String, checks=Check(lambda x: x.notnull()), nullable=False),
         "month": Column(pa.Int, checks=Check(lambda x: 1 <= x <= 12), nullable=False),
-        "hour": Column(pa.Int, checks=Check(lambda x: 0 <= x < 24), nullable=False),
+        "hour": Column(pa.Int, checks=Check(lambda x: 0 <= x < 20), nullable=False),
         "day_name": Column(pa.String, checks=Check.isin(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]), nullable=False),
         "duration": Column(pa.Float, checks=Check(lambda x: x > 0), nullable=False),
         "distance_km": Column(pa.Float, checks=Check(lambda x: x > 0), nullable=False),

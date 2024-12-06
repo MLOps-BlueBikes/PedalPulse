@@ -1,11 +1,16 @@
 steps:
 
-  - name: 'gcr.io/cloud-builders/gcloud'
-    id: Print PWD
-    entrypoint: 'bash'
+  - name: 'gcr.io/cloud-builders/docker'
     args:
+      - 'sh'
       - '-c'
-      - 'pwd'
+      - |
+        echo "Current working directory:"
+        pwd
+        echo "Contents of the directory:"
+        ls -alh
+        echo "Building Docker image..."
+        docker build -t gcr.io/${_PROJECT_ID}/model-trainer:latest ./train
   
   # Step 1: Build and push the training Docker image (model-trainer)
   - name: 'gcr.io/cloud-builders/docker'

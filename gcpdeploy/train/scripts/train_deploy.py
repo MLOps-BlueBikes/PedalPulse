@@ -6,14 +6,14 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 logger = logging.getLogger()
 
 # Constants
-PROJECT_ID = "blue-bike-prediction"
+PROJECT_ID = "bluebike-443722"
 REGION = "us-central1"
-BUCKET_NAME = "test-blue-bikes"
+BUCKET_NAME = "blue-bikes"
 MODEL_FOLDER = "models/"
-CONTAINER_URI = "gcr.io/blue-bike-prediction/model-trainer:latest"
-MODEL_SERVING_CONTAINER_IMAGE_URI = "gcr.io/blue-bike-prediction/model-serve:latest"
-base_output_dir = "gs://test-blue-bikes/models/"
-bucket = "gs://test-blue-bikes/models/model/"
+CONTAINER_URI = "gcr.io/bluebike-443722/model-trainer:latest"
+MODEL_SERVING_CONTAINER_IMAGE_URI = "gcr.io/bluebike-443722/model-serve:latest"
+base_output_dir = "gs://bluebike-443722/models/"
+bucket = "gs://bluebike-443722/models/model/"
 ENDPOINT_ID = "blue-bike-endpoint"
 # Initialize Vertex AI
 aiplatform.init(project=PROJECT_ID, location=REGION, staging_bucket=bucket)
@@ -49,7 +49,7 @@ def create_and_run_training_job(display_name, container_uri, base_output_dir):
     model = job.run(
         model_display_name=display_name,
         base_output_dir=base_output_dir,
-        service_account="muskankh03@blue-bike-prediction.iam.gserviceaccount.com",
+        service_account="121903073410-compute@developer.gserviceaccount.com",
     )
 
     logger.info(f"Training job completed. Model saved to: {model.uri}")

@@ -2,7 +2,7 @@ import streamlit as st
 from google.cloud import aiplatform
 
 # Initialize Vertex AI
-PROJECT_ID = "blue-bike-prediction"
+PROJECT_ID = "blue-bikes"
 REGION = "us-central1"
 
 

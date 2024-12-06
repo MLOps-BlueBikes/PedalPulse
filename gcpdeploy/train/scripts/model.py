@@ -30,9 +30,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 logger = logging.getLogger()
 dt_model_path = os.path.join(MODEL_SAVE_PATH, "decision_tree_model.pkl")
 lr_model_path = os.path.join(MODEL_SAVE_PATH, "linear_regression_model.pkl")
-mlflow.set_tracking_uri("http://35.232.48.135:5050")
+mlflow.set_tracking_uri("http://35.192.77.77:5000")
 mlflow.set_experiment("PedalPulse")
-mlflow_client = mlflow.MlflowClient(tracking_uri="http://35.232.48.135:5050")
+mlflow_client = mlflow.MlflowClient(tracking_uri="http://35.192.77.77:5000")
 
 # Email settings
 EMAIL_SENDER = "athanishreyashri@gmail.com"
@@ -40,11 +40,11 @@ EMAIL_PASSWORD = "hqmd vcuf rodd iniu"  # Replace with your email app-specific p
 EMAIL_RECIPIENT = "athanishreyashri@gmail.com"
 
 # GCS and Environment Configurations
-BUCKET_NAME = os.getenv("BUCKET_NAME", "skc-pedalpulse-testing")
+BUCKET_NAME = os.getenv("BUCKET_NAME", "blue-bikes")
 MODEL_DIR = os.getenv("MODEL_DIR", f"gs://{BUCKET_NAME}/models/model/")
 LOG_DIR = os.getenv("LOG_DIR", f"gs://{BUCKET_NAME}/logs/")
 
-fs = gcsfs.GCSFileSystem(project="pedalpulse-skc")
+fs = gcsfs.GCSFileSystem(project="bluebike-443722")
 storage_client = storage.Client()
 
 

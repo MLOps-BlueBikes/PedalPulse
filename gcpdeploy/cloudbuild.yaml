@@ -1,9 +1,9 @@
 steps:
 
   - name: 'gcr.io/cloud-builders/gcloud'
-      id: Print PWD
-      entrypoint: 'bash'
-      args:
+    id: Print PWD
+    entrypoint: 'bash'
+    args:
         - '-c'
         - |
           echo "Current working directory:"

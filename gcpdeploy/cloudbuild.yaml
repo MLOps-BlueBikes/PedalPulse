@@ -62,7 +62,7 @@ options:
   logging: 'CLOUD_LOGGING_ONLY'
 
 substitutions:
-  _PROJECT_ID: "blue-bike-prediction"
+  _PROJECT_ID: "bluebike-443722"
   _REGION: "us-central1"
 
 timeout: 3600s

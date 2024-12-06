@@ -7,9 +7,9 @@ from google.cloud import storage
 app = Flask(__name__)
 
 # Constants
-PROJECT_ID = "blue-bike-prediction"
+PROJECT_ID = "bluebike-443722"
 MODEL_FILE_NAME = "model.pkl"
-BUCKET_NAME = "test-blue-bikes"
+BUCKET_NAME = "blue-bikes"
 BLOB_NAME = f"models/model/{MODEL_FILE_NAME}"
 
 # Initialize Google Cloud Storage client and download model

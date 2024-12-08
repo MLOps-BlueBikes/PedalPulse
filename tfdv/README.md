@@ -67,10 +67,7 @@ Script Details
     *   Generates and saves statistics and schema using TensorFlow Data Validation.
         
 *   **main**: Executes the pipeline for a specified date range and bucket name.
-    
-
-Usage
------
+  
 
 To run the script, use:
 # Data Fetching Script

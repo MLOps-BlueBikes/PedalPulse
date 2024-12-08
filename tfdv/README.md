@@ -33,8 +33,6 @@ Table of Contents
 7.  [License](#license)
     
 
-Project Overview
-----------------
 
 The Bluebikes Data Validation and Processing Pipeline accomplishes the following tasks:
 

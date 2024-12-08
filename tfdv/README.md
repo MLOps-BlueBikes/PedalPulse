@@ -9,31 +9,6 @@ This process is for validating process, and analyzing monthly Bluebikes trip dat
 <img width="841" alt="Screenshot 2024-12-01 at 10 29 10 PM" src="https://github.com/user-attachments/assets/630a9891-2d04-4d2e-bc11-28900c8273d2">
 
 
-
-
-
-
-
-
-Table of Contents
------------------
-
-1.  [Project Overview](#project-overview)
-    
-2.  [Requirements](#requirements)
-    
-3.  [Setup](#setup)
-    
-4.  [Script Details](#script-details)
-    
-5.  [Usage](#usage)
-    
-6.  [Output](#output)
-    
-7.  [License](#license)
-    
-
-
 The Bluebikes Data Validation and Processing Pipeline accomplishes the following tasks:
 
 1.  **Data Loading**: Fetches monthly CSV data files from a specified GCP bucket.

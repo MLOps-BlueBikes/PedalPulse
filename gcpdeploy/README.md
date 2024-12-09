@@ -61,6 +61,64 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
 6. **Model Monitoring and Alerts**:
   - Tracking regression metrics for deployed models using Google Cloud Monitoring on Metrics Explorer.
   - Sends alerts through Email if metrics drop below specified threshold.
+
+6. **Hyperparameter Tuning**:
+  - The code uses **GridSearchCV**, a systematic search over a predefined hyperparameter grid to evaluate model performance on cross-validated data.
+   - Two models are tuned in the pipeline:
+     - **Linear Regression:**
+       - `fit_intercept`: Whether to calculate the intercept or not.
+       - `positive`: Restrict coefficients to positive values.
+     - **Decision Tree Regressor:**
+       - `max_depth`: The maximum depth of the tree to control overfitting.
+       - `min_samples_split`: The minimum number of samples required to split a node.
+
+     **Process of Hyperparameter Tuning:**
+   - For each combination of hyperparameters in the grid, the model is trained and validated using 5-fold cross-validation.
+   - The model's performance is evaluated using metrics such as **Mean Squared Error (MSE)** and **R² score**.
+   - The combination that gives the best performance is selected as the optimal set of hyperparameters.
+7. **Model Comparison and Selection Process**
+   1. **Training and Validation:**
+      - Both models are trained using a 70%-15%-15% split for training, validation, and testing datasets.
+      - Hyperparameter tuning is performed using **GridSearchCV** with 5-fold cross-validation.
+   
+   2. **Station-Based Performance:**
+      - R² scores are computed separately for:
+        - Top 10 most active stations.
+        - Bottom 10 least active stations.
+      - This ensures the selected model performs well across diverse station activity levels.
+   
+   3. **Best Model Selection:**
+      - The model with the highest R² score on the **validation data** and the most consistent performance across station categories is chosen.
+      - Additionally, the difference in performance between frequent and infrequent stations is analyzed to ensure robustness.
+   
+   4. **Logging and Tracking:**
+      - Performance metrics and best hyperparameters are logged using **MLflow** for reproducibility.
+      - The selected model is saved and registered.
+
+---
+
+#### **Results**
+
+- **Linear Regression:**
+  - Pros:
+    - Simple and interpretable.
+    - Works well for linear relationships.
+  - Cons:
+    - Struggles with complex, non-linear patterns in the data.
+  - Performance:
+    - Moderate R² score on frequent stations.
+
+- **Decision Tree Regressor:**
+  - Pros:
+    - Captures non-linear relationships effectively.
+    - Handles categorical and numerical data naturally.
+  - Cons:
+    - Prone to overfitting on training data.
+  - Performance:
+    - High R² score on frequent stations.
+    - Better generalization on infrequent stations compared to Linear Regression.
+
+
 ---
 
 ## **Setup Instructions**
@@ -90,7 +148,7 @@ Modify the following environment variables as needed:
 - `PROJECT_ID`: Your GCP project ID.
 - `REGION`: GCP region (e.g., `us-central1`).
 - `BUCKET_NAME`: GCS bucket for storing the trained model.
-#### **3. Enable Notebooks API*
+#### **3. Enable Notebooks API**
 #### **4. Configure Google Cloud**
 ```bash
 gcloud config set project <PROJECT_ID>

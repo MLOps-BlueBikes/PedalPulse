@@ -11,6 +11,8 @@ This project aims to predict the demand for BlueBikes using historical data and 
 - **docker/**: Docker-related files for containerization.
 - **airflow/**: Contains DAGs for automating pipelines using Apache Airflow.
 - **ci/**: Files for Continuous Integration/Deployment (CI/CD) setup.
+- **Bias/** 
+- **tdfv/** 
 - **requirements.txt**: A list of dependencies required for the project.
 
 ## Dataset Information

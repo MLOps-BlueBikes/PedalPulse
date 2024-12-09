@@ -243,4 +243,15 @@ Google Cloud Trigger:
 This trigger enables the `cloudbuild.yaml` build workflow, which contains model training/retraining and deployment steps.    
 Model retraining automatically initiates after a push to the main branch. The process fetches recent data from Google Cloud Storage, trains multiple candidate models, and selects a champion model based on performance metrics and bias indicators. If the new model outperforms the current production model, it is deployed.
 
+## **Model sensitivity testing with SHAP**
+
+SHAP is a powerful method for explaining the contributions of each feature to a model's predictions. It calculates Shapley values based on cooperative game theory, where each feature is treated as a "player" contributing to the overall prediction.
+
+### Feature Importance Based on SHAP:
+The feature importance values derived from SHAP provide a ranking of features based on their influence on the model’s output. A feature with a high absolute SHAP value is considered to have a greater impact on the model's decision-making process. Such features are deemed highly sensitive in the context of the model.
+
+### Assessing Overall Model Sensitivity:
+The overall sensitivity of the model is evaluated by analyzing how much the model's predictions change when a feature is modified. If small changes in a feature cause significant shifts in the predicted values, it indicates that the model is sensitive to that feature. On the other hand, if a feature has little effect on predictions, it suggests that the model is less sensitive to that feature.
+
+By examining the SHAP values and feature importance rankings, we can better understand the factors that drive the model’s behavior and interpret how sensitive the model is to variations in input features.
 

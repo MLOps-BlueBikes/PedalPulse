@@ -22,6 +22,8 @@ The Bluebikes Data Validation and Processing Pipeline accomplishes the following
 
 This pipeline can be used to monitor the quality of data stored in GCP and help identify potential schema drifts or anomalies in the dataset over time.
 
+The pipeline evaluates data drift by comparing key statistical metrics between the training and incoming datasets.
+
 Requirements
 ------------
 

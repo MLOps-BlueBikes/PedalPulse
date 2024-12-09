@@ -8,7 +8,7 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
 3. **Streamlit App**: A user-facing application that interacts with the model to provide predictions.
 4. **CI/CD Pipelines**: Automating the building, training, and deployment of the model and application using Cloud Build.
 5. **Retraining**: Preconfigured trigger-based retraining and redeployment of served model based on performance and bias checks.
-
+6. **Monitoring and Alerts**: Monitoring key model and application metrics and sending alerts for anomalies or degradation in performance.
 ---
 
 ## **Folder Structure**
@@ -57,6 +57,10 @@ This folder contains the end-to-end workflow for deploying a machine learning mo
    - Maintains a log of the production model's training and test performance metrics.
 
    ![Mlflow sample run](https://github.com/MLOps-BlueBikes/PedalPulse/blob/main/gcpdeploy/imgs/mlflow_runs.png)
+
+6. **Model Monitoring and Alerts**:
+  - Tracking regression metrics for deployed models using Google Cloud Monitoring on Metrics Explorer.
+  - Sends alerts through Email if metrics drop below specified threshold.
 ---
 
 ## **Setup Instructions**

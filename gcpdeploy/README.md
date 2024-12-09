@@ -255,3 +255,4 @@ The overall sensitivity of the model is evaluated by analyzing how much the mode
 
 By examining the SHAP values and feature importance rankings, we can better understand the factors that drive the model’s behavior and interpret how sensitive the model is to variations in input features.
 
+![Model Sensitivity](https://github.com/MLOps-BlueBikes/PedalPulse/blob/main/gcpdeploy/imgs/ModelSensitivity.jpeg)

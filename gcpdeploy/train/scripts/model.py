@@ -25,6 +25,9 @@ import time
 from app.config import GCP_BUCKET_NAME, GCP_DATA_FILE, MODEL_SAVE_PATH, LOG_PATH
 from google.cloud import storage
 
+# Import functions to report metrics to GCP
+from report_metric import report_model_metric
+
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 logger = logging.getLogger()
@@ -43,6 +46,7 @@ EMAIL_RECIPIENT = "athanishreyashri@gmail.com"
 BUCKET_NAME = os.getenv("BUCKET_NAME", "blue-bikes")
 MODEL_DIR = os.getenv("MODEL_DIR", f"gs://{BUCKET_NAME}/models/model/")
 LOG_DIR = os.getenv("LOG_DIR", f"gs://{BUCKET_NAME}/logs/")
+PROJECT_ID = os.getenv("PROJECT_ID", "bluebike-443722")
 
 fs = gcsfs.GCSFileSystem(project="bluebike-443722")
 storage_client = storage.Client()
@@ -262,6 +266,10 @@ def train_model(X_train, y_train, X_val, y_val, X_test, y_test):
             best_model_r2 = lr_val_r2 if bm == "lr" else dt_val_r2
             best_model_mse = lr_val_mse if bm == "lr" else dt_val_mse
             best_model_run_id = lr_run_id if bm == "lr" else dt_run_id
+
+            # Report RMSE and MSE metrics to cloud monitoring
+            report_model_metric(PROJECT_ID, best_model_r2, 'rmse')
+            report_model_metric(PROJECT_ID, best_model_mse, 'mse')
 
             # Upload log after training
             # upload_log_to_gcs(f"Training completed. Validation MSE: {mse}, R2: {r2}.", LOG_DIR + "/training_log.txt")

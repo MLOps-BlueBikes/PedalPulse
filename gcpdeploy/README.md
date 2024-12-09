@@ -110,7 +110,14 @@ gcloud services enable cloudbuild.googleapis.com
 gcloud services enable storage.googleapis.com
 ```
 
-#### **7. Create model-serving image**
+#### **7. Enable Google Cloud Monitoring and Alerts**
+```bash
+python monitoring/create_mse_metric.py
+python monitoring/create_rmse_metric.py
+python monitoring/create_rmse_alert.py
+```
+
+#### **8. Create model-serving image**
 ```bash
 docker build -t gcr.io/<project_name>/model-serve:latest .
 docker push gcr.io/<project_name>/model-serve:latest

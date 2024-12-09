@@ -2,22 +2,22 @@
 
 This project aims to predict the demand for BlueBikes using historical data and station information. The goal is to deploy an MLOps pipeline that automates data ingestion, model training, deployment, and retraining. 
 
-.dvc/: Tracks data versioning configurations.
-.github/workflows/: Contains GitHub Actions workflows for CI/CD automation.
-Bias/: Directory for handling bias-related computations or analysis.
-airflow/: Contains Apache Airflow DAGs and configurations for pipeline automation.
-api_data_airflow/: Handles API integration within the Airflow pipeline.
-data/: Stores raw and processed datasets managed via DVC.
-gcpdeploy/: Contains files and scripts for deploying the project on Google Cloud Platform.
-models/: Stores trained model artifacts.
-src/: The source code for data ingestion, preprocessing, training, and inference.
-tests/: Unit and integration tests for various pipeline components.
-tdfv/: Directory for TensorFlow Data Validation (TFDV) configurations or reports.
-weather-data-integration/: Manages data integration processes related to weather data.
-Pedal_Pulse_project_scoping.pdf: Project scoping document for reference.
-Pedalpulse_data_pipeline.docx: Documentation or design related to the data pipeline.
-README.md: Main documentation file with project details.
-requirements.txt: A list of dependencies required for the project.
+- **.dvc/**: Tracks data versioning configurations.  
+- **.github/workflows/**: Contains GitHub Actions workflows for CI/CD automation.  
+- **Bias/**: Directory for handling bias-related computations or analysis.  
+- **airflow/**: Contains Apache Airflow DAGs and configurations for pipeline automation.  
+- **api_data_airflow/**: Handles API integration within the Airflow pipeline.  
+- **data/**: Stores raw and processed datasets managed via DVC.  
+- **gcpdeploy/**: Contains files and scripts for deploying the project on Google Cloud Platform.  
+- **models/**: Stores trained model artifacts.  
+- **src/**: The source code for data ingestion, preprocessing, training, and inference.  
+- **tests/**: Unit and integration tests for various pipeline components.  
+- **tdfv/**: Directory for TensorFlow Data Validation (TFDV) configurations or reports.  
+- **weather-data-integration/**: Manages data integration processes related to weather data.  
+- **Pedal_Pulse_project_scoping.pdf**: Project scoping document for reference.  
+- **Pedalpulse_data_pipeline.docx**: Documentation or design related to the data pipeline.  
+- **README.md**: Main documentation file with project details.  
+- **requirements.txt**: A list of dependencies required for the project.  
 
 ## Dataset Information
 

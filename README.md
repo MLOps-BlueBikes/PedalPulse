@@ -12,7 +12,7 @@ This project aims to predict the demand for BlueBikes using historical data and 
 - **models/**: Stores trained model artifacts.  
 - **src/**: The source code for data ingestion, preprocessing, training, and inference.  
 - **tests/**: Unit and integration tests for various pipeline components.  
-- **tdfv/**: Directory for TensorFlow Data Validation (TFDV) configurations or reports.  
+- **tdfv/**: Directory for TensorFlow Data Validation (TFDV) configurations or reports and Data Drift.  
 - **weather-data-integration/**: Manages data integration processes related to weather data.  
 - **Pedal_Pulse_project_scoping.pdf**: Project scoping document for reference.  
 - **Pedalpulse_data_pipeline.docx**: Documentation or design related to the data pipeline.  

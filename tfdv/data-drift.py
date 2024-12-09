@@ -1,7 +1,10 @@
 import os
 os.system('pip install tensorflow_data_validation')
 !pip install pandera
-
+from google.cloud.devtools.cloudbuild_v1.types import GitSource,Source
+from google.cloud.devtools.cloudbuild_v1.services.cloud_build import CloudBuildClient
+from google.cloud.devtools.cloudbuild_v1.types import Build
+from google.cloud.devtools.cloudbuild_v1 import CreateBuildRequest
 import logging
 from google.cloud import storage
 import pandera as pa
@@ -147,6 +150,23 @@ def compare_numerical_distribution_with_drift_detection(stats1, stats2, feature_
             logger.warning(f"Significant change detected in `{feature_name}`: Std Dev change exceeds {threshold}%.")
         if mean_change_percentage > threshold:
             logger.warning(f"Significant change detected in `{feature_name}`: Mean change exceeds {threshold}%.")
+
+
+        try:
+            client = CloudBuildClient()
+            
+            g=Build(project_id="bluebike-443722",source=Source(git_source=GitSource(url=r"https://github.com/MLOps-BlueBikes/PedalPulse",dir_="gcpdeploy",revision="main")),steps=)
+            
+            
+            request = CreateBuildRequest(
+                    project_id="bluebike-443722",build=g 
+                )
+    
+            operation = client.create_build(request=request)
+        except Exception as e:
+                    logger.error(f"Failed to trigger cloud build: `{e}`.")
+
+              
     else:
         logger.error(f"Feature `{feature_name}` not found or has no num_stats.")
 

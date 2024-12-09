@@ -56,6 +56,7 @@ requirements.txt: A list of dependencies required for the project.
 - DVC
 - Google Cloud SDK (for GCP)
 - Apache Airflow (for orchestrating pipelines)
+- MLflow
 
 ### Installation
 
